@@ -39,7 +39,6 @@ export default function Contact() {
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    setResult("Sending...")
     const form = event.currentTarget
     const formData = new FormData(form)
     const name = sanitizeInput(formData.get("name") as string || "")
@@ -49,6 +48,8 @@ export default function Contact() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(email)) { setResult("Please enter a valid email address"); return }
     if (!name || !email || !message) { setResult("Please fill in all required fields"); return }
+
+    setResult("Sending...")
 
     const sanitized = new FormData()
     sanitized.append("name", name)
@@ -187,11 +188,11 @@ export default function Contact() {
                 <Send className="w-4 h-4 mr-2" />
                 Send Message
               </button>
-              {result && (
+              {result ? (
                 <div className={`text-sm text-center ${result.includes("successfully") ? "text-bmw-m-blue-dark" : "text-bmw-m-red"}`}>
                   {result}
                 </div>
-              )}
+              ) : null}
             </form>
           </motion.div>
         </div>

@@ -1,7 +1,6 @@
 "use client"
 
-import type { ReactNode } from "react"
-import { useEffect, useRef } from "react"
+import { memo, type ReactNode, useEffect, useRef } from "react"
 import Lenis from "lenis"
 
 type LenisProviderProps = {
@@ -60,4 +59,4 @@ const LenisProvider = ({ children }: LenisProviderProps) => {
   return <>{children}</>
 }
 
-export default LenisProvider
+export default memo(LenisProvider)
