@@ -186,18 +186,20 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex items-center gap-3 pt-3 border-t border-bmw-hairline">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bmw-text-link text-[11px] group/link"
-                  >
-                    <ExternalLink className="w-3 h-3" />
-                    View
-                  </a>
-                  {project.github && (
+                  {project.link && !project.link.startsWith("https://github.com/") && (
                     <a
-                      href={project.github}
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bmw-text-link text-[11px] group/link"
+                    >
+                      <ExternalLink className="w-3 h-3" />
+                      View
+                    </a>
+                  )}
+                  {(project.github || project.link?.startsWith("https://github.com/")) && (
+                    <a
+                      href={project.github || project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bmw-text-link text-[11px]"
