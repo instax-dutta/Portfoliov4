@@ -43,7 +43,7 @@ const projects = [
   {
     title: "VeronicaBot",
     subtitle: "Discord Bot for YouTube/Twitch",
-    description: "Production-grade Discord bot monitoring YouTube and Twitch channels for live streams with real-time notifications.",
+    description: "Privacy-first Discord bot for real‑time YouTube & Twitch live notifications. Self‑hosted. Zero telemetry. No cloud lock‑in.",
     technologies: ["Node.js", "Discord.js", "SQLite", "Upstash Redis", "Express.js", "Docker"],
     link: "https://github.com/instax-dutta/VeronicaBot",
     github: "https://github.com/instax-dutta/VeronicaBot",
