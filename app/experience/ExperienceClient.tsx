@@ -193,7 +193,7 @@ export default function Experience() {
                       </span>
                     ))}
                   </div>
-                  {exp.achievements.length > 0 && (
+                  {exp.achievements.length > 0 ? (
                     <div className="border-t border-bmw-hairline pt-4">
                       <h3 className="text-bmw-ink text-xs font-bold tracking-machined uppercase mb-3 flex items-center gap-2">
                         <Zap className="w-3 h-3 text-bmw-muted" />
@@ -208,7 +208,7 @@ export default function Experience() {
                         ))}
                       </ul>
                     </div>
-                  )}
+                  ) : null}
                 </div>
               </div>
             </div>

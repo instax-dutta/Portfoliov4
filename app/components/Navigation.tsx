@@ -1,7 +1,6 @@
 "use client"
 
-import type React from "react"
-import { useState, useEffect } from "react"
+import { memo, useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
@@ -67,7 +66,7 @@ const Navigation: React.FC = () => {
         </button>
       </div>
 
-      {isMobileOpen && (
+      {isMobileOpen ? (
         <div className="md:hidden bg-bmw-canvas border-b border-bmw-hairline">
           <div className="px-6 py-4 flex flex-col gap-1">
             {menuItems.map((item) => {
@@ -86,9 +85,9 @@ const Navigation: React.FC = () => {
             })}
           </div>
         </div>
-      )}
+      ) : null}
     </nav>
   )
 }
 
-export default Navigation
+export default memo(Navigation)
