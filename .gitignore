@@ -1,0 +1,8 @@
+/node_modules
+/.next
+/.vscode
+PROJECTS.md
+/.agent
+/docs
+/.agents
+COLOR_SCHEMA_REPORT.md

@@ -1,0 +1,229 @@
+@import "lenis/dist/lenis.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bmw-canvas: #000000;
+  --bmw-ink: #ffffff;
+  --bmw-body: #bbbbbb;
+  --bmw-body-strong: #e6e6e6;
+  --bmw-muted: #7e7e7e;
+  --bmw-hairline: #3c3c3c;
+  --bmw-hairline-strong: #262626;
+  --bmw-surface-card: #1a1a1a;
+  --bmw-surface-elevated: #262626;
+  --bmw-surface-soft: #0d0d0d;
+  --bmw-m-blue-light: #0066b1;
+  --bmw-m-blue-dark: #1c69d4;
+  --bmw-m-red: #e22718;
+  --bmw-carbon: #2b2b2b;
+}
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 10%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 10%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 0 0% 14.9%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 0 0% 83.1%;
+  --chart-1: 220 70% 50%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
+  --sidebar-background: 0 0% 10%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 0 0% 100%;
+  --sidebar-primary-foreground: 0 0% 0%;
+  --sidebar-accent: 0 0% 14.9%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 0 0% 14.9%;
+  --sidebar-ring: 0 0% 100%;
+  --radius: 0px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-inter), sans-serif;
+    color: var(--bmw-body);
+    background-color: var(--bmw-canvas);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: var(--bmw-ink);
+  }
+
+  p {
+    color: var(--bmw-body);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .m-stripe {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--bmw-m-blue-light) 0%, var(--bmw-m-blue-dark) 50%, var(--bmw-m-red) 100%);
+  }
+
+  .m-stripe-vertical {
+    width: 4px;
+    background: linear-gradient(180deg, var(--bmw-m-blue-light) 0%, var(--bmw-m-blue-dark) 50%, var(--bmw-m-red) 100%);
+  }
+
+  .bmw-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 16px 32px;
+    font-family: var(--font-inter), sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--bmw-ink);
+    background: transparent;
+    border: 1px solid var(--bmw-ink);
+    border-radius: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .bmw-btn:hover {
+    background-color: var(--bmw-ink);
+    color: var(--bmw-canvas);
+  }
+
+  .bmw-btn-primary {
+    background-color: var(--bmw-ink);
+    color: var(--bmw-canvas);
+    border: none;
+  }
+
+  .bmw-btn-primary:hover {
+    background-color: var(--bmw-body-strong);
+  }
+
+  .bmw-hairline {
+    height: 1px;
+    background-color: var(--bmw-hairline);
+    width: 100%;
+  }
+
+  .bmw-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .bmw-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .bmw-label {
+    font-family: var(--font-inter), sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--bmw-muted);
+  }
+
+  .bmw-display-xl {
+    font-size: clamp(40px, 5.5vw, 80px);
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--bmw-ink);
+  }
+
+  .bmw-display-lg {
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.05;
+    text-transform: uppercase;
+  }
+
+  .bmw-display-md {
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .bmw-card {
+    background-color: var(--bmw-surface-card);
+    border-radius: 0;
+    padding: 24px;
+  }
+
+  .bmw-spec-cell {
+    background-color: var(--bmw-surface-soft);
+    padding: 24px;
+  }
+
+  .bmw-text-link {
+    font-family: var(--font-inter), sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--bmw-ink);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.2s ease;
+  }
+
+  .bmw-text-link:hover {
+    opacity: 0.7;
+  }
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
