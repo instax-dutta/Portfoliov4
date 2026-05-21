@@ -6,7 +6,7 @@ const HomeClient = dynamic(() => import("./components/HomeClient"), {
 
 export const metadata: Metadata = {
   title: "Sai Dutta Abhishek Dash | Full Stack Engineer & AI/ML Specialist",
-  description: "Official portfolio of Sai Dutta Abhishek Dash. Expert in Security-first Full Stack Development, AI/ML Engineering, and Cloud Architecture. Explore 25+ production-ready projects including Tooner, Ignition, and Binify. Specialized in Python, React, Next.js, and AWS.",
+  description: "Official portfolio of Sai Dutta Abhishek Dash. Expert in Security-first Full Stack Development, AI/ML Engineering, and Cloud Architecture. Explore 25+ production-ready projects including Tooner and Binify. Specialized in Python, React, Next.js, and AWS.",
   keywords: [
     "Sai Dutta Abhishek Dash",
     "sdad.pro",

@@ -12,14 +12,6 @@ const projects = [
     link: "https://tooner.sdad.pro",
   },
   {
-    title: "Ignition",
-    subtitle: "Reddit to LLM Extraction Engine",
-    description: "High-performance extraction engine transforming Reddit discussions into TOON format for LLM ingestion. 50-70% token reduction.",
-    technologies: ["Vite 5", "React 18", "TypeScript 5", "Zustand", "TanStack Query", "Netlify Functions"],
-    link: "https://ignition.sdad.pro",
-    github: "https://github.com/instax-dutta/project-ignition",
-  },
-  {
     title: "GenieLabs",
     subtitle: "AI-Powered Dev Platform",
     description: "AI-powered development platform for code generation, analysis, and optimization with workflow automation.",
