@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
 import { Calendar, Building2, Zap } from "lucide-react"
+import { transitionSmooth } from "../lib/animation"
 
 const experiences = [
   {
@@ -139,7 +140,7 @@ const itemVariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.5, ease: "easeOut" },
+    transition: { duration: 0.5, ease: transitionSmooth.ease },
   },
 }
 

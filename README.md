@@ -21,7 +21,48 @@ The interface follows BMW M's editorial principles:
 - **No drop shadows** — depth comes from surface contrast, not chrome
 - **Generous spacing** — 96px sections, 24px card padding, grid-aligned
 
-The full design system is documented in [`DESIGN.md`](./DESIGN.md).
+### Design System — AI Agent Reference
+
+This section is for AI agents maintaining the portfolio. All UI work must follow these tokens and conventions.
+
+**Colors** (`app/globals.css`, `bmw-*` Tailwind prefix):
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| canvas | `#000000` | Page background |
+| ink | `#ffffff` | Primary text, headings |
+| body | `#bbbbbb` | Body paragraphs |
+| body-strong | `#e6e6e6` | Emphasized body text |
+| muted | `#7e7e7e` | Secondary labels, captions |
+| hairline | `#3c3c3c` | 1px borders, dividers |
+| hairline-strong | `#262626` | Stronger borders |
+| surface-card | `#1a1a1a` | Card backgrounds |
+| surface-elevated | `#262626` | Nested cards |
+| surface-soft | `#0d0d0d` | Tag backgrounds |
+| m-blue-light | `#0066b1` | M stripe start |
+| m-blue-dark | `#1c69d4` | M stripe middle |
+| m-red | `#e22718` | M stripe end |
+
+**Typography:** Inter via `next/font/google`. Headlines uppercase weight 700. Body weight 300 sentence-case. Labels uppercase weight 700 with 1.5px tracking (the "machined" feel is non-negotiable).
+
+**Spacing:** 96px section padding, 24px card padding, max width 1440px centered, 12px grid gaps.
+
+**Components:**
+- Cards: `bg-bmw-surface-card` bg, no border-radius, `p-6`
+- Buttons (outline): `bmw-btn` — transparent, white 1px border, uppercase 14px/700/1.5px, 48px h, no border-radius
+- Buttons (primary): `bmw-btn bmw-btn-primary` — white bg, black text
+- Text links: `bmw-text-link` — uppercase 14px/700/1.5px, inline-flex with gap-2
+- M stripe: `<div className="m-stripe" />` — 4px horiz gradient, full-width, section bottom only
+- Tags inside cards: `px-3 py-1 text-xs text-bmw-muted bg-bmw-surface-soft`
+
+**Rules:**
+- DO use `bmw-*` CSS variables via Tailwind
+- DO NOT add decorative gradients, glows, or background effects
+- DO NOT round card/button corners (except circular icon buttons)
+- DO NOT use M tricolor as a button fill
+- DO NOT bold body text (weight 300 always)
+- DO NOT add drop shadows
+- DO NOT introduce colors outside the defined palette
 
 ## Pages
 

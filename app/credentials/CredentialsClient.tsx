@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { GraduationCap, BookOpen, School, Award, Calendar } from "lucide-react"
 import Navigation from "../components/Navigation"
+import { containerVariants, itemVariants } from "../lib/animation"
 
 const education = [
   {
@@ -38,23 +39,6 @@ const certifications = [
   { title: "Python for Data Science and Machine Learning", issuer: "Udemy", year: "2024" },
   { title: "Project Management", issuer: "Career Ninja | LearnTube", year: "2024" },
 ]
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
-  },
-}
-
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
-}
 
 export default function Credentials() {
   return (

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
 import { ExternalLink, Github } from "lucide-react"
+import { transitionSmooth } from "../lib/animation"
 
 const projects = [
   {
@@ -183,7 +184,7 @@ const itemVariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.4, ease: "easeOut" },
+    transition: { duration: 0.5, ease: transitionSmooth.ease },
   },
 }
 

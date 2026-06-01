@@ -4,6 +4,7 @@ import React, { useRef, useState } from "react"
 import { motion } from "framer-motion"
 import { Github, Linkedin, Twitter, Mail, MapPin, Clock, Send } from "lucide-react"
 import Navigation from "../components/Navigation"
+import { containerVariants, itemVariants } from "../lib/animation"
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/instax-dutta", label: "GitHub" },
@@ -14,23 +15,6 @@ const socialLinks = [
 
 const sanitizeInput = (input: string): string => {
   return input.replace(/[<>]/g, "").replace(/javascript:/gi, "").replace(/on\w+=/gi, "").trim()
-}
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
-  },
-}
-
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
 }
 
 export default function Contact() {

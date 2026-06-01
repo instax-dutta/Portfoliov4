@@ -17,13 +17,13 @@ const LenisProvider = ({ children }: LenisProviderProps) => {
     if (prefersReducedMotion.matches) return
 
     const lenis = new Lenis({
-      duration: 0.9,
-      easing: (t) => 1 - Math.pow(1 - t, 3),
+      duration: 1.2,
+      easing: (t) => 1 - Math.pow(1 - t, 4),
       orientation: 'vertical',
       gestureOrientation: 'vertical',
       smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 1.5,
+      wheelMultiplier: 0.8,
+      touchMultiplier: 1,
       infinite: false,
     })
 

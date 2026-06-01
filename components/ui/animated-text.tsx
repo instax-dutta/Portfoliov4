@@ -91,7 +91,7 @@ const AnimatedText = React.memo(React.forwardRef<HTMLDivElement, AnimatedTextPro
         transition: {
           delay: itemCount * delay + (itemCount - 1) * duration,
           duration: 0.8,
-          ease: "easeOut",
+          ease: [0.22, 1, 0.36, 1],
         },
       },
     }

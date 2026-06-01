@@ -4,6 +4,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
 import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from "lucide-react"
+import { transitionSmooth } from "../lib/animation"
 
 export default function HomeClient() {
   return (
@@ -17,7 +18,7 @@ export default function HomeClient() {
               className="bmw-label inline-block mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ ...transitionSmooth }}
             >
               Full Stack Engineer & AI Specialist
             </motion.span>
@@ -26,7 +27,7 @@ export default function HomeClient() {
               className="bmw-display-xl mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.15, ease: transitionSmooth.ease }}
             >
               Sai Dutta<br />Abhishek Dash
             </motion.h1>
@@ -35,7 +36,7 @@ export default function HomeClient() {
               className="text-bmw-body text-lg max-w-2xl mb-10 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              transition={{ duration: 0.6, delay: 0.3, ease: transitionSmooth.ease }}
             >
               I build production-ready applications at the intersection of full-stack engineering,
               AI/ML, and security. Based in Bhubaneswar — available worldwide.
@@ -45,7 +46,7 @@ export default function HomeClient() {
               className="flex flex-wrap items-center gap-4 mb-16"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
+              transition={{ duration: 0.6, delay: 0.45, ease: transitionSmooth.ease }}
             >
               <Link href="/projects" className="bmw-btn group">
                 View Projects
@@ -60,7 +61,7 @@ export default function HomeClient() {
               className="flex items-center gap-5"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.6, ease: transitionSmooth.ease }}
             >
               <a href="https://github.com/instax-dutta" target="_blank" rel="noopener noreferrer" className="text-bmw-muted hover:text-bmw-ink transition-colors" aria-label="GitHub">
                 <Github className="w-5 h-5" />

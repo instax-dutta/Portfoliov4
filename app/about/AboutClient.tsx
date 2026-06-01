@@ -4,23 +4,7 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { Code, Brain, Server, Zap, Target, TrendingUp, Lightbulb, Globe } from "lucide-react"
 import Navigation from "../components/Navigation"
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
-  },
-}
-
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
-}
+import { containerVariants, itemVariants } from "../lib/animation"
 
 const skills = [
   {
