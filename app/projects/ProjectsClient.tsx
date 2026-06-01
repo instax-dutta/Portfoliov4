@@ -57,14 +57,6 @@ const projects = [
     link: "https://bin.sdad.pro",
   },
   {
-    title: "RedisKeeper",
-    subtitle: "Redis Activity Guard",
-    description: "Privacy-first tool preventing free-tier Redis databases from auto-deletion via weekly encrypted pings.",
-    technologies: ["Next.js 15", "TypeScript", "NeonDB", "Prisma", "TweetNaCl.js"],
-    link: "https://github.com/instax-dutta/rediskeeper",
-    github: "https://github.com/instax-dutta/rediskeeper",
-  },
-  {
     title: "Sensory",
     subtitle: "Scalable Cloud Storage",
     description: "Scalable cloud storage with efficient database management and advanced rate limiting for optimal performance.",
