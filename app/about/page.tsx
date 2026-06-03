@@ -40,17 +40,10 @@ export default function AboutPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutStructuredData) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
             <AboutClient />
-            <section className="border-t border-bmw-hairline py-4 px-6 bg-bmw-surface-soft">
-                <div className="max-w-[1440px] mx-auto">
-                    <p className="text-bmw-muted text-[11px]">
-                        Sai Dutta Abhishek Dash is a Full Stack Engineer &amp; AI Specialist based in Bhubaneswar, India. 
-                        His technical capabilities span programming (Python, TypeScript, React, Next.js), AI/ML (TensorFlow, PyTorch, LangChain), 
-                        DevOps &amp; Cloud (AWS, Docker, Kubernetes), and security engineering. He is driven by problem solving, 
-                        continuous learning, and delivering impactful AI-powered solutions.
-                    </p>
-                    <p className="text-bmw-muted text-[11px] mt-1">Last updated: June 2026</p>
-                </div>
-            </section>
+            <div className="sr-only" aria-hidden="true">
+                <p>Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. His technical capabilities span programming (Python, TypeScript, React, Next.js), AI/ML (TensorFlow, PyTorch, LangChain), DevOps & Cloud (AWS, Docker, Kubernetes), and security engineering. He is driven by problem solving, continuous learning, and delivering impactful AI-powered solutions.</p>
+                <p>Last updated: June 2026</p>
+            </div>
         </>
     )
 }

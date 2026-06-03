@@ -39,24 +39,10 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
       <HomeClient />
-      <section className="border-t border-bmw-hairline py-5 px-6 bg-bmw-surface-soft">
-        <div className="max-w-[1440px] mx-auto">
-          <p className="text-bmw-body text-xs leading-relaxed max-w-4xl">
-            Sai Dutta Abhishek Dash is a Full Stack Engineer &amp; AI Specialist based in Bhubaneswar, India. 
-            He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. 
-            With 20+ production applications and 12 professional experiences across 10+ companies, he specializes in 
-            Python, React, Next.js, Node.js, AWS, TensorFlow, and zero-knowledge encryption. AWS Certified and 
-            available for remote freelance work worldwide.
-          </p>
-          <div className="flex flex-wrap gap-x-5 gap-y-1 mt-2 text-bmw-muted">
-            <span className="text-[11px]">20+ production applications</span>
-            <span className="text-[11px]">12 professional experiences</span>
-            <span className="text-[11px]">AWS Certified Cloud Practitioner</span>
-            <span className="text-[11px]">Available worldwide</span>
-            <span className="text-[11px]">Last updated: June 2026</span>
-          </div>
-        </div>
-      </section>
+      <div className="sr-only" aria-hidden="true">
+        <p>Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. With 20+ production applications and 12 professional experiences across 10+ companies, he specializes in Python, React, Next.js, Node.js, AWS, TensorFlow, and zero-knowledge encryption. AWS Certified and available for remote freelance work worldwide.</p>
+        <p>Stats: 20+ production applications | 12 professional experiences | AWS Certified Cloud Practitioner | Available worldwide | Last updated: June 2026</p>
+      </div>
     </>
   )
 }

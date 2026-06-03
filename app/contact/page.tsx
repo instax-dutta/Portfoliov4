@@ -77,16 +77,10 @@ export default function ContactPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactFaqStructuredData) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
             <ContactClient />
-            <section className="border-t border-bmw-hairline py-4 px-6 bg-bmw-surface-soft">
-                <div className="max-w-[1440px] mx-auto">
-                    <p className="text-bmw-muted text-[11px]">
-                        Sai Dutta Abhishek Dash is available for remote freelance work worldwide. 
-                        Contact via email at contact@sdad.pro or use the contact form. Typical response time is within 24 hours. 
-                        Services include full-stack development, AI/ML implementation, security auditing, and custom web applications.
-                    </p>
-                    <p className="text-bmw-muted text-[11px] mt-1">Last updated: June 2026</p>
-                </div>
-            </section>
+            <div className="sr-only" aria-hidden="true">
+                <p>Sai Dutta Abhishek Dash is available for remote freelance work worldwide. Contact via email at contact@sdad.pro or use the contact form. Typical response time is within 24 hours. Services include full-stack development, AI/ML implementation, security auditing, and custom web applications.</p>
+                <p>Last updated: June 2026</p>
+            </div>
         </>
     )
 }

@@ -44,24 +44,10 @@ export default function SkillsPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(skillsStructuredData) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
             <SkillsClient />
-            <section className="border-t border-bmw-hairline py-4 px-6 bg-bmw-surface-soft">
-                <div className="max-w-[1440px] mx-auto">
-                    <p className="text-bmw-body text-xs leading-relaxed max-w-4xl">
-                        Sai Dutta Abhishek Dash's technical expertise spans four domains: Programming (Python, TypeScript, 
-                        JavaScript, React, Next.js, Node.js, Rust, Go, Java, C++), AI/ML (TensorFlow, PyTorch, scikit-learn, 
-                        LangChain, Hugging Face, Ollama, Google Vertex AI, Mistral AI), DevOps &amp; Cloud (AWS Certified, 
-                        Docker, Kubernetes, Terraform, Ansible, GitHub Actions, CI/CD), and Soft Skills (Problem Solving, 
-                        Leadership, Communication, Critical Thinking, Project Management, Agile).
-                    </p>
-                    <div className="flex flex-wrap gap-x-5 gap-y-1 mt-2 text-bmw-muted">
-                        <span className="text-[11px]">15+ programming languages &amp; frameworks</span>
-                        <span className="text-[11px]">15+ AI/ML tools &amp; libraries</span>
-                        <span className="text-[11px]">10+ DevOps &amp; cloud platforms</span>
-                        <span className="text-[11px]">AWS Certified Cloud Practitioner</span>
-                        <span className="text-[11px]">Last updated: June 2026</span>
-                    </div>
-                </div>
-            </section>
+            <div className="sr-only" aria-hidden="true">
+                <p>Sai Dutta Abhishek Dash's technical expertise spans four domains: Programming (Python, TypeScript, JavaScript, React, Next.js, Node.js, Rust, Go, Java, C++), AI/ML (TensorFlow, PyTorch, scikit-learn, LangChain, Hugging Face, Ollama, Google Vertex AI, Mistral AI), DevOps & Cloud (AWS Certified, Docker, Kubernetes, Terraform, Ansible, GitHub Actions, CI/CD), and Soft Skills (Problem Solving, Leadership, Communication, Critical Thinking, Project Management, Agile).</p>
+                <p>Stats: 15+ programming languages & frameworks | 15+ AI/ML tools & libraries | 10+ DevOps & cloud platforms | AWS Certified Cloud Practitioner | Last updated: June 2026</p>
+            </div>
         </>
     )
 }
