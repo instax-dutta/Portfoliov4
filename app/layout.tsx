@@ -164,6 +164,53 @@ export const metadata: Metadata = {
   },
 }
 
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is Sai Dutta Abhishek Dash?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. He has delivered 20+ production applications serving thousands of users and is AWS Certified."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Sai Dutta Abhishek Dash specialize in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "He specializes in full-stack development with Python, TypeScript, React, and Next.js; AI/ML engineering with TensorFlow, PyTorch, and LangChain; cloud architecture on AWS; security engineering including zero-knowledge encryption and DDoS protection; and DevOps with Docker, Kubernetes, and CI/CD pipelines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Sai Dutta Abhishek Dash available for freelance work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Sai Dutta Abhishek Dash is available for remote freelance work worldwide. He offers full-stack development, AI/ML implementation, security auditing, and custom web application services. Response time is within 24 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What projects has Sai Dutta Abhishek Dash built?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "He has built 20+ production applications including Tooner (document tokenization for LLMs), Binify (zero-knowledge encrypted pastebin), GenieLabs (AI-powered development platform), Sensory (scalable cloud storage), Auralyn (Discord music bot), and PacketBuddy (network usage tracker)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What certifications does Sai Dutta Abhishek Dash hold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "He holds an AWS Certified Cloud Practitioner certification, Amazon Bedrock Getting Started from AWS, Amazon Q Developer from AWS, and a Bachelor's Degree in Computer Science from GIET University Gunupur."
+      }
+    }
+  ]
+}
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -238,6 +285,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
         />
         <Suspense fallback={null}>
           <LenisProvider>

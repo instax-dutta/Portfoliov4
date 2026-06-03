@@ -1,10 +1,32 @@
+# AI search crawlers — allowed for citation and retrieval
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# General crawler
 User-agent: *
 Allow: /
 
-# Disallow admin and private paths
 Disallow: /api/
 Disallow: /_next/
 
-# Sitemap location
+# Sitemap
 Sitemap: https://sdad.pro/sitemap.xml
 

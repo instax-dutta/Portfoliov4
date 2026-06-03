@@ -22,6 +22,45 @@ const contactPageStructuredData = {
     mainEntity: { "@id": "https://sdad.pro/#person" }
 }
 
+const contactFaqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How can I hire Sai Dutta Abhishek Dash?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use the contact form on this page or email contact@sdad.pro. He is available for remote freelance full-stack development, AI/ML implementation, security auditing, and custom web application projects."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Where is Sai Dutta Abhishek Dash based?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "He is based in Bhubaneswar, India and is available for remote work worldwide."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is the response time for inquiries?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Response time is within 24 hours for all inquiries."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What types of projects does Sai Dutta Abhishek Dash take on?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "He takes on full-stack web development, AI/ML integration, security auditing, custom SaaS development, API development, cloud migration, performance optimization, and automation systems."
+            }
+        }
+    ]
+}
+
 const breadcrumbStructuredData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -35,8 +74,19 @@ export default function ContactPage() {
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageStructuredData) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactFaqStructuredData) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
             <ContactClient />
+            <section className="border-t border-bmw-hairline py-4 px-6 bg-bmw-surface-soft">
+                <div className="max-w-[1440px] mx-auto">
+                    <p className="text-bmw-muted text-[11px]">
+                        Sai Dutta Abhishek Dash is available for remote freelance work worldwide. 
+                        Contact via email at contact@sdad.pro or use the contact form. Typical response time is within 24 hours. 
+                        Services include full-stack development, AI/ML implementation, security auditing, and custom web applications.
+                    </p>
+                    <p className="text-bmw-muted text-[11px] mt-1">Last updated: June 2026</p>
+                </div>
+            </section>
         </>
     )
 }

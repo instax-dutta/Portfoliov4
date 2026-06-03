@@ -1,0 +1,38 @@
+# Sai Dutta Abhishek Dash — Full Stack Engineer & AI Specialist
+
+## About
+Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. He has delivered 20+ production applications serving thousands of users across diverse domains — AI agents, encryption tools, cloud storage, Discord bots, security tooling, and more.
+
+## Expertise
+- **Programming**: Python, TypeScript, JavaScript, React, Next.js, Node.js, Express.js, Rust, Go, Java, C++, Tailwind CSS
+- **AI/ML**: TensorFlow, PyTorch, scikit-learn, LangChain, Hugging Face, Ollama, Google Vertex AI, Mistral AI, Gemini API, OpenCV, NLP
+- **DevOps & Cloud**: AWS (Certified), Docker, Kubernetes, GitHub Actions, Terraform, Ansible, CI/CD, Vercel, Netlify, Linux
+- **Security**: Zero-knowledge encryption, DDoS protection, firewall configuration, secure ML, penetration testing
+
+## Experience
+- Freelance Full Stack Developer — Self-Employed (Sep 2025 – Present)
+- Associate — Tech Mahindra (Jun 2025 – Sep 2025)
+- Machine Learning Engineer Intern — Multiple companies (2024)
+- CEO & Co-Founder — RacerNodes (May 2022 – Jul 2023)
+
+## Notable Projects
+- **Tooner** — Privacy-first document tokenization for LLMs (tooner.sdad.pro)
+- **Binify** — Zero-knowledge encrypted pastebin (bin.sdad.pro)
+- **GenieLabs** — AI-powered development platform (genielabs.sdad.pro)
+- **Sensory** — Scalable cloud storage (mirror.sdad.pro)
+- **PacketBuddy** — Network usage tracker
+- **Auralyn** — Discord music bot with integrated Lavalink (auralyn.sdad.pro)
+- **AMZRelay** — Amazon non-returnable products finder (Discord bot)
+
+## Credentials
+- AWS Certified Cloud Practitioner (2024)
+- Amazon Bedrock Getting Started — AWS (2024)
+- Bachelor's Degree in Computer Science — GIET University Gunupur (2025)
+
+## Contact
+- Email: contact@sdad.pro
+- GitHub: github.com/instax-dutta
+- LinkedIn: linkedin.com/in/sdabhishekdash
+- Portfolio: sdad.pro
+- Availability: Remote, worldwide
+- Response time: Within 24 hours
