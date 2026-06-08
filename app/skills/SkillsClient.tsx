@@ -3,6 +3,72 @@ import { motion } from "framer-motion"
 import { Code, Brain, Server, Zap } from "lucide-react"
 import Navigation from "../components/Navigation"
 import { containerVariants, itemVariants } from "../lib/animation"
+import {
+  SiHtml5, SiPython, SiCss, SiSqlite, SiJavascript, SiOpenjdk, SiCplusplus,
+  SiR, SiRust, SiGo, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs,
+  SiTensorflow, SiPytorch, SiScikitlearn, SiNumpy, SiPandas, SiKeras,
+  SiOpencv, SiPlotly, SiHuggingface, SiGooglecloud,
+  SiDocker, SiGit, SiGithubactions, SiGnubash, SiLinux,
+  SiNetlify, SiVercel, SiJenkins, SiKubernetes,
+} from "react-icons/si"
+import { FaAws } from "react-icons/fa"
+import { TbChartDots, TbChartBar, TbChartLine } from "react-icons/tb"
+import { GiArtificialIntelligence } from "react-icons/gi"
+
+const techIconMap: Record<string, React.ReactNode> = {
+  HTML: <SiHtml5 />,
+  Python: <SiPython />,
+  CSS: <SiCss />,
+  SQL: <SiSqlite />,
+  JavaScript: <SiJavascript />,
+  Java: <SiOpenjdk />,
+  "C++": <SiCplusplus />,
+  R: <SiR />,
+  Rust: <SiRust />,
+  Go: <SiGo />,
+  TypeScript: <SiTypescript />,
+  React: <SiReact />,
+  "Next.js": <SiNextdotjs />,
+  "Tailwind CSS": <SiTailwindcss />,
+  "Node.js": <SiNodedotjs />,
+  TensorFlow: <SiTensorflow />,
+  PyTorch: <SiPytorch />,
+  "scikit-learn": <SiScikitlearn />,
+  NumPy: <SiNumpy />,
+  Pandas: <SiPandas />,
+  Keras: <SiKeras />,
+  XGBoost: <TbChartDots />,
+  OpenCV: <SiOpencv />,
+  Matplotlib: <TbChartLine />,
+  Seaborn: <TbChartBar />,
+  Plotly: <SiPlotly />,
+  Ollama: <GiArtificialIntelligence />,
+  "Hugging Face": <SiHuggingface />,
+  "Google Vertex": <SiGooglecloud />,
+  AWS: <FaAws />,
+  Docker: <SiDocker />,
+  Git: <SiGit />,
+  "CI/CD": <SiGithubactions />,
+  Bash: <SiGnubash />,
+  Linux: <SiLinux />,
+  Netlify: <SiNetlify />,
+  Vercel: <SiVercel />,
+  "GitHub Actions": <SiGithubactions />,
+  Jenkins: <SiJenkins />,
+  Kubernetes: <SiKubernetes />,
+  "Problem Solving": <TbChartDots />,
+  Communication: <TbChartDots />,
+  Adaptability: <TbChartDots />,
+  Collaboration: <TbChartDots />,
+  Leadership: <TbChartDots />,
+  "Time Management": <TbChartDots />,
+  "Critical Thinking": <TbChartDots />,
+  Creativity: <TbChartDots />,
+  Empathy: <TbChartDots />,
+  "Conflict Resolution": <TbChartDots />,
+  "Decision Making": <TbChartDots />,
+  Teamwork: <TbChartDots />,
+}
 
 const skills = [
   {
@@ -52,12 +118,22 @@ export default function Skills() {
                 <div className="text-bmw-m-blue-light">{skill.icon}</div>
                 <h2 className="text-bmw-ink text-sm font-bold tracking-machined uppercase">{skill.category}</h2>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {skill.items.map((item) => (
-                  <span key={item} className="px-3 py-1.5 text-xs text-bmw-muted bg-bmw-surface-soft">
-                    {item}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-2.5">
+                {skill.items.map((item) =>
+                  skill.category === "Soft Skills" ? (
+                    <span key={item} className="px-3 py-1.5 text-xs text-bmw-muted bg-bmw-surface-soft">
+                      {item}
+                    </span>
+                  ) : (
+                    <span
+                      key={item}
+                      title={item}
+                      className="inline-flex items-center justify-center w-12 h-12 rounded-lg text-lg text-bmw-muted bg-bmw-surface-soft hover:bg-bmw-surface-hover hover:text-bmw-ink transition-colors"
+                    >
+                      {techIconMap[item]}
+                    </span>
+                  )
+                )}
               </div>
             </motion.div>
           ))}
