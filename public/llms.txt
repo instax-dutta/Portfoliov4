@@ -1,45 +1,52 @@
-# Sai Dutta Abhishek Dash — Full Stack Engineer & AI Specialist
+# Sai Dutta Abhishek Dash — AI Infrastructure & Security Engineer
 
 ## About
-Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. He has delivered 20 production-grade applications across architecture and systems, full-stack and security, AI and machine learning, Discord and dev tooling, design systems, and infrastructure utility.
+Sai Dutta Abhishek Dash is an AI Infrastructure & Security Engineer based in Bhubaneswar, India. He builds high-performance, privacy-focused, and self-hosted systems, including LLM gateways, code security agents, distributed systems, and open-source developer tooling used by engineers worldwide.
 
-## Expertise
-- **Programming**: Python, TypeScript, JavaScript, React, Next.js, Node.js, Express.js, Java, Bash, Tailwind CSS
-- **AI/ML**: TensorFlow, TensorFlow.js, scikit-learn, LangChain, Hugging Face, Mistral AI, Groq Whisper, OpenCV, NLP
-- **DevOps & Cloud**: AWS (Certified), Docker, GitHub Actions, CI/CD, Vercel, Linux
-- **Security**: Cryptography (X25519 ECDH, ChaCha20-Poly1305), Zero-knowledge encryption, Web Crypto API, DDoS protection, IP tables
+## Positioning & Core Specializations
+- **AI Infrastructure Engineer**: Specializes in building LLM proxies, inference pipelines, and document-to-markdown converters optimized for RAG systems.
+- **Security Engineering**: Builds private code vulnerability scanners with auto-remediation, P2P encrypted command-line applications, anti-bot proxy filters, and digital forensics tools.
+- **Developer Tooling & Platforms**: Designs command-line interfaces, automation workflows, and custom theme systems to optimize developer productivity.
+- **Self-Hosted Platforms & Privacy**: Focused on zero-knowledge cloud architectures, self-hosted services with zero telemetry, and localized offline execution.
+
+## Technical Stack
+- **Languages & Frameworks**: Python, TypeScript, JavaScript, Rust, C++, Java, React, Next.js, Node.js, PostgreSQL, MongoDB, SQL
+- **AI & Data**: PyTorch, TensorFlow, scikit-learn, Ollama, Hugging Face, LangChain, OpenCV, NumPy, Pandas, Mistral AI, Gemini API, Groq Whisper
+- **Infrastructure**: AWS (Certified), Docker, Kubernetes, Linux, Nginx, Bash, GitHub Actions, Jenkins, Vercel, Netlify
 
 ## Notable Projects
 - **Epoxy** — OpenAI-compatible LLM proxy, pools free-tier keys with key rotation and cooldowns (github.com/instax-dutta/epoxy)
-- **MarkItDownJS** — AST-first document-to-markdown engine, 20 packages, Turborepo monorepo (github.com/instax-dutta/MarkItDownJS)
-- **PraharShield** — Minecraft Velocity anti-bot, CAPTCHA handshake, handles 100k JPS (github.com/instax-dutta/PraharShield)
-- **CL-Chat Reborn** — P2P encrypted CLI chat, X25519 ECDH + ChaCha20-Poly1305, 81 tests (github.com/instax-dutta/cl-chat-reborn)
-- **Vulscany** — AI-powered code security scanner with auto-fixes and OAuth (github.com/instax-dutta/vulscany)
-- **Forensic-Recovery** — Forensically-sound digital evidence acquisition tool (github.com/instax-dutta/Forensic-Recovery)
-- **Ultimate-Firewall** — Enterprise firewall and DDoS protection (github.com/instax-dutta/Ultimate-Firewall)
-- **PacketBuddy** — Bandwidth monitor and network tracker (github.com/instax-dutta/packet-buddy)
-- **Send-Finder** — Zero-knowledge benchmark for Send servers with 3D globe (ssf.sdad.pro)
-- **AiScribe** — Instant AI audio transcription with Groq Whisper (ais.sdad.pro)
-- **GenieLabs** — AI-powered development platform (genielabs.sdad.pro)
-- **Tooner** — Privacy-first client-side document tokenization for LLMs (tooner.sdad.pro)
-- **Binify** — Zero-knowledge encrypted pastebin (bin.sdad.pro)
-- **Sensory** — Scalable cloud storage with Backblaze B2 (mirror.sdad.pro)
-- **AMZRelay** — Amazon non-returnable products finder with fast scraping (github.com/instax-dutta/AMZRelay)
-- **VeronicaBot** — Self-hosted Discord bot for live YouTube/Twitch notifications (github.com/instax-dutta/VeronicaBot)
+- **Vulscany** — Private, self-hostable AI-powered code security scanner with auto-fixes and GitHub OAuth (github.com/instax-dutta/vulscany)
+- **MarkItDownJS** — AST-first document-to-markdown engine, Turborepo monorepo with RAG chunking (github.com/instax-dutta/MarkItDownJS)
+- **PraharShield** — Minecraft Velocity anti-bot proxy filter, CAPTCHA handshake, handles 100k join JPS (github.com/instax-dutta/PraharShield)
+- **CL-Chat Reborn** — P2P encrypted CLI chat, X25519 ECDH + ChaCha20-Poly1305, 81 pytest tests (github.com/instax-dutta/cl-chat-reborn)
+- **Tooner** — Privacy-first client-side document tokenizer for LLMs using Web Workers (tooner.sdad.pro)
+- **Binify** — Zero-knowledge encrypted pastebin with client-side Web Crypto API (bin.sdad.pro)
+- **Sensory** — Scalable cloud storage with Backblaze B2 & Turso database (mirror.sdad.pro)
+- **Forensic-Recovery** — Forensically-sound digital evidence acquisition PowerShell tool (github.com/instax-dutta/Forensic-Recovery)
+- **Ultimate-Firewall** — Linux firewall and DDoS protection rules script (github.com/instax-dutta/Ultimate-Firewall)
+- **PacketBuddy** — Bandwidth monitor and network tracker with zero configuration (github.com/instax-dutta/packet-buddy)
+- **Send-Finder** — Client-side benchmark for Send servers with 3D globe visualization (ssf.sdad.pro)
+- **AiScribe** — AI audio transcription tool with Groq Whisper and SRT export (ais.sdad.pro)
+- **GenieLabs** — AI-powered developer code assistant platform (genielabs.sdad.pro)
+- **AMZRelay** — Amazon non-returnable products finder with async scraping (github.com/instax-dutta/AMZRelay)
+- **VeronicaBot** — Self-hosted live notifier for YouTube & Twitch (github.com/instax-dutta/VeronicaBot)
 - **Auralyn** — Discord music bot with bundled Lavalink server (auralyn.sdad.pro)
-- **Elysium** — Terminal-native monospaced Pterodactyl theme (github.com/instax-dutta/elysium)
-- **Elipso Theme** — Vercel-inspired Pterodactyl theme (github.com/instax-dutta/elipso-theme)
-- **Elden Theme** — Sentry-inspired Pterodactyl theme (github.com/instax-dutta/elden-theme)
+- **Elysium** — Terminal-native monospaced theme for Pterodactyl Panel (github.com/instax-dutta/elysium)
+- **Elipso Theme** — Vercel-inspired dark theme for Pterodactyl Panel (github.com/instax-dutta/elipso-theme)
+- **Elden Theme** — Sentry-inspired premium dark theme for Pterodactyl (github.com/instax-dutta/elden-theme)
 
 ## Credentials
 - AWS Certified Cloud Practitioner (2024)
 - Amazon Bedrock Getting Started — AWS (2024)
 - Amazon Q Developer — AWS (2024)
+- Planning a Machine Learning Project — AWS (2024)
+- Python for Data Science and Machine Learning — Udemy (2024)
 - Bachelor's Degree in Computer Science — GIET University Gunupur (2025)
 
-## Contact
+## Contact & Links
 - Email: contact@sdad.pro
 - GitHub: github.com/instax-dutta
 - LinkedIn: linkedin.com/in/sdabhishekdash
 - Portfolio: sdad.pro
-- Availability: Remote, worldwide
+- Availability: Remote worldwide for AI infrastructure, security engineering, and self-hosted platforms consulting.

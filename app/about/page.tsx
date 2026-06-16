@@ -5,45 +5,89 @@ const AboutClient = dynamic(() => import("./AboutClient"), {
 })
 
 export const metadata: Metadata = {
-    title: "About Me | Full Stack Engineer & AI Specialist",
-    description: "Discover the journey of Sai Dutta Abhishek Dash, a security-minded Full Stack Developer and ML Engineer. Specializing in Python, React, and building ultra-lightweight production applications.",
-    keywords: ["Sai Dutta Abhishek Dash Background", "Full Stack Developer Story", "AI Engineer Bhubaneswar", "Security-first Development Philosophy"],
-    alternates: {
-        canonical: "/about",
-    },
+  title: "About Me | Sai Dutta Abhishek Dash - AI Infrastructure & Systems",
+  description: "Learn about the engineering philosophy of Sai Dutta Abhishek Dash. Specializing in high-performance AI infrastructure, developer platforms, and privacy-focused systems.",
+  keywords: [
+    "Engineering Profile",
+    "AI Infrastructure",
+    "Security Engineering",
+    "Developer Tooling",
+    "Privacy Engineering",
+    "Distributed Systems",
+    "Cloud Architecture",
+    "Self-Hosted Platforms",
+    "Sai Dutta Abhishek Dash Background",
+    "Open Source Developer"
+  ],
+  alternates: {
+    canonical: "https://sdad.pro/about",
+  },
+  openGraph: {
+    title: "About Me | Sai Dutta Abhishek Dash - AI Infrastructure & Systems",
+    description: "Learn about the engineering philosophy of Sai Dutta Abhishek Dash. Specializing in high-performance AI infrastructure, developer platforms, and privacy-focused systems.",
+    url: "https://sdad.pro/about",
+    siteName: "Sai Dutta Abhishek Dash Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "About Sai Dutta Abhishek Dash - AI Infrastructure & Systems",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Me | Sai Dutta Abhishek Dash - AI Infrastructure & Systems",
+    description: "Engineering philosophy of Sai Dutta Abhishek Dash, specializing in AI infrastructure and developer platforms.",
+    images: ["/og-image.png"],
+  }
 }
 
 const aboutStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    mainEntity: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://sdad.pro/about/#webpage",
+      "url": "https://sdad.pro/about",
+      "name": "About Sai Dutta Abhishek Dash",
+      "description": "Engineering profile and background of Sai Dutta Abhishek Dash, AI Infrastructure & Security Engineer.",
+      "mainEntity": {
         "@type": "Person",
         "@id": "https://sdad.pro/#person",
         "name": "Sai Dutta Abhishek Dash",
-        "url": "https://sdad.pro/about",
-        "description": "Security-minded Full Stack Developer and Machine Learning Engineer specializing in Python, React, and production applications."
-    }
-}
-
-const breadcrumbStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
+        "url": "https://sdad.pro",
+        "image": "https://sdad.pro/og-image.png",
+        "description": "AI Infrastructure, Security Engineering & Developer Tooling Specialist.",
+        "sameAs": [
+          "https://github.com/instax-dutta",
+          "https://www.linkedin.com/in/sdabhishekdash/",
+          "https://twitter.com/abhishekdash69"
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sdad.pro/about/#breadcrumb",
+      "itemListElement": [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://sdad.pro" },
-        { "@type": "ListItem", position: 2, name: "About", item: "https://sdad.pro/about" },
-    ],
+        { "@type": "ListItem", position: 2, name: "About", item: "https://sdad.pro/about" }
+      ]
+    }
+  ]
 }
 
 export default function AboutPage() {
-    return (
-        <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutStructuredData) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
-            <AboutClient />
-            <div className="sr-only" aria-hidden="true">
-                <p>Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. His technical capabilities span programming (Python, TypeScript, React, Next.js), AI/ML (TensorFlow, PyTorch, LangChain), DevOps & Cloud (AWS, Docker, Kubernetes), and security engineering. He is driven by problem solving, continuous learning, and delivering impactful AI-powered solutions.</p>
-                <p>Last updated: June 2026</p>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutStructuredData) }} />
+      <AboutClient />
+      <div className="sr-only" aria-hidden="true">
+        <p>Sai Dutta Abhishek Dash is an AI Infrastructure & Security Engineer. He builds self-hosted developer platforms, LLM gateways, and privacy-focused systems. His toolkit spans Python, React, Next.js, Rust, AWS, and Docker. Learn about his focus areas, including AI infrastructure, security engineering, and open-source tooling.</p>
+        <p>Last updated: June 2026</p>
+      </div>
+    </>
+  )
 }

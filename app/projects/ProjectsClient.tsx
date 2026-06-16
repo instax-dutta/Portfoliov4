@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
 import { ExternalLink, Github } from "lucide-react"
@@ -205,7 +206,7 @@ export default function Projects() {
           <span className="bmw-label inline-block mb-4">Projects</span>
           <h1 className="bmw-display-lg mb-4">Portfolio</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            Production-ready applications spanning AI/ML, security, cloud infrastructure, and full-stack web development.
+            Production-ready applications spanning AI/ML, security, cloud infrastructure, and full-stack web development. Discover the technologies powering these projects in my <Link href="/skills" className="underline hover:text-bmw-m-blue-light transition-colors">engineering toolkit</Link>, or discuss collaboration ideas on the <Link href="/contact" className="underline hover:text-bmw-m-blue-light transition-colors">contact page</Link>.
           </p>
         </motion.div>
 

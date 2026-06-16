@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { GraduationCap, BookOpen, School, Award, Calendar } from "lucide-react"
 import Navigation from "../components/Navigation"
@@ -52,7 +53,7 @@ export default function Credentials() {
           <span className="bmw-label inline-block mb-4">Credentials</span>
           <h1 className="bmw-display-lg mb-4">Education & Credentials</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            Academic background, industry experience, and ongoing learning across AI, security, infrastructure, and software engineering.
+            Academic background, industry experience, and ongoing learning across AI, security, infrastructure, and software engineering. Explore how these credentials apply to my <Link href="/experience" className="underline hover:text-bmw-m-blue-light transition-colors">professional journey</Link>.
           </p>
         </motion.div>
 

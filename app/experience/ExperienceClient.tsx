@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
 import { Calendar, Building2, Zap } from "lucide-react"
@@ -97,7 +98,7 @@ export default function Experience() {
           <span className="bmw-label inline-block mb-4">Experience</span>
           <h1 className="bmw-display-lg mb-4">Professional Journey</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            Career progression across software engineering, AI systems, infrastructure, and entrepreneurship—spanning startup leadership, enterprise experience, and open-source development.
+            Career progression across software engineering, AI systems, infrastructure, and entrepreneurship—spanning startup leadership, enterprise experience, and open-source development. View my complete work history and associated applications in the <Link href="/projects" className="underline hover:text-bmw-m-blue-light transition-colors">projects showcase</Link>.
           </p>
         </motion.div>
 

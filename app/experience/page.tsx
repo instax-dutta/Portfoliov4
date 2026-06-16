@@ -5,28 +5,104 @@ const ExperienceClient = dynamic(() => import("./ExperienceClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Experience & Professional Journey | Sai Dutta Abhishek Dash",
-  description: "Explore the professional history of Sai Dutta Abhishek Dash. From building Aeglyn/VullScanny to full-stack engineering at scale, see the milestones of a dedicated AI & Security engineer.",
-  keywords: ["Software Engineering Experience", "AI/ML Work History", "Freelance Full Stack Milestone", "Professional Developer Resume"],
+  title: "Professional Journey & Experience | Sai Dutta Abhishek Dash",
+  description: "Explore the career history of Sai Dutta Abhishek Dash. Spanning startup leadership at RacerNodes, enterprise engineering at Tech Mahindra, and open-source developer tooling.",
+  keywords: [
+    "Experience Timeline",
+    "Tech Mahindra Associate",
+    "RacerNodes founder",
+    "Software Engineering career",
+    "AI systems history",
+    "Systems Engineer",
+    "AI Infrastructure",
+    "Security Engineering",
+    "Developer Tooling"
+  ],
+  alternates: {
+    canonical: "https://sdad.pro/experience",
+  },
+  openGraph: {
+    title: "Professional Journey & Experience | Sai Dutta Abhishek Dash",
+    description: "Explore the career history of Sai Dutta Abhishek Dash. Spanning startup leadership, enterprise experience, and open-source development.",
+    url: "https://sdad.pro/experience",
+    siteName: "Sai Dutta Abhishek Dash Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Experience of Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Journey & Experience | Sai Dutta Abhishek Dash",
+    description: "Career journey of Sai Dutta Abhishek Dash, from Tech Mahindra to founding RacerNodes.",
+    images: ["/og-image.png"],
+  }
 }
 
-const breadcrumbStructuredData = {
+const experienceStructuredData = {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://sdad.pro" },
-    { "@type": "ListItem", position: 2, name: "Experience", item: "https://sdad.pro/experience" },
-  ],
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sdad.pro/#person",
+      "name": "Sai Dutta Abhishek Dash",
+      "url": "https://sdad.pro",
+      "email": "contact@sdad.pro",
+      "sameAs": [
+        "https://github.com/instax-dutta",
+        "https://www.linkedin.com/in/sdabhishekdash/",
+        "https://twitter.com/abhishekdash69"
+      ]
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "@id": "https://sdad.pro/credentials/#degree",
+      "name": "Bachelor's Degree in Computer Science",
+      "credentialCategory": "degree",
+      "educationalLevel": "Bachelor",
+      "about": { "@id": "https://sdad.pro/#person" },
+      "recognizedBy": {
+        "@type": "EducationalOrganization",
+        "name": "GIET University Gunupur",
+        "url": "https://www.giet.edu"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sdad.pro/experience/#techmahindra",
+      "name": "Tech Mahindra",
+      "url": "https://www.techmahindra.com"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sdad.pro/experience/#racernodes",
+      "name": "RacerNodes",
+      "description": "Game server hosting startup."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://sdad.pro/experience/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://sdad.pro" },
+        { "@type": "ListItem", position: 2, name: "Experience", item: "https://sdad.pro/experience" }
+      ]
+    }
+  ]
 }
 
 export default function ExperiencePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(experienceStructuredData) }} />
       <ExperienceClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash has 12 professional experiences across 10+ companies spanning 3+ years. His career includes freelance full-stack development (Sep 2025 – Present), an Associate role at Tech Mahindra, 8 machine learning engineering internships at companies including CodeAlpha, CognoRise InfoTech, and Encryptix, and founding RacerNodes as CEO & Co-Founder (May 2022 – Jul 2023). He achieved rapid promotion from Associate Trainee to Associate at Tech Mahindra.</p>
-        <p>Stats: 12 professional experiences | 10+ companies | 3+ years | Rapid promotion at Tech Mahindra | Founded RacerNodes | Last updated: June 2026</p>
+        <p>Sai Dutta Abhishek Dash has professional experience spanning freelance full-stack development, an Associate role at Tech Mahindra, multiple machine learning and software engineering internships, and entrepreneurship as CEO & Co-Founder of RacerNodes. His career highlights focus on AI systems, security engineering, and developer infrastructure.</p>
+        <p>Last updated: June 2026</p>
       </div>
     </>
   )

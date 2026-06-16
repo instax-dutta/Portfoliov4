@@ -16,93 +16,37 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sai Dutta Abhishek Dash - Full Stack Developer | AI/ML Engineer | Security Expert",
+    default: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
     template: "%s | Sai Dutta Abhishek Dash",
   },
-  description: "Expert Full Stack Developer & AI/ML Engineer specializing in Security Engineering, Cloud Architecture, and Production Applications. Built 20 apps including Binify (zero-knowledge encryption), GenieLabs (AI dev platform), Sensory (cloud storage), and PacketBuddy (network monitoring). Expertise in Python, React, Next.js, TypeScript, AWS, TensorFlow. AWS Certified Cloud Practitioner available for innovative projects.",
+  description: "AI Infrastructure, Security Engineering & Developer Tooling Specialist. Builder of LLM gateways, code security agents, distributed systems, and open-source platforms. Expert in Python, Next.js, TypeScript, AWS, Rust, Docker, and cryptography.",
   keywords: [
-    "Full Stack Developer",
-    "Machine Learning Engineer",
-    "AI Engineer",
-    "Security Engineer",
-    "DevOps Engineer",
-    "Cloud Architect",
-    "Python Developer",
-    "React Developer",
-    "Next.js Developer",
-    "NLP Engineer",
-    "Cybersecurity Specialist",
-    "Data Engineer",
-    "Systems Automation Specialist",
-    "Cryptography Expert",
-    "Zero-Knowledge Encryption",
-    "React 19",
+    "AI Infrastructure Engineer",
+    "Security Engineering",
+    "Developer Tooling",
+    "Open Source Software",
+    "Self-Hosted Applications",
+    "Distributed Systems",
+    "Full Stack Engineering",
+    "Software Architecture",
+    "LLM gateways",
+    "code security agents",
+    "privacy engineering",
     "Next.js 15",
+    "React 19",
     "TypeScript",
-    "JavaScript",
-    "Tailwind CSS",
-    "Node.js",
-    "Python 3.11",
-    "Flask",
-    "FastAPI",
-    "REST API",
-    "GraphQL",
-    "TensorFlow",
-    "PyTorch",
-    "scikit-learn",
-    "Hugging Face",
-    "OpenAI",
-    "Prompt Engineering",
-    "NLP",
-    "Sentiment Analysis",
-    "Machine Learning Models",
-    "AWS",
-    "AWS Certified",
+    "Python",
+    "Rust",
     "Docker",
     "Kubernetes",
-    "CI/CD",
-    "GitHub Actions",
-    "Vercel",
-    "Cloud Architecture",
-    "Security Vulnerability Scanner",
-    "Penetration Testing",
-    "Cryptography",
-    "Web Security",
-    "Application Security",
-    "DDoS Protection",
-    "Firewall Configuration",
-    "PostgreSQL",
-    "MongoDB",
-    "Redis",
-    "Turso",
-    "Upstash",
-    "SQLite",
-    "Freelance Developer",
-    "Remote Developer",
-    "Hire Full Stack Developer",
-    "Contract Developer",
-    "Web Development Services",
-    "AI Development Services",
-    "Security Consulting",
-    "AI-Powered Applications",
-    "Security Solutions",
-    "Enterprise Web Apps",
-    "SaaS Development",
-    "API Development",
-    "Cloud Migration",
-    "Performance Optimization",
-    "Remote Work",
-    "Available for Hire",
-    "Bhubaneswar Developer",
-    "India Developer",
-    "Global Projects",
-    "Credentials",
-    "Education",
-    "Certifications",
-    "Academic Background",
-    "Professional Certifications",
+    "AWS",
+    "cryptography",
+    "zero-knowledge",
+    "P2P encrypted chat",
+    "Bhubaneswar",
+    "India",
     "Sai Dutta Abhishek Dash",
-    "SDAD",
+    "SDAD"
   ],
   authors: [{ name: "Sai Dutta Abhishek Dash", url: "https://sdad.pro" }],
   creator: "Sai Dutta Abhishek Dash",
@@ -115,22 +59,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://sdad.pro",
-    siteName: "Sai Dutta Abhishek Dash - Developer Portfolio",
-    title: "Sai Dutta Abhishek Dash - Full Stack Developer | AI Engineer | Security Expert",
-    description: "Security-focused Full Stack Developer & AI/ML Engineer with 20 production applications. Built Binify (zero-knowledge encryption), GenieLabs (AI platform), Sensory (cloud storage), PacketBuddy (network monitoring). Python - React - Next.js - AWS - TensorFlow - TypeScript",
+    siteName: "Sai Dutta Abhishek Dash - Portfolio",
+    title: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
+    description: "AI Infrastructure, Security Engineering & Developer Tooling Specialist. Builder of LLM gateways, code security agents, distributed systems, and open-source tools.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sai Dutta Abhishek Dash - Full Stack Developer, AI Engineer, Security Expert",
+        alt: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sai Dutta Abhishek Dash - Full Stack Developer | AI Engineer | Security Expert",
-    description: "Security-focused Full Stack Developer & AI/ML Engineer. Built 20 apps: Binify (encryption), GenieLabs (AI), Sensory (cloud), PacketBuddy (monitoring). Python - React - Next.js - AWS - TensorFlow",
+    title: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
+    description: "AI Infrastructure, Security Engineering & Developer Tooling Specialist. Builder of LLM gateways, code security agents, and open-source tools.",
     images: ["/og-image.png"],
     creator: "@abhishekdash69",
     site: "@abhishekdash69",
@@ -173,7 +117,7 @@ const faqStructuredData = {
       "name": "Who is Sai Dutta Abhishek Dash?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. He has delivered 20 production applications serving thousands of users and is AWS Certified."
+        "text": "Sai Dutta Abhishek Dash is an AI Infrastructure, Security, and Developer Tooling Engineer based in Bhubaneswar, India. He builds high-performance, privacy-focused, and self-hosted open-source software used by developers worldwide."
       }
     },
     {
@@ -181,31 +125,23 @@ const faqStructuredData = {
       "name": "What does Sai Dutta Abhishek Dash specialize in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He specializes in full-stack development with Python, TypeScript, React, and Next.js; AI/ML engineering with TensorFlow, PyTorch, and LangChain; cloud architecture on AWS; security engineering including zero-knowledge encryption and DDoS protection; and DevOps with Docker, Kubernetes, and CI/CD pipelines."
+        "text": "He specializes in AI infrastructure (LLM gateways, inference pipelines), security engineering (code security agents, cryptography, anti-bot filtering), developer platforms, distributed systems, self-hosted software, and open-source development."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Sai Dutta Abhishek Dash available for freelance work?",
+      "name": "Is Sai Dutta Abhishek Dash available for collaboration or consulting?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Sai Dutta Abhishek Dash is available for remote freelance work worldwide. He offers full-stack development, AI/ML implementation, security auditing, and custom web application services. Response time is within 24 hours."
+        "text": "Yes, he is open to opportunities, collaborations, and technical consulting across AI infrastructure, security engineering, developer tooling, and self-hosted platforms."
       }
     },
     {
       "@type": "Question",
-      "name": "What projects has Sai Dutta Abhishek Dash built?",
+      "name": "What systems has Sai Dutta Abhishek Dash built?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He has built 20 production applications including Tooner (document tokenization for LLMs), Binify (zero-knowledge encrypted pastebin), GenieLabs (AI-powered development platform), Sensory (scalable cloud storage), Auralyn (Discord music bot), and PacketBuddy (network usage tracker)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What certifications does Sai Dutta Abhishek Dash hold?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "He holds an AWS Certified Cloud Practitioner certification, Amazon Bedrock Getting Started from AWS, Amazon Q Developer from AWS, and a Bachelor's Degree in Computer Science from GIET University Gunupur."
+        "text": "He has built 20 production systems including Epoxy (LLM gateway proxy), Vulscany (AI code security agent), MarkItDownJS (document ingestion engine), PraharShield (DDoS anti-bot proxy filter), and CL-Chat Reborn (encrypted P2P CLI chat)."
       }
     }
   ]
@@ -220,22 +156,22 @@ const structuredData = {
       "name": "Sai Dutta Abhishek Dash",
       "url": "https://sdad.pro",
       "image": "https://sdad.pro/og-image.png",
-      "description": "Security-focused Full Stack Developer & AI/ML Engineer. Specialist in Python, Next.js, and AWS Cloud Architecture.",
+      "description": "AI Infrastructure, Security Engineering & Developer Tooling Specialist. Creator of LLM gateways, code security agents, and distributed open-source tools.",
       "sameAs": [
         "https://github.com/instax-dutta",
         "https://www.linkedin.com/in/sdabhishekdash/",
         "https://twitter.com/abhishekdash69"
       ],
-      "jobTitle": "Full Stack Engineer & AI Specialist",
+      "jobTitle": "AI Infrastructure & Security Engineer",
       "knowsAbout": [
-        "Full Stack Web Development",
-        "Machine Learning",
-        "AI Agent Development",
+        "AI Infrastructure",
         "Security Engineering",
-        "Cloud Architecture (AWS)",
-        "Zero-Knowledge Encryption",
-        "NLP & Sentiment Analysis",
-        "Automation Systems"
+        "Developer Tooling",
+        "Self-Hosted Platforms",
+        "Open Source Software",
+        "Distributed Systems",
+        "Cloud Architecture",
+        "Privacy Engineering"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -253,7 +189,7 @@ const structuredData = {
     },
     {
       "@type": "ProfessionalService",
-      "name": "Sai Dutta Abhishek Dash - Development Services",
+      "name": "Sai Dutta Abhishek Dash - Engineering Services",
       "image": "https://sdad.pro/og-image.png",
       "url": "https://sdad.pro",
       "address": {
@@ -265,10 +201,10 @@ const structuredData = {
       "priceRange": "$$",
       "areaServed": "Worldwide",
       "serviceType": [
-        "SaaS Development",
-        "AI/ML Implementation",
+        "AI Infrastructure Integration",
         "Security Auditing",
-        "Custom Web Applications"
+        "Developer Tooling Development",
+        "Custom SaaS Systems"
       ]
     }
   ]

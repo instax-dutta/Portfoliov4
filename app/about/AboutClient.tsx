@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { Code, Brain, Server, Zap, Target, TrendingUp, Lightbulb, Globe } from "lucide-react"
 import Navigation from "../components/Navigation"
@@ -66,7 +67,7 @@ export default function About() {
           <span className="bmw-label inline-block mb-4">About</span>
           <h1 className="bmw-display-lg mb-4">Engineering Profile</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            I build AI infrastructure, security tooling, and developer platforms focused on performance, privacy, and self-hosted systems. My work spans LLM gateways, code security agents, distributed systems, cloud infrastructure, and open-source tools used by engineers worldwide.
+            I build AI infrastructure, security tooling, and developer platforms focused on performance, privacy, and self-hosted systems. My work spans LLM gateways, code security agents, distributed systems, cloud infrastructure, and <Link href="/projects" className="underline hover:text-bmw-m-blue-light transition-colors">open-source tools</Link> used by engineers worldwide.
           </p>
         </motion.div>
 
