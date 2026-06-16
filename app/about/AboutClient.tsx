@@ -9,23 +9,23 @@ import { containerVariants, itemVariants } from "../lib/animation"
 const skills = [
   {
     icon: <Code className="w-5 h-5" />,
-    title: "Programming",
+    title: "Languages & Frameworks",
     items: ["Python", "TypeScript", "JavaScript", "React", "Next.js", "Node.js", "PostgreSQL", "MongoDB", "Java", "C++", "Rust", "SQL"],
   },
   {
     icon: <Brain className="w-5 h-5" />,
-    title: "AI / ML",
+    title: "AI & Data",
     items: ["PyTorch", "TensorFlow", "scikit-learn", "Ollama", "Hugging Face", "LangChain", "OpenCV", "NumPy", "Pandas", "Mistral AI", "Gemini API"],
   },
   {
     icon: <Server className="w-5 h-5" />,
-    title: "DevOps & Cloud",
+    title: "Infrastructure",
     items: ["Docker", "Linux", "AWS", "GitHub Actions", "Nginx", "Bash", "Kubernetes", "Vercel", "Netlify"],
   },
   {
     icon: <Zap className="w-5 h-5" />,
-    title: "Soft Skills",
-    items: ["Problem Solving", "Leadership", "Communication", "Teamwork", "Adaptability", "Creativity", "Time Management", "Critical Thinking", "Decision Making", "Conflict Resolution", "Empathy", "Mentoring", "Project Management", "Agile"],
+    title: "Specializations",
+    items: ["AI Infrastructure", "Security Engineering", "Developer Tooling", "Self-Hosted Platforms", "Open Source", "Distributed Systems", "Cloud Architecture", "Privacy Engineering"],
   },
 ]
 
@@ -64,9 +64,9 @@ export default function About() {
       >
         <motion.div className="mb-16" variants={itemVariants}>
           <span className="bmw-label inline-block mb-4">About</span>
-          <h1 className="bmw-display-lg mb-4">Professional Profile</h1>
+          <h1 className="bmw-display-lg mb-4">Engineering Profile</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            I build AI infrastructure, security tooling, and developer platforms with a focus on performance, privacy, and self-hosted systems. My work spans LLM gateways, code security agents, distributed communication systems, cloud infrastructure, and open-source developer tools used by engineers worldwide.
+            I build AI infrastructure, security tooling, and developer platforms focused on performance, privacy, and self-hosted systems. My work spans LLM gateways, code security agents, distributed systems, cloud infrastructure, and open-source tools used by engineers worldwide.
           </p>
         </motion.div>
 

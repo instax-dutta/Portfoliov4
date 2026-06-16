@@ -79,6 +79,9 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-6">
           <motion.div variants={itemVariants} className="space-y-4">
             <div className="bg-bmw-surface-card p-6">
+              <p className="text-bmw-body text-sm leading-relaxed mb-6">
+                Whether you're building AI products, developer platforms, security tools, or open-source infrastructure, I'd be happy to discuss ideas, collaborations, and technical challenges.
+              </p>
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-10 h-10 flex items-center justify-center border border-bmw-hairline shrink-0">
                   <Mail className="w-4 h-4 text-bmw-ink" />
@@ -97,7 +100,9 @@ export default function Contact() {
                 <div>
                   <p className="bmw-label text-[10px] mb-1">Location</p>
                   <p className="text-bmw-ink text-sm">Bhubaneswar, India</p>
-                  <p className="text-bmw-muted text-xs mt-0.5">Available for remote work</p>
+                  <p className="text-bmw-muted text-xs mt-0.5 leading-relaxed">
+                    Open to opportunities, collaborations, and consulting across AI infrastructure, security engineering, developer tooling, and self-hosted platforms.
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -106,7 +111,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="bmw-label text-[10px] mb-1">Response Time</p>
-                  <p className="text-bmw-ink text-sm">Within 24 hours</p>
+                  <p className="text-bmw-ink text-sm">Typically responds within 24 hours.</p>
                 </div>
               </div>
             </div>
@@ -130,6 +135,18 @@ export default function Contact() {
                   )
                 })}
               </div>
+            </div>
+
+            <div className="bg-bmw-surface-card p-6">
+              <p className="bmw-label text-[10px] mb-4">Areas of Interest</p>
+              <ul className="space-y-2">
+                {["AI Infrastructure", "Security Engineering", "Developer Tooling", "Self-Hosted Platforms", "Open Source Collaboration"].map((area) => (
+                  <li key={area} className="flex items-center gap-2 text-bmw-muted text-sm">
+                    <span className="w-1.5 h-1.5 bg-bmw-m-blue-dark shrink-0" />
+                    {area}
+                  </li>
+                ))}
+              </ul>
             </div>
           </motion.div>
 
