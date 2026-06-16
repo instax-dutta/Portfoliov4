@@ -1,7 +1,7 @@
 # Sai Dutta Abhishek Dash — Full Stack Engineer & AI Specialist
 
 ## About
-Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. He has delivered 21 production-grade applications across architecture and systems, full-stack and security, AI and machine learning, Discord and dev tooling, design systems, and infrastructure utility.
+Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. He has delivered 20 production-grade applications across architecture and systems, full-stack and security, AI and machine learning, Discord and dev tooling, design systems, and infrastructure utility.
 
 ## Expertise
 - **Programming**: Python, TypeScript, JavaScript, React, Next.js, Node.js, Express.js, Java, Bash, Tailwind CSS
@@ -24,7 +24,6 @@ Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhuban
 - **Tooner** — Privacy-first client-side document tokenization for LLMs (tooner.sdad.pro)
 - **Binify** — Zero-knowledge encrypted pastebin (bin.sdad.pro)
 - **Sensory** — Scalable cloud storage with Backblaze B2 (mirror.sdad.pro)
-- **Discactyl** — Pterodactyl panel Discord controller, role-based commands (github.com/instax-dutta/discactyl)
 - **AMZRelay** — Amazon non-returnable products finder with fast scraping (github.com/instax-dutta/AMZRelay)
 - **VeronicaBot** — Self-hosted Discord bot for live YouTube/Twitch notifications (github.com/instax-dutta/VeronicaBot)
 - **Auralyn** — Discord music bot with bundled Lavalink server (auralyn.sdad.pro)

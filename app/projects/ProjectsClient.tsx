@@ -121,14 +121,6 @@ const projects = [
 
   // 5. Developer & Platform Tooling
   {
-    title: "Discactyl",
-    subtitle: "Pterodactyl Panel Discord Controller",
-    description: "Control your Pterodactyl server panel directly from Discord. Manage servers, backups, and nodes through slash commands and interactive UI with role-based access control.",
-    technologies: ["TypeScript", "Discord.js", "Node.js", "SQLite", "Docker", "AES-256-GCM"],
-    link: "https://github.com/instax-dutta/discactyl",
-    github: "https://github.com/instax-dutta/discactyl",
-  },
-  {
     title: "AMZRelay",
     subtitle: "Amazon Non-Returnable Products Finder",
     description: "Discord bot that scans Amazon India for non-returnable products using fast aiohttp scraping. Features smart JSON caching and interactive pagination.",

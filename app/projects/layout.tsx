@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Projects - Portfolio Showcase | Freelance Full Stack Developer",
-  description: "Explore my portfolio of innovative projects including AI-powered applications, web development solutions, and cloud infrastructure. View 21 production-ready projects built with React, Next.js, Python, and modern technologies. Available for freelance projects.",
+  description: "Explore my portfolio of innovative projects including AI-powered applications, web development solutions, and cloud infrastructure. View 20 production-ready projects built with React, Next.js, Python, and modern technologies. Available for freelance projects.",
   keywords: [
     "Portfolio Projects",
     "Full Stack Developer Projects",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Projects - Portfolio Showcase | Freelance Full Stack Developer",
-    description: "Explore my portfolio of 21 innovative projects including AI-powered applications, web development solutions, and cloud infrastructure.",
+    description: "Explore my portfolio of 20 innovative projects including AI-powered applications, web development solutions, and cloud infrastructure.",
     url: "https://sdad.pro/projects",
     type: "website",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Projects - Portfolio Showcase | Freelance Full Stack Developer",
-    description: "Explore my portfolio of 21 innovative projects including AI-powered applications and web development solutions.",
+    description: "Explore my portfolio of 20 innovative projects including AI-powered applications and web development solutions.",
     images: ["https://sdad.pro/og-image.png"],
   },
   alternates: {
@@ -48,11 +48,11 @@ const projectsStructuredData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   name: "Projects Portfolio - Sai Dutta Abhishek Dash",
-  description: "Portfolio showcasing 21 production-grade web development, AI/ML, security, and infrastructure projects built with React, Next.js, Python, TypeScript, Java, and modern technologies",
+  description: "Portfolio showcasing 20 production-grade web development, AI/ML, security, and infrastructure projects built with React, Next.js, Python, TypeScript, Java, and modern technologies",
   url: "https://sdad.pro/projects",
   mainEntity: {
     "@type": "ItemList",
-    numberOfItems: 21,
+    numberOfItems: 20,
     itemListElement: [
       {
         "@type": "ListItem", position: 1, item: {
@@ -154,48 +154,41 @@ const projectsStructuredData = {
       },
       {
         "@type": "ListItem", position: 15, item: {
-          "@type": "SoftwareApplication", name: "Discactyl", applicationCategory: "DeveloperApplication", operatingSystem: "Linux",
-          description: "Pterodactyl Panel Discord controller. Manage servers, users, nodes, and backups through slash commands with role-based access and AES-256-GCM encryption.",
-          url: "https://github.com/instax-dutta/discactyl", programmingLanguage: ["TypeScript", "Discord.js", "Node.js"],
-        },
-      },
-      {
-        "@type": "ListItem", position: 16, item: {
           "@type": "SoftwareApplication", name: "AMZRelay", applicationCategory: "WebApplication", operatingSystem: "Linux",
           description: "High-performance Discord bot that finds Amazon India products marked as non-returnable. Async scraping with aiohttp, smart JSON caching, interactive pagination.",
           url: "https://github.com/instax-dutta/AMZRelay", programmingLanguage: ["Python", "aiohttp", "BeautifulSoup"],
         },
       },
       {
-        "@type": "ListItem", position: 17, item: {
+        "@type": "ListItem", position: 16, item: {
           "@type": "SoftwareApplication", name: "VeronicaBot", applicationCategory: "WebApplication", operatingSystem: "Linux",
           description: "Privacy-first Discord bot for real-time YouTube and Twitch live notifications. Self-hosted, zero telemetry, no cloud lock-in.",
           url: "https://github.com/instax-dutta/VeronicaBot", programmingLanguage: ["Node.js", "Discord.js", "SQLite", "Redis"],
         },
       },
       {
-        "@type": "ListItem", position: 18, item: {
+        "@type": "ListItem", position: 17, item: {
           "@type": "SoftwareApplication", name: "Auralyn", applicationCategory: "WebApplication", operatingSystem: "Linux",
           description: "Zero-infrastructure Discord music bot with bundled Lavalink server. High-fidelity playback, interactive controls, single-container deployment.",
           url: "https://auralyn.sdad.pro", programmingLanguage: ["JavaScript", "Discord.js", "Lavalink"],
         },
       },
       {
-        "@type": "ListItem", position: 19, item: {
+        "@type": "ListItem", position: 18, item: {
           "@type": "SoftwareApplication", name: "Elysium", applicationCategory: "ThemeApplication", operatingSystem: "Linux",
           description: "Terminal-native dark theme for Pterodactyl Panel with JetBrains Mono typography and Apple HIG semantic colors.",
           url: "https://github.com/instax-dutta/elysium", programmingLanguage: ["CSS", "Tailwind CSS", "Blade"],
         },
       },
       {
-        "@type": "ListItem", position: 20, item: {
+        "@type": "ListItem", position: 19, item: {
           "@type": "SoftwareApplication", name: "Elipso Theme", applicationCategory: "ThemeApplication", operatingSystem: "Linux",
           description: "Vercel-inspired dark theme for Pterodactyl Panel with Geist typography, mesh gradient auth pages, and fully dark-themed React client.",
           url: "https://github.com/instax-dutta/elipso-theme", programmingLanguage: ["CSS", "TypeScript", "Tailwind CSS", "Blade"],
         },
       },
       {
-        "@type": "ListItem", position: 21, item: {
+        "@type": "ListItem", position: 20, item: {
           "@type": "SoftwareApplication", name: "Elden Theme", applicationCategory: "ThemeApplication", operatingSystem: "Linux",
           description: "Sentry-inspired dark theme for Pterodactyl Panel with midnight violet canvas, electric lime accents, neon border glows, and custom Monaco-style terminal controls.",
           url: "https://github.com/instax-dutta/elden-theme", programmingLanguage: ["CSS", "Tailwind CSS", "Blade", "JavaScript"],
