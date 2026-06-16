@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { Code, Brain, Server, Zap } from "lucide-react"
 import Navigation from "../components/Navigation"
 import { containerVariants, itemVariants } from "../lib/animation"
+import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/components/ui/tooltip"
 import {
   SiHtml5, SiPython, SiCss, SiSqlite, SiJavascript, SiOpenjdk, SiCplusplus,
   SiR, SiRust, SiGo, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs,
@@ -97,48 +98,55 @@ export default function Skills() {
   return (
     <div className="min-h-screen bg-bmw-canvas">
       <Navigation />
-      <motion.main
-        className="max-w-[1440px] mx-auto px-6 pt-28 pb-20"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.div className="mb-16" variants={itemVariants}>
-          <span className="bmw-label inline-block mb-4">Skills</span>
-          <h1 className="bmw-display-lg mb-4">Engineering Toolkit</h1>
-          <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            Technologies, platforms, and tools I use to build AI infrastructure, security products, developer tooling, and production-grade applications.
-          </p>
-        </motion.div>
+      <TooltipProvider delayDuration={100}>
+        <motion.main
+          className="max-w-[1440px] mx-auto px-6 pt-28 pb-20"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div className="mb-16" variants={itemVariants}>
+            <span className="bmw-label inline-block mb-4">Skills</span>
+            <h1 className="bmw-display-lg mb-4">Engineering Toolkit</h1>
+            <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
+              Technologies, platforms, and tools I use to build AI infrastructure, security products, developer tooling, and production-grade applications.
+            </p>
+          </motion.div>
 
-        <motion.div className="grid md:grid-cols-2 gap-3" variants={containerVariants}>
-          {skills.map((skill) => (
-            <motion.div key={skill.category} variants={itemVariants} className="bg-bmw-surface-card p-6">
-              <div className="flex items-center gap-3 mb-5 pb-4 border-b border-bmw-hairline">
-                <div className="text-bmw-m-blue-light">{skill.icon}</div>
-                <h2 className="text-bmw-ink text-sm font-bold tracking-machined uppercase">{skill.category}</h2>
-              </div>
-              <div className="flex flex-wrap gap-2.5">
-                {skill.items.map((item) =>
-                  skill.category === "Specializations" ? (
-                    <span key={item} className="px-3 py-1.5 text-xs text-bmw-muted bg-bmw-surface-soft">
-                      {item}
-                    </span>
-                  ) : (
-                    <span
-                      key={item}
-                      title={item}
-                      className="inline-flex items-center justify-center w-12 h-12 rounded-lg text-lg text-bmw-muted bg-bmw-surface-soft hover:bg-bmw-surface-hover hover:text-bmw-ink transition-colors"
-                    >
-                      {techIconMap[item]}
-                    </span>
-                  )
-                )}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </motion.main>
+          <motion.div className="grid md:grid-cols-2 gap-3" variants={containerVariants}>
+            {skills.map((skill) => (
+              <motion.div key={skill.category} variants={itemVariants} className="bg-bmw-surface-card p-6">
+                <div className="flex items-center gap-3 mb-5 pb-4 border-b border-bmw-hairline">
+                  <div className="text-bmw-m-blue-light">{skill.icon}</div>
+                  <h2 className="text-bmw-ink text-sm font-bold tracking-machined uppercase">{skill.category}</h2>
+                </div>
+                <div className="flex flex-wrap gap-2.5">
+                  {skill.items.map((item) =>
+                    skill.category === "Specializations" ? (
+                      <span key={item} className="px-3 py-1.5 text-xs text-bmw-muted bg-bmw-surface-soft">
+                        {item}
+                      </span>
+                    ) : (
+                      <Tooltip key={item}>
+                        <TooltipTrigger asChild>
+                          <span
+                            className="inline-flex items-center justify-center w-12 h-12 rounded-lg text-lg text-bmw-muted bg-bmw-surface-soft hover:bg-bmw-surface-hover hover:text-bmw-ink transition-colors cursor-pointer"
+                          >
+                            {techIconMap[item]}
+                          </span>
+                        </TooltipTrigger>
+                        <TooltipContent className="bg-bmw-surface-card border-bmw-hairline text-bmw-ink text-[11px] uppercase tracking-machined px-3 py-1.5 font-bold rounded-none shadow-xl">
+                          {item}
+                        </TooltipContent>
+                      </Tooltip>
+                    )
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.main>
+      </TooltipProvider>
       <div className="m-stripe" />
     </div>
   )
