@@ -10,7 +10,7 @@ const education = [
     degree: "Bachelor's Degree, Computer Science",
     institution: "GIET University Gunupur",
     year: "2025",
-    description: "Specialized in Computer Science with focus on AI/ML and Software Engineering",
+    description: "Computer Science graduate with interests in AI infrastructure, security engineering, distributed systems, and software architecture.",
     location: "Gunupur, Odisha",
   },
   {
@@ -33,8 +33,6 @@ const certifications = [
   { title: "AWS Bedrock Workshop - Build a Gen AI Chatbot", issuer: "Udemy", year: "2024" },
   { title: "Amazon Bedrock Getting Started", issuer: "Amazon Web Services (AWS)", year: "2024" },
   { title: "Amazon Q Developer", issuer: "Amazon Web Services (AWS)", year: "2024" },
-  { title: "AWS Cloud Practitioner", issuer: "Udemy", year: "2024" },
-  { title: "Learn to Code in Python 3", issuer: "Udemy", year: "2024" },
   { title: "Planning a Machine Learning Project", issuer: "Amazon Web Services (AWS)", year: "2024" },
   { title: "Python for Data Science and Machine Learning", issuer: "Udemy", year: "2024" },
   { title: "Project Management", issuer: "Career Ninja | LearnTube", year: "2024" },
@@ -52,9 +50,9 @@ export default function Credentials() {
       >
         <motion.div className="mb-16" variants={itemVariants}>
           <span className="bmw-label inline-block mb-4">Credentials</span>
-          <h1 className="bmw-display-lg mb-4">Education & Certifications</h1>
+          <h1 className="bmw-display-lg mb-4">Education & Credentials</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            Academic foundation and continuous professional development.
+            Academic background, industry experience, and ongoing learning across AI, security, infrastructure, and software engineering.
           </p>
         </motion.div>
 
@@ -88,7 +86,7 @@ export default function Credentials() {
             <div className="w-10 h-10 flex items-center justify-center border border-bmw-hairline">
               <Award className="w-5 h-5 text-bmw-ink" />
             </div>
-            <h2 className="text-bmw-ink text-lg font-bold uppercase tracking-machined">Certifications</h2>
+            <h2 className="text-bmw-ink text-lg font-bold uppercase tracking-machined">Professional Development</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {certifications.map((cert, index) => (
@@ -110,10 +108,10 @@ export default function Credentials() {
 
         <motion.div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-3" variants={itemVariants}>
           {[
-            { value: "1", label: "Degree" },
-            { value: "3", label: "Institutions" },
-            { value: "8", label: "Certifications" },
-            { value: "2025", label: "Latest" },
+            { value: "20+", label: "Products Built" },
+            { value: "50+", label: "Public Repositories" },
+            { value: "3+", label: "Years Building" },
+            { value: "AI • Security • Infrastructure", label: "Focus" },
           ].map((stat) => (
             <div key={stat.label} className="bg-bmw-surface-soft p-6 text-center">
               <div className="text-bmw-ink text-3xl font-bold mb-1">{stat.value}</div>
