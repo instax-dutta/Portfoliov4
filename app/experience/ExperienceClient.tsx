@@ -36,84 +36,19 @@ const experiences = [
     achievements: ["Successfully completed training program", "Quick promotion to Associate"],
   },
   {
-    title: "Machine Learning Engineer Intern",
-    company: "CodeAlpha",
-    date: "June 2024 – July 2024",
+    title: "Machine Learning & Software Engineering Internships",
+    company: "Various Companies",
+    date: "February 2024 – July 2024",
     type: "Internship",
     location: "Remote",
-    description: "Developed and implemented machine learning models for data analysis and predictive analytics projects.",
-    skills: ["Python", "Machine Learning", "Data Analysis", "TensorFlow", "Scikit-learn"],
-    achievements: ["Built 3 ML models", "Improved prediction accuracy by 15%"],
-  },
-  {
-    title: "Python Developer Intern",
-    company: "OctaNet Services Pvt Ltd.",
-    date: "June 2024 – July 2024",
-    type: "Internship",
-    location: "Remote",
-    description: "Developed Python applications and automated workflows, contributing to backend development projects.",
-    skills: ["Python", "Backend Development", "API Development", "Automation", "Database Management"],
-    achievements: ["Created automation scripts", "Reduced manual work by 40%"],
-  },
-  {
-    title: "Machine Learning Engineer Intern",
-    company: "CognoRise InfoTech",
-    date: "June 2024 – July 2024",
-    type: "Internship",
-    location: "Remote",
-    description: "Focused on computer vision and natural language processing projects, implementing cutting-edge ML algorithms.",
-    skills: ["Computer Vision", "NLP", "Deep Learning", "OpenCV", "NLTK"],
-    achievements: ["Implemented CV solutions", "Developed NLP models"],
-  },
-  {
-    title: "Machine Learning Engineer Intern",
-    company: "TechnoHacks EduTech Official",
-    date: "May 2024 – June 2024",
-    type: "Internship",
-    location: "Remote",
-    description: "Worked on educational technology solutions using machine learning to enhance learning experiences.",
-    skills: ["EdTech Solutions", "Machine Learning", "Data Science", "Educational Analytics"],
-    achievements: ["Built learning recommendation system", "Analyzed student performance data"],
-  },
-  {
-    title: "Machine Learning Engineer Intern",
-    company: "CodSoft",
-    date: "May 2024 – June 2024",
-    type: "Internship",
-    location: "Remote",
-    description: "Developed machine learning solutions for business intelligence and data-driven decision making.",
-    skills: ["Business Intelligence", "Data Mining", "Predictive Analytics", "Machine Learning"],
-    achievements: ["Created BI dashboards", "Implemented predictive models"],
-  },
-  {
-    title: "Machine Learning Engineer Intern",
-    company: "Cognifyz Technologies",
-    date: "May 2024 – June 2024",
-    type: "Internship",
-    location: "Remote",
-    description: "Specialized in developing AI-powered applications and integrating machine learning models into production systems.",
-    skills: ["AI Applications", "Model Deployment", "Production Systems", "MLOps"],
-    achievements: ["Deployed ML models to production", "Optimized model performance"],
-  },
-  {
-    title: "Machine Learning Engineer Intern",
-    company: "Encryptix",
-    date: "April 2024 – May 2024",
-    type: "Internship",
-    location: "Remote",
-    description: "Focused on developing secure ML applications with emphasis on data privacy and security in AI systems.",
-    skills: ["Secure ML", "Data Privacy", "Encryption", "AI Security", "Privacy-Preserving ML"],
-    achievements: ["Implemented secure ML pipeline", "Enhanced data privacy measures"],
-  },
-  {
-    title: "Python Developer Intern",
-    company: "Cognifyz Technologies",
-    date: "Feb 2024 – March 2024",
-    type: "Internship",
-    location: "Remote",
-    description: "Early internship experience focusing on Python development fundamentals and software engineering practices.",
-    skills: ["Python", "Software Engineering", "Web Development", "Database Design"],
-    achievements: ["Built web applications", "Learned industry best practices"],
+    description: "Completed multiple internships focused on machine learning, software engineering, automation, NLP, computer vision, and backend development. Built production-ready projects, deployed ML models, and gained hands-on experience across diverse technology stacks.",
+    skills: ["Python", "Machine Learning", "Deep Learning", "Computer Vision", "NLP", "Backend Development", "Automation", "MLOps", "TensorFlow", "Scikit-learn", "OpenCV"],
+    achievements: [
+      "Completed 8 industry internships",
+      "Built and deployed multiple ML applications",
+      "Worked across NLP, computer vision, and predictive analytics projects",
+      "Developed production-ready automation and backend solutions"
+    ],
   },
   {
     title: "CEO & Co-Founder",
@@ -123,7 +58,11 @@ const experiences = [
     location: "India",
     description: "Founded and led a technology startup, managing team operations, product development, and strategic planning.",
     skills: ["Leadership", "Entrepreneurship", "Strategic Planning", "Team Management", "Product Development"],
-    achievements: ["Led team of 5+ members", "Launched successful product", "Managed startup operations"],
+    achievements: [
+      "Founded and operated a game server hosting startup",
+      "Managed infrastructure, customer support, and product delivery",
+      "Built and maintained services used by paying customers"
+    ],
   },
 ]
 
@@ -158,8 +97,7 @@ export default function Experience() {
           <span className="bmw-label inline-block mb-4">Experience</span>
           <h1 className="bmw-display-lg mb-4">Professional Journey</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            A comprehensive journey through my professional experiences, from entrepreneurship to machine learning engineering,
-            showcasing growth, learning, and impact across diverse technology domains.
+            Career progression across software engineering, AI systems, infrastructure, and entrepreneurship—spanning startup leadership, enterprise experience, and open-source development.
           </p>
         </motion.div>
 
@@ -218,9 +156,9 @@ export default function Experience() {
 
         <motion.div className="mt-20 grid grid-cols-3 gap-3" variants={itemVariants}>
           {[
-            { value: experiences.length.toString(), label: "Total Experiences" },
-            { value: "10+", label: "Companies" },
-            { value: "3+", label: "Years" },
+            { value: "5", label: "Key Roles" },
+            { value: "20+", label: "Products Built" },
+            { value: "50+", label: "Public Repositories" },
           ].map((stat) => (
             <div key={stat.label} className="bg-bmw-surface-soft p-6 text-center">
               <div className="text-bmw-ink text-3xl font-bold mb-1">{stat.value}</div>
