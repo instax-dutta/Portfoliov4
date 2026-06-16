@@ -72,24 +72,24 @@ const techIconMap: Record<string, React.ReactNode> = {
 
 const skills = [
   {
-    category: "Programming",
+    category: "Languages & Frameworks",
     icon: <Code className="w-5 h-5" />,
-    items: ["HTML", "Python", "CSS", "SQL", "JavaScript", "Java", "C++", "R", "Rust", "Go", "TypeScript", "React", "Next.js", "Tailwind CSS", "Node.js"],
+    items: ["Python", "SQL", "JavaScript", "Java", "C++", "Rust", "TypeScript", "React", "Next.js", "Tailwind CSS", "Node.js"],
   },
   {
-    category: "AI / ML",
+    category: "AI & Data",
     icon: <Brain className="w-5 h-5" />,
     items: ["TensorFlow", "PyTorch", "scikit-learn", "NumPy", "Pandas", "Keras", "XGBoost", "OpenCV", "Matplotlib", "Seaborn", "Plotly", "Ollama", "Hugging Face", "Google Vertex"],
   },
   {
-    category: "DevOps & Cloud",
+    category: "Infrastructure",
     icon: <Server className="w-5 h-5" />,
     items: ["AWS", "Docker", "Git", "CI/CD", "Bash", "Linux", "Netlify", "Vercel", "GitHub Actions", "Jenkins", "Kubernetes"],
   },
   {
-    category: "Soft Skills",
+    category: "Specializations",
     icon: <Zap className="w-5 h-5" />,
-    items: ["Problem Solving", "Communication", "Adaptability", "Collaboration", "Leadership", "Time Management", "Critical Thinking", "Creativity", "Empathy", "Conflict Resolution", "Decision Making", "Teamwork"],
+    items: ["AI Infrastructure", "Security Engineering", "Developer Tooling", "Self-Hosted Platforms", "Open Source", "Distributed Systems", "Cloud Architecture", "Privacy Engineering"],
   },
 ]
 
@@ -105,9 +105,9 @@ export default function Skills() {
       >
         <motion.div className="mb-16" variants={itemVariants}>
           <span className="bmw-label inline-block mb-4">Skills</span>
-          <h1 className="bmw-display-lg mb-4">Technical Expertise</h1>
+          <h1 className="bmw-display-lg mb-4">Engineering Toolkit</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            A comprehensive overview of my technical abilities and professional competencies.
+            Technologies, platforms, and tools I use to build AI infrastructure, security products, developer tooling, and production-grade applications.
           </p>
         </motion.div>
 
@@ -120,7 +120,7 @@ export default function Skills() {
               </div>
               <div className="flex flex-wrap gap-2.5">
                 {skill.items.map((item) =>
-                  skill.category === "Soft Skills" ? (
+                  skill.category === "Specializations" ? (
                     <span key={item} className="px-3 py-1.5 text-xs text-bmw-muted bg-bmw-surface-soft">
                       {item}
                     </span>
