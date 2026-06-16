@@ -6,7 +6,7 @@ const ProjectsClient = dynamic(() => import("./ProjectsClient"), {
 
 export const metadata: Metadata = {
     title: "Portfolio: AI, Security & Full Stack Projects",
-    description: "Explore 21 production-ready projects by Sai Dutta Abhishek Dash: MarkItDownJS (document-to-markdown engine), PraharShield (Minecraft anti-bot), CL-Chat Reborn (P2P encrypted chat), Tooner (doc tokenization), Binify (zero-knowledge encryption), and more. Expertise in React, Next.js, Python, TypeScript, ML, Cryptography, and Security Architecture.",
+    description: "Explore 21 production-ready projects by Sai Dutta Abhishek Dash: Epoxy (LLM proxy), MarkItDownJS (document-to-markdown), Vulscany (AI security scanner), PraharShield (anti-bot), Forensic-Recovery (PowerShell triage), CL-Chat Reborn (P2P chat), and more. Expertise in React, Next.js, Python, TypeScript, ML, Cryptography, and Security Architecture.",
     keywords: [
         "Sai Dutta Abhishek Dash Projects",
         "MarkItDownJS",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         "Open Source Security Tools",
         "Next.js Production Examples",
         "P2P Encrypted Chat",
-        "Minecraft Plugin Development",
+        "Minecraft Proxy Security",
         "Full Stack Developer Portfolio 2026",
     ],
 }
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
         <>
             <ProjectsClient />
             <div className="sr-only" aria-hidden="true">
-                <p>Sai Dutta Abhishek Dash has built 21 production-ready applications spanning: architecture and systems (MarkItDownJS monorepo with 20 packages, PraharShield anti-bot handling 100k JPS on 1GB RAM, CL-Chat Reborn P2P encrypted chat with ECDH and 81 tests), full-stack and security (Tooner document tokenization with Web Workers, Binify zero-knowledge encrypted pastebin, Sensory cloud storage with Backblaze B2, AiScribe AI transcription with Groq Whisper, Vulscany AI code security scanner, Send-Finder Three.js file-sharing benchmark), AI and machine learning (GenieLabs AI dev platform, Epoxy free-tier LLM proxy), Discord and dev tooling (Discactyl Pterodactyl controller with AES-256-GCM, Auralyn music bot with Lavalink, VeronicaBot YouTube/Twitch notifications, AMZRelay async Amazon scraper), design systems (Elipso Vercel-inspired theme, Elden Sentri-inspired theme, Elysium terminal-native theme), and infrastructure (PacketBuddy network tracker, Ultimate-Firewall DDoS protection, Forensic-Recovery PowerShell evidence acquisition tool). Technologies used include React 19, Next.js 16, TypeScript, Python, Java, TensorFlow, Groq Whisper, Web Crypto API, cryptography (X25519, ChaCha20-Poly1305), Turborepo, Docker, Backblaze B2, Turso, Upstash Redis, and AWS.</p>
+                <p>Sai Dutta Abhishek Dash has built 21 production-ready applications spanning: architecture and systems (Epoxy free-tier LLM proxy, MarkItDownJS monorepo with 20 packages, PraharShield anti-bot handling 100k JPS on 1GB RAM, CL-Chat Reborn P2P encrypted chat with ECDH and 81 tests), security and infrastructure (Vulscany AI code security scanner, Forensic-Recovery PowerShell evidence acquisition tool, Ultimate-Firewall DDoS protection, PacketBuddy network tracker, Send-Finder Three.js file-sharing benchmark), AI products (AiScribe AI transcription with Groq Whisper, GenieLabs AI dev platform, Tooner document tokenization with Web Workers), full-stack applications (Binify zero-knowledge encrypted pastebin, Sensory cloud storage with Backblaze B2), developer and platform tooling (Discactyl Pterodactyl controller with AES-256-GCM, AMZRelay async Amazon scraper), community and automation (VeronicaBot YouTube/Twitch notifications, Auralyn music bot with Lavalink), and design systems (Elysium terminal-native theme, Elipso Vercel-inspired theme, Elden Sentri-inspired theme). Technologies used include React 19, Next.js 16, TypeScript, Python, Java, TensorFlow, Groq Whisper, Web Crypto API, cryptography (X25519, ChaCha20-Poly1305), Turborepo, Docker, Backblaze B2, Turso, Upstash Redis, and AWS.</p>
                 <p>Stats: 21 production-grade applications | 8 live demo links | 17 open-source GitHub repos | Technologies: React, Next.js, TypeScript, Python, Java, TensorFlow, Docker, AWS | Last updated: June 2026</p>
             </div>
         </>

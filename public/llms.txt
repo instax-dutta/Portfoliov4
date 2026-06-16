@@ -10,27 +10,27 @@ Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhuban
 - **Security**: Cryptography (X25519 ECDH, ChaCha20-Poly1305), Zero-knowledge encryption, Web Crypto API, DDoS protection, IP tables
 
 ## Notable Projects
+- **Epoxy** — OpenAI-compatible LLM proxy, pools free-tier keys with key rotation and cooldowns (github.com/instax-dutta/epoxy)
 - **MarkItDownJS** — AST-first document-to-markdown engine, 20 packages, Turborepo monorepo (github.com/instax-dutta/MarkItDownJS)
-- **PraharShield** — Minecraft Velocity anti-bot, handles 100k JPS on 1GB RAM (github.com/instax-dutta/PraharShield)
-- **CL-Chat Reborn** — P2P encrypted CLI chat, ECDH + ChaCha20-Poly1305, 81 tests (github.com/instax-dutta/cl-chat-reborn)
-- **Tooner** — Privacy-first document tokenization for LLMs (tooner.sdad.pro)
+- **PraharShield** — Minecraft Velocity anti-bot, CAPTCHA handshake, handles 100k JPS (github.com/instax-dutta/PraharShield)
+- **CL-Chat Reborn** — P2P encrypted CLI chat, X25519 ECDH + ChaCha20-Poly1305, 81 tests (github.com/instax-dutta/cl-chat-reborn)
+- **Vulscany** — AI-powered code security scanner with auto-fixes and OAuth (github.com/instax-dutta/vulscany)
+- **Forensic-Recovery** — Forensically-sound digital evidence acquisition tool (github.com/instax-dutta/Forensic-Recovery)
+- **Ultimate-Firewall** — Enterprise firewall and DDoS protection (github.com/instax-dutta/Ultimate-Firewall)
+- **PacketBuddy** — Bandwidth monitor and network tracker (github.com/instax-dutta/packet-buddy)
+- **Send-Finder** — Zero-knowledge benchmark for Send servers with 3D globe (ssf.sdad.pro)
+- **AiScribe** — Instant AI audio transcription with Groq Whisper (ais.sdad.pro)
+- **GenieLabs** — AI-powered development platform (genielabs.sdad.pro)
+- **Tooner** — Privacy-first client-side document tokenization for LLMs (tooner.sdad.pro)
 - **Binify** — Zero-knowledge encrypted pastebin (bin.sdad.pro)
 - **Sensory** — Scalable cloud storage with Backblaze B2 (mirror.sdad.pro)
-- **AiScribe** — AI audio transcription with Groq Whisper (ais.sdad.pro)
-- **Vulscany** — AI-powered code security scanner (github.com/instax-dutta/vulscany)
-- **Send-Finder** — Benchmark community Send servers (ssf.sdad.pro)
-- **GenieLabs** — AI-powered development platform (genielabs.sdad.pro)
-- **Epoxy** — Free-tier LLM proxy for Hermes Agent (github.com/instax-dutta/epoxy)
-- **Discactyl** — Pterodactyl panel Discord controller (github.com/instax-dutta/discactyl)
-- **Auralyn** — Discord music bot with Lavalink (auralyn.sdad.pro)
-- **VeronicaBot** — YouTube/Twitch Discord notifications (github.com/instax-dutta/VeronicaBot)
-- **AMZRelay** — Amazon non-returnable products finder (Discord bot)
-- **Elipso Theme** — Vercel-inspired Pterodactyl theme
-- **Elden Theme** — Sentri-inspired Pterodactyl theme
-- **Elysium** — Terminal-native Pterodactyl theme
-- **PacketBuddy** — Network usage tracker
-- **Ultimate-Firewall** — Enterprise DDoS protection
-- **Forensic-Recovery** — Forensically-sound digital evidence acquisition tool (github.com/instax-dutta/Forensic-Recovery)
+- **Discactyl** — Pterodactyl panel Discord controller, role-based commands (github.com/instax-dutta/discactyl)
+- **AMZRelay** — Amazon non-returnable products finder with fast scraping (github.com/instax-dutta/AMZRelay)
+- **VeronicaBot** — Self-hosted Discord bot for live YouTube/Twitch notifications (github.com/instax-dutta/VeronicaBot)
+- **Auralyn** — Discord music bot with bundled Lavalink server (auralyn.sdad.pro)
+- **Elysium** — Terminal-native monospaced Pterodactyl theme (github.com/instax-dutta/elysium)
+- **Elipso Theme** — Vercel-inspired Pterodactyl theme (github.com/instax-dutta/elipso-theme)
+- **Elden Theme** — Sentry-inspired Pterodactyl theme (github.com/instax-dutta/elden-theme)
 
 ## Credentials
 - AWS Certified Cloud Practitioner (2024)

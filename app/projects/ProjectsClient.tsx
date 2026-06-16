@@ -5,7 +5,15 @@ import { ExternalLink, Github } from "lucide-react"
 import { transitionSmooth } from "../lib/animation"
 
 const projects = [
-  // Architecture & Systems — strongest signal anchors skill perception
+  // 1. Architecture & Systems
+  {
+    title: "Epoxy",
+    subtitle: "Free-tier LLM Proxy for Hermes Agent",
+    description: "OpenAI-compatible LLM proxy that pools free-tier keys with automatic rotation and cooldown handling. Features keyword routing, .env hot-reloads, and Docker/Pterodactyl support.",
+    technologies: ["Python", "Docker", "Groq", "Ollama Cloud", "Mistral AI"],
+    link: "https://github.com/instax-dutta/epoxy",
+    github: "https://github.com/instax-dutta/epoxy",
+  },
   {
     title: "MarkItDownJS",
     subtitle: "Universal Document-to-Markdown Engine",
@@ -30,7 +38,63 @@ const projects = [
     link: "https://github.com/instax-dutta/cl-chat-reborn",
     github: "https://github.com/instax-dutta/cl-chat-reborn",
   },
-  // Full-Stack & Security — modern web depth
+
+  // 2. Security & Infrastructure
+  {
+    title: "Vulscany",
+    subtitle: "AI-Powered Code Security Agent",
+    description: "Private, self-hostable AI code scanner with automated fix generation. Features multi-language scanning, real-time CVE matching, and GitHub OAuth with zero database dependencies.",
+    technologies: ["Next.js 16", "TypeScript", "Mistral AI", "Ollama", "Tailwind CSS", "GitHub OAuth"],
+    link: "https://github.com/instax-dutta/vulscany",
+    github: "https://github.com/instax-dutta/vulscany",
+  },
+  {
+    title: "Forensic-Recovery",
+    subtitle: "Forensically-Sound Digital Evidence Acquisition Tool",
+    description: "PowerShell digital evidence acquisition tool with SHA-256 chain-of-custody verification. Features automated system file exclusion, audit logs, dry-run mode, and multi-drive triage.",
+    technologies: ["PowerShell", "SHA-256", "Windows"],
+    link: "https://github.com/instax-dutta/Forensic-Recovery",
+    github: "https://github.com/instax-dutta/Forensic-Recovery",
+  },
+  {
+    title: "Ultimate-Firewall",
+    subtitle: "Enterprise DDoS Protection",
+    description: "Enterprise firewall with comprehensive IP table rules and DDoS protection techniques.",
+    technologies: ["IP tables", "DDoS Protection", "Linux", "Bash"],
+    link: "https://github.com/instax-dutta/Ultimate-Firewall",
+  },
+  {
+    title: "PacketBuddy",
+    subtitle: "Network Usage Tracker",
+    description: "Ultra-lightweight bandwidth monitor and network traffic tracker with real-time stats and zero configuration.",
+    technologies: ["Python", "JavaScript", "Shell", "NeonDB", "Chart.js"],
+    link: "https://github.com/instax-dutta/packet-buddy",
+  },
+  {
+    title: "Send-Finder",
+    subtitle: "Find the Fastest Send Server Near You",
+    description: "Browser-based benchmark tool for 23+ community Send servers with a 3D globe visualization. 100% client-side and zero-knowledge to discover the fastest file-sharing instance.",
+    technologies: ["JavaScript", "Three.js", "Web API"],
+    link: "https://ssf.sdad.pro",
+    github: "https://github.com/instax-dutta/Send-Finder",
+  },
+
+  // 3. AI Products
+  {
+    title: "AiScribe",
+    subtitle: "AI Audio Transcription",
+    description: "Instant AI audio transcription featuring drag-and-drop upload, language auto-detection, and export to TXT/SRT formats via a secure server-side Groq proxy.",
+    technologies: ["Next.js 16", "TypeScript 5", "Groq Whisper", "Lenis", "Vanilla CSS"],
+    link: "https://ais.sdad.pro",
+    github: "https://github.com/instax-dutta/aiscribe",
+  },
+  {
+    title: "GenieLabs",
+    subtitle: "AI-Powered Dev Platform",
+    description: "AI-powered development platform for code generation, analysis, and optimization with workflow automation.",
+    technologies: ["AI Agent", "Next.js 14", "React 18", "Tailwind CSS", "TypeScript"],
+    link: "https://genielabs.sdad.pro",
+  },
   {
     title: "Tooner",
     subtitle: "Lightning-Fast Document Tokenization",
@@ -38,6 +102,8 @@ const projects = [
     technologies: ["React 19", "Vite 6", "TypeScript 5", "Web Workers", "TOON Format"],
     link: "https://tooner.sdad.pro",
   },
+
+  // 4. Full-Stack Applications
   {
     title: "Binify",
     subtitle: "Zero-Knowledge Encrypted Pastebin",
@@ -52,47 +118,8 @@ const projects = [
     technologies: ["Next.js 15", "React 19", "TypeScript", "Backblaze B2", "Turso", "Upstash Redis"],
     link: "https://mirror.sdad.pro",
   },
-  {
-    title: "AiScribe",
-    subtitle: "AI Audio Transcription",
-    description: "Instant AI audio transcription featuring drag-and-drop upload, language auto-detection, and export to TXT/SRT formats via a secure server-side Groq proxy.",
-    technologies: ["Next.js 16", "TypeScript 5", "Groq Whisper", "Lenis", "Vanilla CSS"],
-    link: "https://ais.sdad.pro",
-    github: "https://github.com/instax-dutta/aiscribe",
-  },
-  {
-    title: "Vulscany",
-    subtitle: "AI-Powered Code Security Agent",
-    description: "Private, self-hostable AI code scanner with automated fix generation. Features multi-language scanning, real-time CVE matching, and GitHub OAuth with zero database dependencies.",
-    technologies: ["Next.js 16", "TypeScript", "Mistral AI", "Ollama", "Tailwind CSS", "GitHub OAuth"],
-    link: "https://github.com/instax-dutta/vulscany",
-    github: "https://github.com/instax-dutta/vulscany",
-  },
-  {
-    title: "Send-Finder",
-    subtitle: "Find the Fastest Send Server Near You",
-    description: "Browser-based benchmark tool for 23+ community Send servers with a 3D globe visualization. 100% client-side and zero-knowledge to discover the fastest file-sharing instance.",
-    technologies: ["JavaScript", "Three.js", "Web API"],
-    link: "https://ssf.sdad.pro",
-    github: "https://github.com/instax-dutta/Send-Finder",
-  },
-  // AI & Machine Learning — breadth across AI
-  {
-    title: "GenieLabs",
-    subtitle: "AI-Powered Dev Platform",
-    description: "AI-powered development platform for code generation, analysis, and optimization with workflow automation.",
-    technologies: ["AI Agent", "Next.js 14", "React 18", "Tailwind CSS", "TypeScript"],
-    link: "https://genielabs.sdad.pro",
-  },
-  {
-    title: "Epoxy",
-    subtitle: "Free-tier LLM Proxy for Hermes Agent",
-    description: "OpenAI-compatible LLM proxy that pools free-tier keys with automatic rotation and cooldown handling. Features keyword routing, .env hot-reloads, and Docker/Pterodactyl support.",
-    technologies: ["Python", "Docker", "Groq", "Ollama Cloud", "Mistral AI"],
-    link: "https://github.com/instax-dutta/epoxy",
-    github: "https://github.com/instax-dutta/epoxy",
-  },
-  // Discord & Dev Tooling — automation & integrations
+
+  // 5. Developer & Platform Tooling
   {
     title: "Discactyl",
     subtitle: "Pterodactyl Panel Discord Controller",
@@ -102,13 +129,15 @@ const projects = [
     github: "https://github.com/instax-dutta/discactyl",
   },
   {
-    title: "Auralyn",
-    subtitle: "Discord Music Bot with Integrated Lavalink",
-    description: "Zero-infrastructure Discord music bot with a bundled Lavalink server. Features high-fidelity playback, smart search, and single-container Docker deployment.",
-    technologies: ["JavaScript", "Discord.js", "Lavalink", "Node.js", "Docker"],
-    link: "https://auralyn.sdad.pro",
-    github: "https://github.com/instax-dutta/Auralyn",
+    title: "AMZRelay",
+    subtitle: "Amazon Non-Returnable Products Finder",
+    description: "Discord bot that scans Amazon India for non-returnable products using fast aiohttp scraping. Features smart JSON caching and interactive pagination.",
+    technologies: ["Python", "aiohttp", "BeautifulSoup", "py-cord", "Asyncio"],
+    link: "https://discord.com/api/oauth2/authorize?client_id=1509572599422910626&permissions=0&scope=bot%20applications.commands",
+    github: "https://github.com/instax-dutta/AMZRelay",
   },
+
+  // 6. Community & Automation
   {
     title: "VeronicaBot",
     subtitle: "Discord Bot for YouTube/Twitch",
@@ -118,14 +147,23 @@ const projects = [
     github: "https://github.com/instax-dutta/VeronicaBot",
   },
   {
-    title: "AMZRelay",
-    subtitle: "Amazon Non-Returnable Products Finder",
-    description: "Discord bot that scans Amazon India for non-returnable products using fast aiohttp scraping. Features smart JSON caching and interactive pagination.",
-    technologies: ["Python", "aiohttp", "BeautifulSoup", "py-cord", "Asyncio"],
-    link: "https://discord.com/api/oauth2/authorize?client_id=1509572599422910626&permissions=0&scope=bot%20applications.commands",
-    github: "https://github.com/instax-dutta/AMZRelay",
+    title: "Auralyn",
+    subtitle: "Discord Music Bot with Integrated Lavalink",
+    description: "Zero-infrastructure Discord music bot with a bundled Lavalink server. Features high-fidelity playback, smart search, and single-container Docker deployment.",
+    technologies: ["JavaScript", "Discord.js", "Lavalink", "Node.js", "Docker"],
+    link: "https://auralyn.sdad.pro",
+    github: "https://github.com/instax-dutta/Auralyn",
   },
-  // Design Systems — visual & UI craft
+
+  // 7. Design Systems
+  {
+    title: "Elysium",
+    subtitle: "Monospaced Pterodactyl Panel Theme",
+    description: "Terminal-native monospaced theme for Pterodactyl Panel. Features 100% JetBrains Mono typography, flat-with-hairline layout, and Apple HIG semantic colors.",
+    technologies: ["CSS", "JetBrains Mono", "Blade", "Shell", "Tailwind CSS", "Terminal UI"],
+    link: "https://github.com/instax-dutta/elysium",
+    github: "https://github.com/instax-dutta/elysium",
+  },
   {
     title: "Elipso Theme",
     subtitle: "Vercel Dark Theme for Pterodactyl",
@@ -141,37 +179,6 @@ const projects = [
     technologies: ["CSS", "Tailwind CSS", "Blade", "Shell", "JavaScript"],
     link: "https://github.com/instax-dutta/elden-theme",
     github: "https://github.com/instax-dutta/elden-theme",
-  },
-  {
-    title: "Elysium",
-    subtitle: "Monospaced Pterodactyl Panel Theme",
-    description: "Terminal-native monospaced theme for Pterodactyl Panel. Features 100% JetBrains Mono typography, flat-with-hairline layout, and Apple HIG semantic colors.",
-    technologies: ["CSS", "JetBrains Mono", "Blade", "Shell", "Tailwind CSS", "Terminal UI"],
-    link: "https://github.com/instax-dutta/elysium",
-    github: "https://github.com/instax-dutta/elysium",
-  },
-  // Infrastructure & Utility — closes on reliability signal
-  {
-    title: "PacketBuddy",
-    subtitle: "Network Usage Tracker",
-    description: "Ultra-lightweight bandwidth monitor and network traffic tracker with real-time stats and zero configuration.",
-    technologies: ["Python", "JavaScript", "Shell", "NeonDB", "Chart.js"],
-    link: "https://github.com/instax-dutta/packet-buddy",
-  },
-  {
-    title: "Ultimate-Firewall",
-    subtitle: "Enterprise DDoS Protection",
-    description: "Enterprise firewall with comprehensive IP table rules and DDoS protection techniques.",
-    technologies: ["IP tables", "DDoS Protection", "Linux", "Bash"],
-    link: "https://github.com/instax-dutta/Ultimate-Firewall",
-  },
-  {
-    title: "Forensic-Recovery",
-    subtitle: "Forensically-Sound Digital Evidence Acquisition Tool",
-    description: "PowerShell digital evidence acquisition tool with SHA-256 chain-of-custody verification. Features automated system file exclusion, audit logs, dry-run mode, and multi-drive triage.",
-    technologies: ["PowerShell", "SHA-256", "Windows"],
-    link: "https://github.com/instax-dutta/Forensic-Recovery",
-    github: "https://github.com/instax-dutta/Forensic-Recovery",
   },
 ]
 

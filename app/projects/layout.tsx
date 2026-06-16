@@ -56,58 +56,58 @@ const projectsStructuredData = {
     itemListElement: [
       {
         "@type": "ListItem", position: 1, item: {
+          "@type": "SoftwareApplication", name: "Epoxy", applicationCategory: "DeveloperApplication", operatingSystem: "Linux",
+          description: "Unified OpenAI-compatible proxy that pools free-tier Groq, Ollama Cloud & Mistral API keys behind a single endpoint. Features automatic key rotation, intelligent cooldown handling, cross-provider fallback, keyword-based model routing, and hot-reload.",
+          url: "https://github.com/instax-dutta/epoxy", programmingLanguage: ["Python", "Docker", "Groq", "Ollama Cloud", "Mistral AI"],
+        },
+      },
+      {
+        "@type": "ListItem", position: 2, item: {
           "@type": "SoftwareApplication", name: "MarkItDownJS", applicationCategory: "DeveloperApplication", operatingSystem: "Cross-Platform",
           description: "AST-first document ingestion and conversion platform for TypeScript. Convert PDF, DOCX, PPTX, XLSX, HTML, EPUB, CSV, JSON, XML, images, audio, and archives into structured AI-ready Markdown. Plugin architecture, 20 packages, chunking for RAG.",
           url: "https://github.com/instax-dutta/MarkItDownJS", programmingLanguage: ["TypeScript", "Node.js"],
         },
       },
       {
-        "@type": "ListItem", position: 2, item: {
+        "@type": "ListItem", position: 3, item: {
           "@type": "SoftwareApplication", name: "PraharShield", applicationCategory: "SecurityApplication", operatingSystem: "Linux",
           description: "High-performance bot filtering plugin for Minecraft Velocity proxies. Layered limbo-based handshake with CAPTCHA, client fingerprinting, and IP rate limiting. Handles 100k JPS join-flood attacks on 1 GB RAM VPS.",
           url: "https://github.com/instax-dutta/PraharShield", programmingLanguage: ["Java", "Velocity", "Gradle"],
         },
       },
       {
-        "@type": "ListItem", position: 3, item: {
+        "@type": "ListItem", position: 4, item: {
           "@type": "SoftwareApplication", name: "CL-Chat Reborn", applicationCategory: "CommunicationApplication", operatingSystem: "Linux",
           description: "Peer-to-peer command-line chat with per-connection ECDH (X25519) encryption, ChaCha20-Poly1305 AEAD, mesh message propagation, TOFU fingerprint verification, and input sanitization. 81 pytest tests.",
           url: "https://github.com/instax-dutta/cl-chat-reborn", programmingLanguage: ["Python", "Cryptography"],
         },
       },
       {
-        "@type": "ListItem", position: 4, item: {
-          "@type": "SoftwareApplication", name: "Tooner", applicationCategory: "WebApplication", operatingSystem: "Web",
-          description: "Privacy-first, client-side document tokenization platform. Convert PDF, DOCX, CSV into token-optimized .toon files for LLMs with zero server-side storage using Web Workers.",
-          url: "https://tooner.sdad.pro", programmingLanguage: ["React", "TypeScript", "Vite"],
-        },
-      },
-      {
         "@type": "ListItem", position: 5, item: {
-          "@type": "SoftwareApplication", name: "Binify", applicationCategory: "WebApplication", operatingSystem: "Web",
-          description: "Zero-knowledge encrypted pastebin with client-side encryption ensuring absolute privacy. Built with Next.js 15, Turso, Upstash Redis, and Web Crypto API.",
-          url: "https://bin.sdad.pro", programmingLanguage: ["Next.js", "TypeScript", "Web Crypto API"],
+          "@type": "SoftwareApplication", name: "Vulscany", applicationCategory: "DeveloperApplication", operatingSystem: "Web",
+          description: "Private, self-hostable AI-powered code security scanner with AI-powered fix generation, multi-language scanning, real-time CVE matching, and GitHub OAuth integration. Privacy-first architecture.",
+          url: "https://github.com/instax-dutta/vulscany", programmingLanguage: ["Next.js", "TypeScript", "Mistral AI", "Ollama", "Tailwind CSS", "GitHub OAuth"],
         },
       },
       {
         "@type": "ListItem", position: 6, item: {
-          "@type": "SoftwareApplication", name: "Sensory", applicationCategory: "WebApplication", operatingSystem: "Web",
-          description: "Scalable cloud storage with efficient database management and advanced rate limiting. Built with Next.js 15, Backblaze B2, Turso, and Upstash Redis.",
-          url: "https://mirror.sdad.pro", programmingLanguage: ["Next.js", "React", "TypeScript"],
+          "@type": "SoftwareApplication", name: "Forensic-Recovery", applicationCategory: "SecurityApplication", operatingSystem: "Windows",
+          description: "Windows PowerShell tool for forensically-sound digital evidence acquisition with SHA-256 chain-of-custody verification, audit-grade logging, pre-flight space checking, and multi-drive triage.",
+          url: "https://github.com/instax-dutta/Forensic-Recovery", programmingLanguage: ["PowerShell", "SHA-256", "Windows"],
         },
       },
       {
         "@type": "ListItem", position: 7, item: {
-          "@type": "SoftwareApplication", name: "AiScribe", applicationCategory: "WebApplication", operatingSystem: "Web",
-          description: "AI audio transcription with drag-and-drop upload, multiple Whisper models, language auto-detect, and export to TXT or SRT. Secure server-side Groq proxy.",
-          url: "https://ais.sdad.pro", programmingLanguage: ["Next.js", "TypeScript", "Groq Whisper"],
+          "@type": "SoftwareApplication", name: "Ultimate-Firewall", applicationCategory: "SecurityApplication", operatingSystem: "Linux",
+          description: "Enterprise firewall with comprehensive IP table rules and DDoS protection techniques for Linux systems.",
+          url: "https://github.com/instax-dutta/Ultimate-Firewall", programmingLanguage: ["Bash", "Linux"],
         },
       },
       {
         "@type": "ListItem", position: 8, item: {
-          "@type": "SoftwareApplication", name: "Vulscany", applicationCategory: "DeveloperApplication", operatingSystem: "Web",
-          description: "Private, self-hostable AI-powered code security scanner with AI-powered fix generation, multi-language scanning, real-time CVE matching, and GitHub OAuth integration. Privacy-first architecture.",
-          url: "https://github.com/instax-dutta/vulscany", programmingLanguage: ["Next.js", "TypeScript", "Mistral AI", "Ollama", "Tailwind CSS", "GitHub OAuth"],
+          "@type": "SoftwareApplication", name: "PacketBuddy", applicationCategory: "WebApplication", operatingSystem: "Cross-Platform",
+          description: "Ultra-lightweight bandwidth monitor and network traffic tracker with real-time stats and zero configuration.",
+          url: "https://github.com/instax-dutta/packet-buddy", programmingLanguage: ["Python", "JavaScript", "Shell"],
         },
       },
       {
@@ -119,86 +119,86 @@ const projectsStructuredData = {
       },
       {
         "@type": "ListItem", position: 10, item: {
+          "@type": "SoftwareApplication", name: "AiScribe", applicationCategory: "WebApplication", operatingSystem: "Web",
+          description: "AI audio transcription with drag-and-drop upload, multiple Whisper models, language auto-detect, and export to TXT or SRT. Secure server-side Groq proxy.",
+          url: "https://ais.sdad.pro", programmingLanguage: ["Next.js", "TypeScript", "Groq Whisper"],
+        },
+      },
+      {
+        "@type": "ListItem", position: 11, item: {
           "@type": "SoftwareApplication", name: "GenieLabs", applicationCategory: "WebApplication", operatingSystem: "Web",
           description: "AI-powered development platform for code generation, analysis, and optimization with workflow automation.",
           url: "https://genielabs.sdad.pro", programmingLanguage: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
         },
       },
       {
-        "@type": "ListItem", position: 11, item: {
-          "@type": "SoftwareApplication", name: "Epoxy", applicationCategory: "DeveloperApplication", operatingSystem: "Linux",
-          description: "Unified OpenAI-compatible proxy that pools free-tier Groq, Ollama Cloud & Mistral API keys behind a single endpoint. Features automatic key rotation, intelligent cooldown handling, cross-provider fallback, keyword-based model routing, and hot-reload.",
-          url: "https://github.com/instax-dutta/epoxy", programmingLanguage: ["Python", "Docker", "Groq", "Ollama Cloud", "Mistral AI"],
+        "@type": "ListItem", position: 12, item: {
+          "@type": "SoftwareApplication", name: "Tooner", applicationCategory: "WebApplication", operatingSystem: "Web",
+          description: "Privacy-first, client-side document tokenization platform. Convert PDF, DOCX, CSV into token-optimized .toon files for LLMs with zero server-side storage using Web Workers.",
+          url: "https://tooner.sdad.pro", programmingLanguage: ["React", "TypeScript", "Vite"],
         },
       },
       {
-        "@type": "ListItem", position: 12, item: {
+        "@type": "ListItem", position: 13, item: {
+          "@type": "SoftwareApplication", name: "Binify", applicationCategory: "WebApplication", operatingSystem: "Web",
+          description: "Zero-knowledge encrypted pastebin with client-side encryption ensuring absolute privacy. Built with Next.js 15, Turso, Upstash Redis, and Web Crypto API.",
+          url: "https://bin.sdad.pro", programmingLanguage: ["Next.js", "TypeScript", "Web Crypto API"],
+        },
+      },
+      {
+        "@type": "ListItem", position: 14, item: {
+          "@type": "SoftwareApplication", name: "Sensory", applicationCategory: "WebApplication", operatingSystem: "Web",
+          description: "Scalable cloud storage with efficient database management and advanced rate limiting. Built with Next.js 15, Backblaze B2, Turso, and Upstash Redis.",
+          url: "https://mirror.sdad.pro", programmingLanguage: ["Next.js", "React", "TypeScript"],
+        },
+      },
+      {
+        "@type": "ListItem", position: 15, item: {
           "@type": "SoftwareApplication", name: "Discactyl", applicationCategory: "DeveloperApplication", operatingSystem: "Linux",
           description: "Pterodactyl Panel Discord controller. Manage servers, users, nodes, and backups through slash commands with role-based access and AES-256-GCM encryption.",
           url: "https://github.com/instax-dutta/discactyl", programmingLanguage: ["TypeScript", "Discord.js", "Node.js"],
         },
       },
       {
-        "@type": "ListItem", position: 13, item: {
-          "@type": "SoftwareApplication", name: "Auralyn", applicationCategory: "WebApplication", operatingSystem: "Linux",
-          description: "Zero-infrastructure Discord music bot with bundled Lavalink server. High-fidelity playback, interactive controls, single-container deployment.",
-          url: "https://auralyn.sdad.pro", programmingLanguage: ["JavaScript", "Discord.js", "Lavalink"],
-        },
-      },
-      {
-        "@type": "ListItem", position: 14, item: {
-          "@type": "SoftwareApplication", name: "VeronicaBot", applicationCategory: "WebApplication", operatingSystem: "Linux",
-          description: "Privacy-first Discord bot for real-time YouTube and Twitch live notifications. Self-hosted, zero telemetry, no cloud lock-in.",
-          url: "https://github.com/instax-dutta/VeronicaBot", programmingLanguage: ["Node.js", "Discord.js", "SQLite", "Redis"],
-        },
-      },
-      {
-        "@type": "ListItem", position: 15, item: {
+        "@type": "ListItem", position: 16, item: {
           "@type": "SoftwareApplication", name: "AMZRelay", applicationCategory: "WebApplication", operatingSystem: "Linux",
           description: "High-performance Discord bot that finds Amazon India products marked as non-returnable. Async scraping with aiohttp, smart JSON caching, interactive pagination.",
           url: "https://github.com/instax-dutta/AMZRelay", programmingLanguage: ["Python", "aiohttp", "BeautifulSoup"],
         },
       },
       {
-        "@type": "ListItem", position: 16, item: {
-          "@type": "SoftwareApplication", name: "Elipso Theme", applicationCategory: "ThemeApplication", operatingSystem: "Linux",
-          description: "Vercel-inspired dark theme for Pterodactyl Panel with Geist typography, mesh gradient auth pages, and fully dark-themed React client.",
-          url: "https://github.com/instax-dutta/elipso-theme", programmingLanguage: ["CSS", "TypeScript", "Tailwind CSS", "Blade"],
-        },
-      },
-      {
         "@type": "ListItem", position: 17, item: {
-          "@type": "SoftwareApplication", name: "Elden Theme", applicationCategory: "ThemeApplication", operatingSystem: "Linux",
-          description: "Sentry-inspired dark theme for Pterodactyl Panel with midnight violet canvas, electric lime accents, neon border glows, and custom Monaco-style terminal controls.",
-          url: "https://github.com/instax-dutta/elden-theme", programmingLanguage: ["CSS", "Tailwind CSS", "Blade", "JavaScript"],
+          "@type": "SoftwareApplication", name: "VeronicaBot", applicationCategory: "WebApplication", operatingSystem: "Linux",
+          description: "Privacy-first Discord bot for real-time YouTube and Twitch live notifications. Self-hosted, zero telemetry, no cloud lock-in.",
+          url: "https://github.com/instax-dutta/VeronicaBot", programmingLanguage: ["Node.js", "Discord.js", "SQLite", "Redis"],
         },
       },
       {
         "@type": "ListItem", position: 18, item: {
+          "@type": "SoftwareApplication", name: "Auralyn", applicationCategory: "WebApplication", operatingSystem: "Linux",
+          description: "Zero-infrastructure Discord music bot with bundled Lavalink server. High-fidelity playback, interactive controls, single-container deployment.",
+          url: "https://auralyn.sdad.pro", programmingLanguage: ["JavaScript", "Discord.js", "Lavalink"],
+        },
+      },
+      {
+        "@type": "ListItem", position: 19, item: {
           "@type": "SoftwareApplication", name: "Elysium", applicationCategory: "ThemeApplication", operatingSystem: "Linux",
           description: "Terminal-native dark theme for Pterodactyl Panel with JetBrains Mono typography and Apple HIG semantic colors.",
           url: "https://github.com/instax-dutta/elysium", programmingLanguage: ["CSS", "Tailwind CSS", "Blade"],
         },
       },
       {
-        "@type": "ListItem", position: 19, item: {
-          "@type": "SoftwareApplication", name: "PacketBuddy", applicationCategory: "WebApplication", operatingSystem: "Cross-Platform",
-          description: "Ultra-lightweight bandwidth monitor and network traffic tracker with real-time stats and zero configuration.",
-          url: "https://github.com/instax-dutta/packet-buddy", programmingLanguage: ["Python", "JavaScript", "Shell"],
-        },
-      },
-      {
         "@type": "ListItem", position: 20, item: {
-          "@type": "SoftwareApplication", name: "Ultimate-Firewall", applicationCategory: "SecurityApplication", operatingSystem: "Linux",
-          description: "Enterprise firewall with comprehensive IP table rules and DDoS protection techniques for Linux systems.",
-          url: "https://github.com/instax-dutta/Ultimate-Firewall", programmingLanguage: ["Bash", "Linux"],
+          "@type": "SoftwareApplication", name: "Elipso Theme", applicationCategory: "ThemeApplication", operatingSystem: "Linux",
+          description: "Vercel-inspired dark theme for Pterodactyl Panel with Geist typography, mesh gradient auth pages, and fully dark-themed React client.",
+          url: "https://github.com/instax-dutta/elipso-theme", programmingLanguage: ["CSS", "TypeScript", "Tailwind CSS", "Blade"],
         },
       },
       {
         "@type": "ListItem", position: 21, item: {
-          "@type": "SoftwareApplication", name: "Forensic-Recovery", applicationCategory: "SecurityApplication", operatingSystem: "Windows",
-          description: "Windows PowerShell tool for forensically-sound digital evidence acquisition with SHA-256 chain-of-custody verification, audit-grade logging, pre-flight space checking, and multi-drive triage.",
-          url: "https://github.com/instax-dutta/Forensic-Recovery", programmingLanguage: ["PowerShell", "SHA-256", "Windows"],
+          "@type": "SoftwareApplication", name: "Elden Theme", applicationCategory: "ThemeApplication", operatingSystem: "Linux",
+          description: "Sentry-inspired dark theme for Pterodactyl Panel with midnight violet canvas, electric lime accents, neon border glows, and custom Monaco-style terminal controls.",
+          url: "https://github.com/instax-dutta/elden-theme", programmingLanguage: ["CSS", "Tailwind CSS", "Blade", "JavaScript"],
         },
       },
     ],
