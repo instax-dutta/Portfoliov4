@@ -6,7 +6,7 @@ const HomeClient = dynamic(() => import("./components/HomeClient"), {
 
 export const metadata: Metadata = {
   title: "Sai Dutta Abhishek Dash | Full Stack Engineer & AI/ML Specialist",
-  description: "Official portfolio of Sai Dutta Abhishek Dash. Expert in Security-first Full Stack Development, AI/ML Engineering, and Cloud Architecture. Explore 25+ production-ready projects including Tooner and Binify. Specialized in Python, React, Next.js, and AWS.",
+  description: "Official portfolio of Sai Dutta Abhishek Dash. Expert in Security-first Full Stack Development, AI/ML Engineering, and Cloud Architecture. Explore 21 production-ready projects including Tooner and Binify. Specialized in Python, React, Next.js, and AWS.",
   keywords: [
     "Sai Dutta Abhishek Dash",
     "sdad.pro",
@@ -40,8 +40,8 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
       <HomeClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. With 20+ production applications and 12 professional experiences across 10+ companies, he specializes in Python, React, Next.js, Node.js, AWS, TensorFlow, and zero-knowledge encryption. AWS Certified and available for remote freelance work worldwide.</p>
-        <p>Stats: 20+ production applications | 12 professional experiences | AWS Certified Cloud Practitioner | Available worldwide | Last updated: June 2026</p>
+        <p>Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. With 21 production applications and 12 professional experiences across 10+ companies, he specializes in Python, React, Next.js, Node.js, AWS, TensorFlow, and zero-knowledge encryption. AWS Certified and available for remote freelance work worldwide.</p>
+        <p>Stats: 21 production applications | 12 professional experiences | AWS Certified Cloud Practitioner | Available worldwide | Last updated: June 2026</p>
       </div>
     </>
   )

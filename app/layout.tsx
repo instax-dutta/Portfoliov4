@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "Sai Dutta Abhishek Dash - Full Stack Developer | AI/ML Engineer | Security Expert",
     template: "%s | Sai Dutta Abhishek Dash",
   },
-  description: "Expert Full Stack Developer & AI/ML Engineer specializing in Security Engineering, Cloud Architecture, and Production Applications. Built 20+ apps including Binify (zero-knowledge encryption), GenieLabs (AI dev platform), Sensory (cloud storage), and PacketBuddy (network monitoring). Expertise in Python, React, Next.js, TypeScript, AWS, TensorFlow. AWS Certified Cloud Practitioner available for innovative projects.",
+  description: "Expert Full Stack Developer & AI/ML Engineer specializing in Security Engineering, Cloud Architecture, and Production Applications. Built 21 apps including Binify (zero-knowledge encryption), GenieLabs (AI dev platform), Sensory (cloud storage), and PacketBuddy (network monitoring). Expertise in Python, React, Next.js, TypeScript, AWS, TensorFlow. AWS Certified Cloud Practitioner available for innovative projects.",
   keywords: [
     "Full Stack Developer",
     "Machine Learning Engineer",
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
     url: "https://sdad.pro",
     siteName: "Sai Dutta Abhishek Dash - Developer Portfolio",
     title: "Sai Dutta Abhishek Dash - Full Stack Developer | AI Engineer | Security Expert",
-    description: "Security-focused Full Stack Developer & AI/ML Engineer with 20+ production applications. Built Binify (zero-knowledge encryption), GenieLabs (AI platform), Sensory (cloud storage), PacketBuddy (network monitoring). Python - React - Next.js - AWS - TensorFlow - TypeScript",
+    description: "Security-focused Full Stack Developer & AI/ML Engineer with 21 production applications. Built Binify (zero-knowledge encryption), GenieLabs (AI platform), Sensory (cloud storage), PacketBuddy (network monitoring). Python - React - Next.js - AWS - TensorFlow - TypeScript",
     images: [
       {
         url: "/og-image.png",
@@ -130,7 +130,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sai Dutta Abhishek Dash - Full Stack Developer | AI Engineer | Security Expert",
-    description: "Security-focused Full Stack Developer & AI/ML Engineer. Built 20+ apps: Binify (encryption), GenieLabs (AI), Sensory (cloud), PacketBuddy (monitoring). Python - React - Next.js - AWS - TensorFlow",
+    description: "Security-focused Full Stack Developer & AI/ML Engineer. Built 21 apps: Binify (encryption), GenieLabs (AI), Sensory (cloud), PacketBuddy (monitoring). Python - React - Next.js - AWS - TensorFlow",
     images: ["/og-image.png"],
     creator: "@abhishekdash69",
     site: "@abhishekdash69",
@@ -173,7 +173,7 @@ const faqStructuredData = {
       "name": "Who is Sai Dutta Abhishek Dash?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. He has delivered 20+ production applications serving thousands of users and is AWS Certified."
+        "text": "Sai Dutta Abhishek Dash is a Full Stack Engineer & AI Specialist based in Bhubaneswar, India. He builds production-ready applications at the intersection of full-stack engineering, AI/ML, and security. He has delivered 21 production applications serving thousands of users and is AWS Certified."
       }
     },
     {
@@ -197,7 +197,7 @@ const faqStructuredData = {
       "name": "What projects has Sai Dutta Abhishek Dash built?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He has built 20+ production applications including Tooner (document tokenization for LLMs), Binify (zero-knowledge encrypted pastebin), GenieLabs (AI-powered development platform), Sensory (scalable cloud storage), Auralyn (Discord music bot), and PacketBuddy (network usage tracker)."
+        "text": "He has built 21 production applications including Tooner (document tokenization for LLMs), Binify (zero-knowledge encrypted pastebin), GenieLabs (AI-powered development platform), Sensory (scalable cloud storage), Auralyn (Discord music bot), and PacketBuddy (network usage tracker)."
       }
     },
     {
