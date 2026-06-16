@@ -20,7 +20,7 @@ export default function HomeClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...transitionSmooth }}
             >
-              Full Stack Engineer & AI Specialist
+              AI Infrastructure Engineer
             </motion.span>
 
             <motion.h1
@@ -38,8 +38,10 @@ export default function HomeClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: transitionSmooth.ease }}
             >
-              I build production-ready applications at the intersection of full-stack engineering,
-              AI/ML, and security. Based in Bhubaneswar — available worldwide.
+              Building open-source AI infrastructure, developer tools, and security products used by engineers, creators, and self-hosters worldwide.
+              <span className="block text-bmw-muted text-sm mt-4 font-normal">
+                20+ deployed products • 50+ public repositories • AI, Security & Infrastructure
+              </span>
             </motion.p>
 
             <motion.div
@@ -49,7 +51,7 @@ export default function HomeClient() {
               transition={{ duration: 0.6, delay: 0.45, ease: transitionSmooth.ease }}
             >
               <Link href="/projects" className="bmw-btn group">
-                View Projects
+                Explore Projects
                 <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
               <Link href="/contact" className="bmw-btn">
