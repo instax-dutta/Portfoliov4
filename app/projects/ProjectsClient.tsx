@@ -9,7 +9,7 @@ const projects = [
   {
     title: "MarkItDownJS",
     subtitle: "Universal Document-to-Markdown Engine",
-    description: "AST-first document ingestion and conversion platform for TypeScript. Convert PDF, DOCX, PPTX, XLSX, HTML, EPUB, CSV, JSON, XML, images, audio, and archives into structured AI-ready Markdown. Plugin architecture, 20 packages, chunking for RAG, runs in Node, Bun, Deno, and browsers.",
+    description: "AST-first document ingestion and conversion platform for TypeScript. Converts PDFs, Office docs, images, and audio into structured AI-ready Markdown with RAG chunking.",
     technologies: ["TypeScript", "Node.js", "Turborepo", "pnpm", "Vite"],
     link: "https://github.com/instax-dutta/MarkItDownJS",
     github: "https://github.com/instax-dutta/MarkItDownJS",
@@ -17,7 +17,7 @@ const projects = [
   {
     title: "PraharShield",
     subtitle: "Minecraft Velocity Anti-Bot Filter",
-    description: "High-performance bot filtering plugin for Minecraft Velocity proxies built on LimboAPI. Layered limbo-based handshake with falling check, CAPTCHA, client brand/settings fingerprinting, and IP rate limiting. Handles 100k JPS join-flood attacks on 1 GB RAM VPS.",
+    description: "High-performance bot filtering plugin for Minecraft Velocity proxies. Features CAPTCHA handshakes and client fingerprinting to block 100k join-flood JPS attacks on 1GB RAM VPS.",
     technologies: ["Java", "Velocity", "LimboAPI", "Gradle", "AGPLv3"],
     link: "https://github.com/instax-dutta/PraharShield",
     github: "https://github.com/instax-dutta/PraharShield",
@@ -25,7 +25,7 @@ const projects = [
   {
     title: "CL-Chat Reborn",
     subtitle: "P2P Encrypted Command-Line Chat",
-    description: "Peer-to-peer command-line chat with per-connection ECDH (X25519) encryption, ChaCha20-Poly1305 AEAD, mesh message propagation with UUID dedup sliding window, TOFU fingerprint verification against MITM, nickname system, rate limiting, and full input sanitization. No servers, no accounts, no logs. 81 pytest tests across all modules.",
+    description: "P2P command-line chat with X25519 ECDH encryption and ChaCha20-Poly1305 AEAD. Features serverless mesh propagation, TOFU fingerprint verification, and full input sanitization.",
     technologies: ["Python", "Cryptography", "X25519 ECDH", "ChaCha20-Poly1305", "HKDF-SHA256", "pytest"],
     link: "https://github.com/instax-dutta/cl-chat-reborn",
     github: "https://github.com/instax-dutta/cl-chat-reborn",
@@ -55,7 +55,7 @@ const projects = [
   {
     title: "AiScribe",
     subtitle: "AI Audio Transcription",
-    description: "Transcribe audio files instantly using AI. Free to start, no account needed. Features drag-and-drop upload, multiple Whisper models, language auto-detect, and export to TXT or SRT with a secure server-side Groq proxy.",
+    description: "Instant AI audio transcription featuring drag-and-drop upload, language auto-detection, and export to TXT/SRT formats via a secure server-side Groq proxy.",
     technologies: ["Next.js 16", "TypeScript 5", "Groq Whisper", "Lenis", "Vanilla CSS"],
     link: "https://ais.sdad.pro",
     github: "https://github.com/instax-dutta/aiscribe",
@@ -63,7 +63,7 @@ const projects = [
   {
     title: "Vulscany",
     subtitle: "AI-Powered Code Security Agent",
-    description: "Private, self-hostable AI-powered code security scanner — originally the core product of a venture-backed startup, now open-sourced. Features AI-powered fix generation, multi-language scanning (React, Next.js, TypeScript, JavaScript, Python), real-time CVE matching and GitHub Advisory correlation, batch scanning for entire orgs with severity-sorted summaries, GitHub OAuth integration, and automated PR creation. Privacy-first architecture — source code never leaves the machine. Zero external services: no database, no Redis, no cloud dependencies — just npm run dev.",
+    description: "Private, self-hostable AI code scanner with automated fix generation. Features multi-language scanning, real-time CVE matching, and GitHub OAuth with zero database dependencies.",
     technologies: ["Next.js 16", "TypeScript", "Mistral AI", "Ollama", "Tailwind CSS", "GitHub OAuth"],
     link: "https://github.com/instax-dutta/vulscany",
     github: "https://github.com/instax-dutta/vulscany",
@@ -71,7 +71,7 @@ const projects = [
   {
     title: "Send-Finder",
     subtitle: "Find the Fastest Send Server Near You",
-    description: "Benchmarks 23+ community-hosted encrypted file sharing (Send) servers directly from your browser with an interactive 3D globe visualization. Fully zero-knowledge and client-side — no data is sent to any server during benchmarking. Helps users discover the geographically closest and fastest Send instance for peer-to-peer encrypted file transfers.",
+    description: "Browser-based benchmark tool for 23+ community Send servers with a 3D globe visualization. 100% client-side and zero-knowledge to discover the fastest file-sharing instance.",
     technologies: ["JavaScript", "Three.js", "Web API"],
     link: "https://ssf.sdad.pro",
     github: "https://github.com/instax-dutta/Send-Finder",
@@ -87,7 +87,7 @@ const projects = [
   {
     title: "Epoxy",
     subtitle: "Free-tier LLM Proxy for Hermes Agent",
-    description: "Unified OpenAI-compatible proxy that pools free-tier Groq, Ollama Cloud & Mistral API keys behind a single endpoint. Features automatic key rotation (round-robin, fill-first, least-used, random), intelligent cooldown handling (429→1h, 402→24h, 401→permanent removal), cross-provider fallback, keyword-based model routing, and hot-reload via .env monitoring. Deploy via Docker or Pterodactyl with multi-arch images for amd64 and arm64.",
+    description: "OpenAI-compatible LLM proxy that pools free-tier keys with automatic rotation and cooldown handling. Features keyword routing, .env hot-reloads, and Docker/Pterodactyl support.",
     technologies: ["Python", "Docker", "Groq", "Ollama Cloud", "Mistral AI"],
     link: "https://github.com/instax-dutta/epoxy",
     github: "https://github.com/instax-dutta/epoxy",
@@ -96,7 +96,7 @@ const projects = [
   {
     title: "Discactyl",
     subtitle: "Pterodactyl Panel Discord Controller",
-    description: "Stop switching tabs. Control your entire Pterodactyl panel directly from Discord — manage servers, users, nodes, and backups through slash commands and interactive components with role-based access.",
+    description: "Control your Pterodactyl server panel directly from Discord. Manage servers, backups, and nodes through slash commands and interactive UI with role-based access control.",
     technologies: ["TypeScript", "Discord.js", "Node.js", "SQLite", "Docker", "AES-256-GCM"],
     link: "https://github.com/instax-dutta/discactyl",
     github: "https://github.com/instax-dutta/discactyl",
@@ -104,7 +104,7 @@ const projects = [
   {
     title: "Auralyn",
     subtitle: "Discord Music Bot with Integrated Lavalink",
-    description: "Zero-infrastructure Discord music bot with bundled Lavalink server. High-fidelity playback, smart track resolution with priority-based search, interactive controls, and single-container deployment for Pelican/Pterodactyl panels.",
+    description: "Zero-infrastructure Discord music bot with a bundled Lavalink server. Features high-fidelity playback, smart search, and single-container Docker deployment.",
     technologies: ["JavaScript", "Discord.js", "Lavalink", "Node.js", "Docker"],
     link: "https://auralyn.sdad.pro",
     github: "https://github.com/instax-dutta/Auralyn",
@@ -120,7 +120,7 @@ const projects = [
   {
     title: "AMZRelay",
     subtitle: "Amazon Non-Returnable Products Finder",
-    description: "A high-performance Discord bot that finds products on Amazon India explicitly marked as non-returnable. Async scraping with aiohttp, smart JSON caching, interactive pagination, and 10-50x faster than Selenium-based alternatives.",
+    description: "Discord bot that scans Amazon India for non-returnable products using fast aiohttp scraping. Features smart JSON caching and interactive pagination.",
     technologies: ["Python", "aiohttp", "BeautifulSoup", "py-cord", "Asyncio"],
     link: "https://discord.com/api/oauth2/authorize?client_id=1509572599422910626&permissions=0&scope=bot%20applications.commands",
     github: "https://github.com/instax-dutta/AMZRelay",
@@ -129,7 +129,7 @@ const projects = [
   {
     title: "Elipso Theme",
     subtitle: "Vercel Dark Theme for Pterodactyl",
-    description: "A Vercel-inspired dark theme for Pterodactyl Panel featuring near-black canvas, Geist & Geist Mono typography, mesh gradient auth pages, and fully dark-themed React client and admin panel.",
+    description: "Vercel-inspired dark theme for Pterodactyl Panel. Features a near-black canvas, Geist typography, mesh gradient auth pages, and fully dark-themed panels.",
     technologies: ["CSS", "TypeScript", "Tailwind CSS", "Blade", "Shell", "Geist"],
     link: "https://github.com/instax-dutta/elipso-theme",
     github: "https://github.com/instax-dutta/elipso-theme",
@@ -137,7 +137,7 @@ const projects = [
   {
     title: "Elden Theme",
     subtitle: "Sentri Dark Theme for Pterodactyl",
-    description: "A premium dark theme for Pterodactyl Panel inspired by Sentry's design language — midnight violet canvas, electric lime accents, neon border glows, and custom Monaco-style terminal controls.",
+    description: "Premium dark theme for Pterodactyl Panel inspired by Sentry. Features a midnight violet canvas, electric lime accents, neon glows, and custom terminal controls.",
     technologies: ["CSS", "Tailwind CSS", "Blade", "Shell", "JavaScript"],
     link: "https://github.com/instax-dutta/elden-theme",
     github: "https://github.com/instax-dutta/elden-theme",
@@ -145,7 +145,7 @@ const projects = [
   {
     title: "Elysium",
     subtitle: "Monospaced Pterodactyl Panel Theme",
-    description: "A terminal-native dark theme for Pterodactyl Panel inspired by OpenCode — 100% JetBrains Mono typography, flat-with-hairline design, ASCII-bracket glyphs, and Apple HIG semantic colors.",
+    description: "Terminal-native monospaced theme for Pterodactyl Panel. Features 100% JetBrains Mono typography, flat-with-hairline layout, and Apple HIG semantic colors.",
     technologies: ["CSS", "JetBrains Mono", "Blade", "Shell", "Tailwind CSS", "Terminal UI"],
     link: "https://github.com/instax-dutta/elysium",
     github: "https://github.com/instax-dutta/elysium",
@@ -168,7 +168,7 @@ const projects = [
   {
     title: "Forensic-Recovery",
     subtitle: "Forensically-Sound Digital Evidence Acquisition Tool",
-    description: "Windows PowerShell tool for forensically-sound digital evidence acquisition. Targets user-generated files (documents, images, videos, audio) across multiple drives while automatically excluding system artifacts (Windows, Program Files, Recycle Bin, System Volume Information). Features SHA-256 chain-of-custody verification on every file copy, audit-grade timestamped logging with per-file CSV reports, dry-run mode, space pre-flight check with 10% headroom warning, and multi-drive triage (C:, D: by default). Built for incident responders, forensic examiners, and law enforcement — read-only acquisition with no source files modified or deleted.",
+    description: "PowerShell digital evidence acquisition tool with SHA-256 chain-of-custody verification. Features automated system file exclusion, audit logs, dry-run mode, and multi-drive triage.",
     technologies: ["PowerShell", "SHA-256", "Windows"],
     link: "https://github.com/instax-dutta/Forensic-Recovery",
     github: "https://github.com/instax-dutta/Forensic-Recovery",
