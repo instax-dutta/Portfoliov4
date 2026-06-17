@@ -1,18 +1,27 @@
 "use client"
 
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
 import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from "lucide-react"
 import { transitionSmooth } from "../lib/animation"
+
+const AerodynamicStream = dynamic(() => import("./AerodynamicStream"), {
+  ssr: false,
+})
 
 export default function HomeClient() {
   return (
     <main className="min-h-screen bg-bmw-canvas flex flex-col">
       <Navigation />
 
-      <section className="flex-1 flex flex-col justify-center px-6 pt-16">
-        <div className="max-w-[1440px] mx-auto w-full">
+      <section className="flex-1 flex flex-col justify-center px-6 pt-16 relative overflow-hidden">
+        <div className="max-w-[1440px] mx-auto w-full relative z-10">
+          {/* 3D Component - AerodynamicStream (can be easily removed/commented) */}
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-[45%] h-[350px] lg:h-[550px] pointer-events-none z-0 opacity-60">
+            <AerodynamicStream />
+          </div>
           <div className="max-w-5xl">
             <motion.span
               className="bmw-label inline-block mb-6"
