@@ -5,42 +5,43 @@ const AboutClient = dynamic(() => import("./AboutClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "About Me | Sai Dutta Abhishek Dash - AI Infrastructure & Systems",
-  description: "Learn about the engineering philosophy of Sai Dutta Abhishek Dash. Specializing in high-performance AI infrastructure, developer platforms, and privacy-focused systems.",
+  title: "About | Sai Dutta Abhishek Dash — Founder & Engineer",
+  description: "Building AI infrastructure, language technology, and security systems at production scale. 20+ shipped products. Active across multiple deep-tech ventures. Open to investment and partnerships.",
   keywords: [
-    "Engineering Profile",
+    "Founder Profile",
+    "Builder",
     "AI Infrastructure",
+    "Language AI",
     "Security Engineering",
-    "Developer Tooling",
-    "Privacy Engineering",
-    "Distributed Systems",
-    "Cloud Architecture",
-    "Self-Hosted Platforms",
-    "Sai Dutta Abhishek Dash Background",
-    "Open Source Developer"
+    "Product Engineering",
+    "Open Source",
+    "Deep Tech",
+    "Investment Ready",
+    "Sai Dutta Abhishek Dash"
   ],
   alternates: {
     canonical: "https://sdad.pro/about",
   },
   openGraph: {
-    title: "About Me | Sai Dutta Abhishek Dash - AI Infrastructure & Systems",
-    description: "Learn about the engineering philosophy of Sai Dutta Abhishek Dash. Specializing in high-performance AI infrastructure, developer platforms, and privacy-focused systems.",
+    title: "About — Sai Dutta Abhishek Dash",
+    description: "Building AI infrastructure, language technology for underserved markets, and security systems. 85+ repos, 46+ HF models, 20+ shipped products.",
     url: "https://sdad.pro/about",
-    siteName: "Sai Dutta Abhishek Dash Portfolio",
+    siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "About Sai Dutta Abhishek Dash - AI Infrastructure & Systems",
+        alt: "Sai Dutta Abhishek Dash — Founder & Engineer",
       },
     ],
-    type: "website",
+    type: "profile",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Me | Sai Dutta Abhishek Dash - AI Infrastructure & Systems",
-    description: "Engineering philosophy of Sai Dutta Abhishek Dash, specializing in AI infrastructure and developer platforms.",
+    title: "About | Sai Dutta Abhishek Dash — Founder & Engineer",
+    description: "Building AI infrastructure, language technology, and security systems. 20+ shipped products.",
     images: ["/og-image.png"],
   }
 }
@@ -52,19 +53,43 @@ const aboutStructuredData = {
       "@type": "AboutPage",
       "@id": "https://sdad.pro/about/#webpage",
       "url": "https://sdad.pro/about",
-      "name": "About Sai Dutta Abhishek Dash",
-      "description": "Engineering profile and background of Sai Dutta Abhishek Dash, AI Infrastructure & Security Engineer.",
+      "name": "About Sai Dutta Abhishek Dash — Founder & Engineer",
+      "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 85+ public repositories, 46+ Hugging Face models.",
+      "dateModified": "2026-08-31",
       "mainEntity": {
         "@type": "Person",
         "@id": "https://sdad.pro/#person",
         "name": "Sai Dutta Abhishek Dash",
         "url": "https://sdad.pro",
         "image": "https://sdad.pro/og-image.png",
-        "description": "AI Infrastructure, Security Engineering & Developer Tooling Specialist.",
+        "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale.",
+        "jobTitle": "Founder & Engineer",
+        "nationality": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "knowsAbout": [
+          "AI Infrastructure",
+          "Language AI",
+          "On-Device ML",
+          "Security Engineering",
+          "LLM Inference",
+          "Tokenizer Optimization",
+          "Privacy Engineering",
+          "Open Source Software"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "AWS Certified Cloud Practitioner",
+            "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" }
+          }
+        ],
         "sameAs": [
           "https://github.com/instax-dutta",
           "https://www.linkedin.com/in/sdabhishekdash/",
-          "https://twitter.com/abhishekdash69"
+          "https://twitter.com/abhishekdash69",
+          "https://huggingface.co/saidutta69"
         ]
       }
     },
@@ -85,8 +110,8 @@ export default function AboutPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutStructuredData) }} />
       <AboutClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash is an AI Infrastructure & Security Engineer. He builds self-hosted developer platforms, LLM gateways, and privacy-focused systems. His toolkit spans Python, React, Next.js, Rust, AWS, and Docker. Learn about his focus areas, including AI infrastructure, security engineering, and open-source tooling.</p>
-        <p>Last updated: June 2026</p>
+        <p>Sai Dutta Abhishek Dash is a founder and engineer building AI infrastructure, language technology for underserved markets, and security systems. He has shipped 20+ production products across LLM inference engines, on-device ML models, code security agents, privacy-first platforms, and developer tooling. His toolkit spans Python, TypeScript, Rust, C++, Next.js, AWS, and Docker.</p>
+        <p>Last updated: August 2026</p>
       </div>
     </>
   )

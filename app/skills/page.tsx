@@ -22,16 +22,17 @@ export const metadata: Metadata = {
     canonical: "https://sdad.pro/skills",
   },
   openGraph: {
-    title: "Engineering Toolkit & Tech Stack | Sai Dutta Abhishek Dash",
-    description: "Complete tech stack of Sai Dutta Abhishek Dash. Spanning languages, AI & data, infrastructure, and security engineering.",
+    title: "Engineering Toolkit — Sai Dutta Abhishek Dash",
+    description: "Python, TypeScript, Rust, C/C++, PyTorch, TensorFlow, Docker, AWS. Full-stack AI infrastructure and security engineering toolkit.",
     url: "https://sdad.pro/skills",
-    siteName: "Sai Dutta Abhishek Dash Portfolio",
+    siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Skills Toolkit - Sai Dutta Abhishek Dash",
+        alt: "Sai Dutta Abhishek Dash — Engineering Toolkit",
       },
     ],
     type: "website",
@@ -91,8 +92,8 @@ export default function SkillsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(skillsStructuredData) }} />
       <SkillsClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash's technical toolkit includes Languages & Frameworks (Python, TypeScript, JavaScript, React, Next.js, Node.js, PostgreSQL, MongoDB, Java, C++, Rust, SQL), AI & Data (PyTorch, TensorFlow, scikit-learn, Ollama, Hugging Face, LangChain, OpenCV, NumPy, Pandas, Mistral AI, Gemini API), Infrastructure (Docker, Linux, AWS, GitHub Actions, Nginx, Bash, Kubernetes, Vercel, Netlify), and Specializations (AI Infrastructure, Security Engineering, Developer Tooling, Self-Hosted Platforms, Open Source, Distributed Systems, Cloud Architecture, Privacy Engineering).</p>
-        <p>Last updated: June 2026</p>
+        <p>Sai Dutta Abhishek Dash's technical toolkit includes Languages & Frameworks (Python, TypeScript, JavaScript, Rust, C/C++, Java, Go, React, Next.js, Node.js, PostgreSQL, MongoDB), AI & Data (PyTorch, TensorFlow, scikit-learn, Ollama, Hugging Face, LangChain, OpenCV, Mistral AI), Infrastructure (Docker, Linux, AWS, Kubernetes, GitHub Actions, Nginx, Bash, Vercel, Netlify), and Specializations (AI Infrastructure, Language AI, On-Device ML, Security Engineering, Developer Tooling, Open Source, Product Engineering, Privacy Engineering).</p>
+        <p>Last updated: August 2026</p>
       </div>
     </>
   )

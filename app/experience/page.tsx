@@ -5,41 +5,42 @@ const ExperienceClient = dynamic(() => import("./ExperienceClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Professional Journey & Experience | Sai Dutta Abhishek Dash",
-  description: "Explore the career history of Sai Dutta Abhishek Dash. Spanning startup leadership at RacerNodes, enterprise engineering at Tech Mahindra, and open-source developer tooling.",
+  title: "Builder Timeline | Sai Dutta Abhishek Dash",
+  description: "Building across AI infrastructure, language technology, security systems, and product engineering. From founder-led ventures to enterprise experience and open-source development at scale.",
   keywords: [
-    "Experience Timeline",
-    "Tech Mahindra Associate",
-    "RacerNodes founder",
-    "Software Engineering career",
-    "AI systems history",
-    "Systems Engineer",
+    "Founder Timeline",
+    "Builder Journey",
     "AI Infrastructure",
+    "Language AI",
     "Security Engineering",
-    "Developer Tooling"
+    "Product Engineering",
+    "Open Source Development",
+    "Enterprise Experience",
+    "Startup Building"
   ],
   alternates: {
     canonical: "https://sdad.pro/experience",
   },
   openGraph: {
-    title: "Professional Journey & Experience | Sai Dutta Abhishek Dash",
-    description: "Explore the career history of Sai Dutta Abhishek Dash. Spanning startup leadership, enterprise experience, and open-source development.",
+    title: "Builder Timeline — Sai Dutta Abhishek Dash",
+    description: "Founder at Maelis Research, Co-Founder at Offsage, and enterprise experience at Tech Mahindra. Building across AI infrastructure and language technology.",
     url: "https://sdad.pro/experience",
-    siteName: "Sai Dutta Abhishek Dash Portfolio",
+    siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Experience of Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
+        alt: "Sai Dutta Abhishek Dash — Builder Timeline",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Journey & Experience | Sai Dutta Abhishek Dash",
-    description: "Career journey of Sai Dutta Abhishek Dash, from Tech Mahindra to founding RacerNodes.",
+    title: "Builder Timeline | Sai Dutta Abhishek Dash",
+    description: "Building across AI infrastructure, language technology, and product engineering at scale.",
     images: ["/og-image.png"],
   }
 }
@@ -53,6 +54,7 @@ const experienceStructuredData = {
       "name": "Sai Dutta Abhishek Dash",
       "url": "https://sdad.pro",
       "email": "contact@sdad.pro",
+      "jobTitle": "Founder & Engineer",
       "sameAs": [
         "https://github.com/instax-dutta",
         "https://www.linkedin.com/in/sdabhishekdash/",
@@ -74,15 +76,55 @@ const experienceStructuredData = {
     },
     {
       "@type": "Organization",
-      "@id": "https://sdad.pro/experience/#techmahindra",
-      "name": "Tech Mahindra",
-      "url": "https://www.techmahindra.com"
+      "@id": "https://sdad.pro/experience/#maelisresearch",
+      "name": "Maelis Research",
+      "description": "Language AI infrastructure for Odia and low-resource Indian languages. Building tokenizer optimization, LLMs, speech recognition, and translation APIs.",
+      "url": "https://maelis.sdad.pro",
+      "foundingDate": "2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhenkanal",
+        "addressRegion": "Odisha",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://maelis.sdad.pro",
+        "https://huggingface.co/MaelisResearch"
+      ]
+    },
+    {
+      "@type": "OrganizationRole",
+      "@id": "https://sdad.pro/experience/#maelisresearch-role",
+      "roleName": "Founder",
+      "description": "Building language AI infrastructure for 38 million Odia speakers. Developing Odia-optimized tokenizer, Lekhani model family, Shruti speech recognition, and Anuvada translation.",
+      "startDate": "2026-08",
+      "organization": { "@id": "https://sdad.pro/experience/#maelisresearch" },
+      "employee": { "@id": "https://sdad.pro/#person" }
     },
     {
       "@type": "Organization",
-      "@id": "https://sdad.pro/experience/#racernodes",
-      "name": "RacerNodes",
-      "description": "Game server hosting startup."
+      "@id": "https://sdad.pro/experience/#offsage",
+      "name": "Offsage",
+      "description": "Smart engineering for ambitious brands. Digital and technical agency specializing in business automation, SaaS development, and web engineering for startups and scaling teams.",
+      "url": "https://offsage.com",
+      "sameAs": [
+        "https://offsage.com"
+      ]
+    },
+    {
+      "@type": "OrganizationRole",
+      "@id": "https://sdad.pro/experience/#offsage-role",
+      "roleName": "Co-Founder",
+      "description": "Co-founded a technical agency eliminating operational friction for startups and scaling teams — from first automation to full-scale SaaS.",
+      "startDate": "2025-09",
+      "organization": { "@id": "https://sdad.pro/experience/#offsage" },
+      "employee": { "@id": "https://sdad.pro/#person" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sdad.pro/experience/#techmahindra",
+      "name": "Tech Mahindra",
+      "url": "https://www.techmahindra.com"
     },
     {
       "@type": "BreadcrumbList",
@@ -101,8 +143,8 @@ export default function ExperiencePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(experienceStructuredData) }} />
       <ExperienceClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash has professional experience spanning freelance full-stack development, an Associate role at Tech Mahindra, multiple machine learning and software engineering internships, and entrepreneurship as CEO & Co-Founder of RacerNodes. His career highlights focus on AI systems, security engineering, and developer infrastructure.</p>
-        <p>Last updated: June 2026</p>
+        <p>Sai Dutta Abhishek Dash is building across AI infrastructure, language technology, security systems, and product engineering. His timeline includes founder-led ventures in deep-tech AI and language infrastructure, co-founding a technical agency, enterprise experience at Tech Mahindra, and multiple ML and software engineering internships.</p>
+        <p>Last updated: August 2026</p>
       </div>
     </>
   )

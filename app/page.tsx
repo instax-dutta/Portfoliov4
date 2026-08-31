@@ -5,48 +5,51 @@ const HomeClient = dynamic(() => import("./components/HomeClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
-  description: "Official portfolio of Sai Dutta Abhishek Dash, AI Infrastructure & Security Engineer. Expert in LLM gateways, code security agents, distributed systems, and self-hosted developer tools. Built 20 production platforms including Epoxy, Vulscany, and MarkItDownJS.",
+  title: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
+  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products spanning on-device ML, LLM inference engines, privacy-first platforms, and developer tooling. Active across multiple deep-tech ventures.",
   keywords: [
-    "AI Infrastructure Engineer",
+    "Founder",
+    "Builder",
+    "AI Infrastructure",
+    "Language AI",
+    "Indic Languages",
+    "On-Device ML",
     "Security Engineering",
     "Developer Tooling",
-    "Open Source Software",
-    "Self-Hosted Applications",
-    "Distributed Systems",
-    "Full Stack Engineering",
-    "Software Architecture",
+    "Production Systems",
+    "Open Source",
+    "LLM Inference",
+    "Edge AI",
+    "Privacy Engineering",
+    "Deep Tech",
     "Sai Dutta Abhishek Dash",
     "sdad.pro",
-    "Bhubaneswar Tech Expert",
-    "India Software Engineer",
-    "LLM proxy",
-    "P2P encrypted chat",
-    "zero-knowledge",
-    "privacy-first"
+    "Odisha",
+    "India"
   ],
   alternates: {
     canonical: "https://sdad.pro/",
   },
   openGraph: {
-    title: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
-    description: "Official portfolio of Sai Dutta Abhishek Dash, AI Infrastructure & Security Engineer. Builder of LLM gateways, code security agents, and self-hosted platforms.",
+    title: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    description: "Building AI infrastructure, language technology for underserved markets, and security systems. 85+ repos, 46+ HF models, 20+ shipped products.",
     url: "https://sdad.pro/",
-    siteName: "Sai Dutta Abhishek Dash Portfolio",
+    siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
+        alt: "Sai Dutta Abhishek Dash — Founder & Engineer",
       },
     ],
-    type: "website",
+    type: "profile",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
-    description: "Official portfolio of Sai Dutta Abhishek Dash. Builder of LLM gateways, code security agents, and self-hosted platforms.",
+    title: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    description: "Building AI infrastructure, language technology, and security systems. 85+ repos, 46+ HF models.",
     images: ["/og-image.png"],
   }
 }
@@ -60,37 +63,42 @@ const homeStructuredData = {
       "name": "Sai Dutta Abhishek Dash",
       "url": "https://sdad.pro",
       "image": "https://sdad.pro/og-image.png",
-      "description": "AI Infrastructure, Security Engineering & Developer Tooling Specialist.",
+      "description": "Founder and engineer building AI infrastructure, language technology, and security systems at production scale.",
       "sameAs": [
         "https://github.com/instax-dutta",
         "https://www.linkedin.com/in/sdabhishekdash/",
-        "https://twitter.com/abhishekdash69"
+        "https://twitter.com/abhishekdash69",
+        "https://huggingface.co/saidutta69"
       ],
       "email": "contact@sdad.pro",
-      "jobTitle": "AI Infrastructure & Security Engineer",
+      "jobTitle": "Founder & Engineer",
       "knowsAbout": [
         "AI Infrastructure",
+        "Language AI",
+        "On-Device ML",
         "Security Engineering",
         "Developer Tooling",
-        "Self-Hosted Platforms",
+        "LLM Inference",
+        "Tokenizer Optimization",
+        "Privacy Engineering",
+        "Product Engineering",
         "Open Source Software",
-        "Distributed Systems",
-        "Cloud Architecture",
-        "Privacy Engineering"
+        "Startup Building"
       ]
     },
     {
       "@type": "WebSite",
       "@id": "https://sdad.pro/#website",
       "url": "https://sdad.pro",
-      "name": "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer Portfolio",
+      "name": "Sai Dutta Abhishek Dash — Founder & Engineer",
+      "dateModified": "2026-08-31",
       "publisher": { "@id": "https://sdad.pro/#person" }
     },
     {
       "@type": "ProfilePage",
       "@id": "https://sdad.pro/#profile",
       "url": "https://sdad.pro",
-      "name": "Sai Dutta Abhishek Dash Professional Profile Page",
+      "name": "Sai Dutta Abhishek Dash — Founder & Engineer Profile",
       "mainEntity": { "@id": "https://sdad.pro/#person" }
     },
     {
@@ -109,8 +117,8 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }} />
       <HomeClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash is an AI Infrastructure & Security Engineer based in Bhubaneswar, India. He builds high-performance, privacy-focused, and self-hosted open-source software, including LLM gateways, code security agents, distributed systems, and developer tooling. With 20 production systems deployed worldwide, his technical capabilities cover Python, Next.js, React, Rust, AWS, Docker, Kubernetes, and cryptographic security.</p>
-        <p>Stats: 20 production systems | 5 professional roles | AWS Certified | Available for consulting and collaboration | Last updated: June 2026</p>
+        <p>Sai Dutta Abhishek Dash is a founder and engineer based in Odisha, India, building AI infrastructure, language technology for underserved markets, and security systems. He has shipped production products and maintains 85+ public repositories spanning LLM inference engines, on-device ML models, code security agents, privacy-first platforms, developer tooling, and 6 AI agent skills. His technical capabilities cover Python, TypeScript, Rust, C++, Next.js, AWS, Docker, and production infrastructure.</p>
+        <p>Stats: 20+ shipped products | 85+ public repositories | 6 AI agent skills | Multiple ventures in deep-tech AI | Open to investment and strategic partnerships | Last updated: August 2026</p>
       </div>
     </>
   )

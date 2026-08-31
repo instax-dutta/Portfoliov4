@@ -7,14 +7,33 @@ import { transitionSmooth } from "../lib/animation"
 
 const experiences = [
   {
-    title: "Freelance Full Stack Developer",
-    company: "Self-Employed",
+    title: "Founder",
+    company: "Maelis Research",
+    date: "August 2026 – Present",
+    type: "Founder",
+    location: "Dhenkanal, Odisha",
+    description: "Building language AI infrastructure for Odia and low-resource Indian languages. Developing an Odia-optimized tokenizer (3x more efficient than generic alternatives), a family of Odia-exclusive LLMs (Lekhani), speech recognition (Shruti), and translation (Anuvada) APIs. All research released under Apache 2.0.",
+    skills: ["Language AI", "Tokenizer Optimization", "Model Distillation", "On-Device ML", "NLP", "Low-Resource Languages", "Product Strategy", "Research"],
+    achievements: [
+      "Building the first commercial Odia-specific AI API",
+      "3x more efficient tokenizer for Brahmic scripts",
+      "Odia-exclusive LLM family with Apache 2.0 licensing",
+      "Published unified Odia evaluation benchmark on Hugging Face"
+    ],
+  },
+  {
+    title: "Co-Founder",
+    company: "Offsage",
     date: "September 2025 – Present",
-    type: "Freelance",
+    type: "Startup",
     location: "Remote",
-    description: "Providing full-stack development services to clients, building scalable web applications, and delivering end-to-end solutions from frontend to backend.",
-    skills: ["Full Stack Development", "Web Applications", "Client Services", "Project Management", "React", "Node.js", "Database Design"],
-    achievements: ["Delivering custom web solutions", "Working with diverse client projects", "Building scalable applications"],
+    description: "Co-founded a technical agency eliminating operational friction for startups and scaling teams — from first automation to full-scale SaaS. Discipline-first web engineering, measured animation systems, and conversion-optimized infrastructure. Built in India, deployed globally.",
+    skills: ["Technical Leadership", "SaaS Development", "Business Automation", "Web Engineering", "Client Delivery", "Product Architecture"],
+    achievements: [
+      "Built and led engineering delivery for startups and scaling teams",
+      "Delivered end-to-end automation and SaaS solutions",
+      "Established discipline-first web engineering practice"
+    ],
   },
   {
     title: "Associate",
@@ -96,9 +115,9 @@ export default function Experience() {
       >
         <motion.div className="mb-16" variants={itemVariants}>
           <span className="bmw-label inline-block mb-4">Experience</span>
-          <h1 className="bmw-display-lg mb-4">Professional Journey</h1>
+          <h1 className="bmw-display-lg mb-4">Builder Timeline</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            Career progression across software engineering, AI systems, infrastructure, and entrepreneurship—spanning startup leadership, enterprise experience, and open-source development. View my complete work history and associated applications in the <Link href="/projects" className="underline hover:text-bmw-m-blue-light transition-colors">projects showcase</Link>.
+            Building across AI infrastructure, language technology, security systems, and product engineering — from founder-led ventures to enterprise experience and open-source development at scale. See what I ship in the <Link href="/projects" className="underline hover:text-bmw-m-blue-light transition-colors">projects showcase</Link>.
           </p>
         </motion.div>
 
@@ -157,9 +176,9 @@ export default function Experience() {
 
         <motion.div className="mt-20 grid grid-cols-3 gap-3" variants={itemVariants}>
           {[
-            { value: "5", label: "Key Roles" },
-            { value: "20+", label: "Products Built" },
-            { value: "50+", label: "Public Repositories" },
+            { value: "3", label: "Active Ventures" },
+            { value: "20+", label: "Products Shipped" },
+            { value: "85+", label: "Public Repositories" },
           ].map((stat) => (
             <div key={stat.label} className="bg-bmw-surface-soft p-6 text-center">
               <div className="text-bmw-ink text-3xl font-bold mb-1">{stat.value}</div>

@@ -29,7 +29,7 @@ export default function HomeClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ ...transitionSmooth }}
             >
-              AI Infrastructure Engineer
+              Founder & Engineer
             </motion.span>
 
             <motion.h1
@@ -47,9 +47,9 @@ export default function HomeClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: transitionSmooth.ease }}
             >
-              Building open-source AI infrastructure, developer tools, and security products used by engineers, creators, and self-hosters worldwide.
+              Building AI infrastructure, language technology, and security systems at production scale. Multiple ventures. 20+ shipped products. Open-source by default.
               <span className="block text-bmw-muted text-sm mt-4 font-normal">
-                20+ deployed products • 50+ public repositories • AI, Security & Infrastructure
+                20+ shipped products • 85+ repositories • 6 AI agent skills
               </span>
             </motion.p>
 

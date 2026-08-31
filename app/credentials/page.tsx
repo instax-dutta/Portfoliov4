@@ -21,16 +21,17 @@ export const metadata: Metadata = {
     canonical: "https://sdad.pro/credentials",
   },
   openGraph: {
-    title: "Academic Credentials & Certifications | Sai Dutta Abhishek Dash",
-    description: "Verified educational background and industry certifications from AWS, GIET University, and leading tech institutions.",
+    title: "Credentials — Sai Dutta Abhishek Dash",
+    description: "AWS Certified Cloud Practitioner, Bachelor's in Computer Science from GIET University. Certifications in Bedrock, Amazon Q, and ML.",
     url: "https://sdad.pro/credentials",
-    siteName: "Sai Dutta Abhishek Dash Portfolio",
+    siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Credentials - Sai Dutta Abhishek Dash",
+        alt: "Sai Dutta Abhishek Dash — Credentials",
       },
     ],
     type: "website",
@@ -99,8 +100,8 @@ export default function CredentialsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(credentialsStructuredData) }} />
       <CredentialsClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash holds a Bachelor's Degree in Computer Science from GIET University Gunupur (2025). He completed Intermediate at Delhi Public School Dhenkanal (2021) and High School at Maharshi Vidya Mandir Rayagada (2019). Professional development includes AWS Bedrock, Amazon Q Developer, and Python for Data Science and Machine Learning.</p>
-        <p>Last updated: June 2026</p>
+        <p>Sai Dutta Abhishek Dash holds a Bachelor's Degree in Computer Science from GIET University Gunupur (2025). He completed Intermediate at Delhi Public School Dhenkanal (2021) and High School at Maharshi Vidya Mandir Rayagada (2019). AWS Certified Cloud Practitioner (2024). Professional development includes AWS Bedrock, Amazon Q Developer, and Python for Data Science and Machine Learning.</p>
+        <p>Last updated: August 2026</p>
       </div>
     </>
   )

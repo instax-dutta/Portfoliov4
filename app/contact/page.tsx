@@ -6,30 +6,31 @@ const ContactClient = dynamic(() => import("./ContactClient"), {
 
 export const metadata: Metadata = {
   title: "Connect & Collaborate | Sai Dutta Abhishek Dash",
-  description: "Get in touch with Sai Dutta Abhishek Dash for consulting, projects, or collaborations in AI infrastructure, security engineering, and developer tooling.",
+  description: "Get in touch with Sai Dutta Abhishek Dash for investment conversations, strategic partnerships, technical collaborations, and advisory roles across AI infrastructure, language technology, and security.",
   keywords: [
-    "Contact Developer",
-    "Consulting Inquiries",
-    "Open Source Collaboration",
-    "Bhubaneswar Software Engineer",
-    "Hire Systems Engineer",
-    "AI Infrastructure Consultation",
-    "Security Auditing Inquiries"
+    "Contact Founder",
+    "Investment Inquiries",
+    "Strategic Partnership",
+    "Technical Collaboration",
+    "AI Infrastructure Advisory",
+    "Language AI Partnerships",
+    "Security Engineering Consulting"
   ],
   alternates: {
     canonical: "https://sdad.pro/contact",
   },
   openGraph: {
-    title: "Connect & Collaborate | Sai Dutta Abhishek Dash",
-    description: "Get in touch with Sai Dutta Abhishek Dash for consulting, projects, or collaborations in AI infrastructure, security engineering, and developer tooling.",
+    title: "Contact — Sai Dutta Abhishek Dash",
+    description: "Investment conversations, strategic partnerships, technical collaborations, and advisory roles. Active across deep-tech AI ventures.",
     url: "https://sdad.pro/contact",
-    siteName: "Sai Dutta Abhishek Dash Portfolio",
+    siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    locale: "en_US",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Contact Sai Dutta Abhishek Dash",
+        alt: "Sai Dutta Abhishek Dash — Contact",
       },
     ],
     type: "website",
@@ -82,8 +83,8 @@ export default function ContactPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactStructuredData) }} />
       <ContactClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Get in touch with Sai Dutta Abhishek Dash for technical collaborations, consulting, and project opportunities in AI infrastructure, security engineering, developer tooling, and self-hosted platforms. Typical response time is within 24 hours. Contact via email at contact@sdad.pro or the submit form.</p>
-        <p>Last updated: June 2026</p>
+        <p>Get in touch with Sai Dutta Abhishek Dash for investment conversations, strategic partnerships, technical collaborations, and advisory roles across AI infrastructure, language technology, and security. Active across multiple deep-tech AI ventures. Contact via email at contact@sdad.pro or the submit form.</p>
+        <p>Last updated: August 2026</p>
       </div>
     </>
   )

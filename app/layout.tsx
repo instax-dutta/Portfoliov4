@@ -16,34 +16,34 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
+    default: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
     template: "%s | Sai Dutta Abhishek Dash",
   },
-  description: "AI Infrastructure, Security Engineering & Developer Tooling Specialist. Builder of LLM gateways, code security agents, distributed systems, and open-source platforms. Expert in Python, Next.js, TypeScript, AWS, Rust, Docker, and cryptography.",
+  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products spanning on-device ML, LLM inference engines, privacy-first platforms, and developer tooling. Active across multiple ventures in deep-tech AI.",
   keywords: [
-    "AI Infrastructure Engineer",
+    "Founder",
+    "Builder",
+    "AI Infrastructure",
+    "Language AI",
+    "Indic Language Technology",
+    "On-Device ML",
     "Security Engineering",
     "Developer Tooling",
     "Open Source Software",
-    "Self-Hosted Applications",
-    "Distributed Systems",
-    "Full Stack Engineering",
-    "Software Architecture",
-    "LLM gateways",
-    "code security agents",
-    "privacy engineering",
-    "Next.js 15",
-    "React 19",
-    "TypeScript",
+    "Production Systems",
+    "Product Engineering",
+    "LLM Inference",
+    "Edge AI",
+    "Privacy Engineering",
+    "Deep Tech",
+    "Startup Founder",
     "Python",
+    "TypeScript",
     "Rust",
+    "C++",
     "Docker",
-    "Kubernetes",
     "AWS",
-    "cryptography",
-    "zero-knowledge",
-    "P2P encrypted chat",
-    "Bhubaneswar",
+    "Odisha",
     "India",
     "Sai Dutta Abhishek Dash",
     "SDAD"
@@ -56,25 +56,25 @@ export const metadata: Metadata = {
     canonical: "https://sdad.pro/",
   },
   openGraph: {
-    type: "website",
+    type: "profile",
     locale: "en_US",
     url: "https://sdad.pro",
-    siteName: "Sai Dutta Abhishek Dash - Portfolio",
-    title: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
-    description: "AI Infrastructure, Security Engineering & Developer Tooling Specialist. Builder of LLM gateways, code security agents, distributed systems, and open-source tools.",
+    siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    title: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
+    description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems. 85+ repositories, 46+ Hugging Face models, 20+ shipped products.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
+        alt: "Sai Dutta Abhishek Dash — Founder & Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sai Dutta Abhishek Dash - AI Infrastructure & Security Engineer",
-    description: "AI Infrastructure, Security Engineering & Developer Tooling Specialist. Builder of LLM gateways, code security agents, and open-source tools.",
+    title: "Sai Dutta Abhishek Dash — Founder & Engineer",
+    description: "Building AI infrastructure, language technology, and security systems. 85+ repos, 46+ HF models, 20+ shipped products.",
     images: ["/og-image.png"],
     creator: "@abhishekdash69",
     site: "@abhishekdash69",
@@ -117,31 +117,31 @@ const faqStructuredData = {
       "name": "Who is Sai Dutta Abhishek Dash?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sai Dutta Abhishek Dash is an AI Infrastructure, Security, and Developer Tooling Engineer based in Bhubaneswar, India. He builds high-performance, privacy-focused, and self-hosted open-source software used by developers worldwide."
+        "text": "Sai Dutta Abhishek Dash is a founder and engineer based in Odisha, India, building AI infrastructure, language technology for underserved markets, and security systems. He has shipped 20+ production products and maintains 85+ public repositories."
       }
     },
     {
       "@type": "Question",
-      "name": "What does Sai Dutta Abhishek Dash specialize in?",
+      "name": "What does Sai Dutta Abhishek Dash build?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He specializes in AI infrastructure (LLM gateways, inference pipelines), security engineering (code security agents, cryptography, anti-bot filtering), developer platforms, distributed systems, self-hosted software, and open-source development."
+        "text": "He builds across the full stack: LLM inference engines, on-device ML models, language AI infrastructure, code security agents, privacy-first platforms, developer tooling, and open-source systems. His work spans Python, TypeScript, Rust, C++, and production infrastructure."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Sai Dutta Abhishek Dash available for collaboration or consulting?",
+      "name": "Is Sai Dutta Abhishek Dash open to investment or collaboration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, he is open to opportunities, collaborations, and technical consulting across AI infrastructure, security engineering, developer tooling, and self-hosted platforms."
+        "text": "Yes. He is actively building multiple ventures in deep-tech AI and is open to investment conversations, technical collaborations, and strategic partnerships across AI infrastructure, language technology, and security."
       }
     },
     {
       "@type": "Question",
-      "name": "What systems has Sai Dutta Abhishek Dash built?",
+      "name": "What has Sai Dutta Abhishek Dash shipped?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "He has built 20 production systems including Epoxy (LLM gateway proxy), Vulscany (AI code security agent), MarkItDownJS (document ingestion engine), PraharShield (DDoS anti-bot proxy filter), and CL-Chat Reborn (encrypted P2P CLI chat)."
+        "text": "He has shipped production systems including AgentLoop (self-verifying coding agents), ornith-flight (C99 inference engine), Vulscany (AI code security agent), MarkItDownJS (universal document converter), PhishScout (on-device phishing detector), and 6 AI agent skills used by developers worldwide."
       }
     }
   ]
@@ -156,26 +156,30 @@ const structuredData = {
       "name": "Sai Dutta Abhishek Dash",
       "url": "https://sdad.pro",
       "image": "https://sdad.pro/og-image.png",
-      "description": "AI Infrastructure, Security Engineering & Developer Tooling Specialist. Creator of LLM gateways, code security agents, and distributed open-source tools.",
+      "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products.",
       "sameAs": [
         "https://github.com/instax-dutta",
         "https://www.linkedin.com/in/sdabhishekdash/",
-        "https://twitter.com/abhishekdash69"
+        "https://twitter.com/abhishekdash69",
+        "https://huggingface.co/saidutta69"
       ],
-      "jobTitle": "AI Infrastructure & Security Engineer",
+      "jobTitle": "Founder & Engineer",
       "knowsAbout": [
         "AI Infrastructure",
+        "Language AI",
+        "On-Device ML",
         "Security Engineering",
         "Developer Tooling",
-        "Self-Hosted Platforms",
+        "LLM Inference",
+        "Tokenizer Optimization",
+        "Privacy Engineering",
+        "Product Engineering",
         "Open Source Software",
-        "Distributed Systems",
-        "Cloud Architecture",
-        "Privacy Engineering"
+        "Startup Building"
       ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Bhubaneswar",
+        "addressLocality": "Odisha",
         "addressRegion": "Odisha",
         "addressCountry": "IN"
       }
@@ -184,27 +188,28 @@ const structuredData = {
       "@type": "WebSite",
       "@id": "https://sdad.pro/#website",
       "url": "https://sdad.pro",
-      "name": "Sai Dutta Abhishek Dash Portfolio",
+      "name": "Sai Dutta Abhishek Dash — Founder & Engineer",
+      "dateModified": "2026-08-31",
       "publisher": { "@id": "https://sdad.pro/#person" }
     },
     {
       "@type": "ProfessionalService",
-      "name": "Sai Dutta Abhishek Dash - Engineering Services",
+      "name": "Sai Dutta Abhishek Dash — Engineering & Advisory Services",
       "image": "https://sdad.pro/og-image.png",
       "url": "https://sdad.pro",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Bhubaneswar",
+        "addressLocality": "Odisha",
         "addressRegion": "Odisha",
         "addressCountry": "IN"
       },
-      "priceRange": "$$",
       "areaServed": "Worldwide",
       "serviceType": [
-        "AI Infrastructure Integration",
-        "Security Auditing",
-        "Developer Tooling Development",
-        "Custom SaaS Systems"
+        "AI Infrastructure Engineering",
+        "Language Technology Development",
+        "Security Engineering",
+        "Product Architecture",
+        "Technical Advisory"
       ]
     }
   ]

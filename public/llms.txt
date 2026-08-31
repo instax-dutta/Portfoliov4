@@ -1,52 +1,87 @@
-# Sai Dutta Abhishek Dash — AI Infrastructure & Security Engineer
+# Sai Dutta Abhishek Dash — Founder & Engineer
 
-## About
-Sai Dutta Abhishek Dash is an AI Infrastructure & Security Engineer based in Bhubaneswar, India. He builds high-performance, privacy-focused, and self-hosted systems, including LLM gateways, code security agents, distributed systems, and open-source developer tooling used by engineers worldwide.
+> Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. Based in Odisha, India. 85+ public repositories. 46+ models on Hugging Face. Open to investment conversations and strategic partnerships.
 
-## Positioning & Core Specializations
-- **AI Infrastructure Engineer**: Specializes in building LLM proxies, inference pipelines, and document-to-markdown converters optimized for RAG systems.
-- **Security Engineering**: Builds private code vulnerability scanners with auto-remediation, P2P encrypted command-line applications, anti-bot proxy filters, and digital forensics tools.
-- **Developer Tooling & Platforms**: Designs command-line interfaces, automation workflows, and custom theme systems to optimize developer productivity.
-- **Self-Hosted Platforms & Privacy**: Focused on zero-knowledge cloud architectures, self-hosted services with zero telemetry, and localized offline execution.
+**Last updated:** August 2026
 
-## Technical Stack
-- **Languages & Frameworks**: Python, TypeScript, JavaScript, Rust, C++, Java, React, Next.js, Node.js, PostgreSQL, MongoDB, SQL
-- **AI & Data**: PyTorch, TensorFlow, scikit-learn, Ollama, Hugging Face, LangChain, OpenCV, NumPy, Pandas, Mistral AI, Gemini API, Groq Whisper
-- **Infrastructure**: AWS (Certified), Docker, Kubernetes, Linux, Nginx, Bash, GitHub Actions, Jenkins, Vercel, Netlify
+## Quick Facts
 
-## Notable Projects
-- **Epoxy** — OpenAI-compatible LLM proxy, pools free-tier keys with key rotation and cooldowns (github.com/instax-dutta/epoxy)
-- **Vulscany** — Private, self-hostable AI-powered code security scanner with auto-fixes and GitHub OAuth (github.com/instax-dutta/vulscany)
-- **MarkItDownJS** — AST-first document-to-markdown engine, Turborepo monorepo with RAG chunking (github.com/instax-dutta/MarkItDownJS)
-- **PraharShield** — Minecraft Velocity anti-bot proxy filter, CAPTCHA handshake, handles 100k join JPS (github.com/instax-dutta/PraharShield)
-- **CL-Chat Reborn** — P2P encrypted CLI chat, X25519 ECDH + ChaCha20-Poly1305, 81 pytest tests (github.com/instax-dutta/cl-chat-reborn)
-- **Tooner** — Privacy-first client-side document tokenizer for LLMs using Web Workers (tooner.sdad.pro)
-- **Binify** — Zero-knowledge encrypted pastebin with client-side Web Crypto API (bin.sdad.pro)
-- **Sensory** — Scalable cloud storage with Backblaze B2 & Turso database (mirror.sdad.pro)
-- **Forensic-Recovery** — Forensically-sound digital evidence acquisition PowerShell tool (github.com/instax-dutta/Forensic-Recovery)
-- **Ultimate-Firewall** — Linux firewall and DDoS protection rules script (github.com/instax-dutta/Ultimate-Firewall)
-- **PacketBuddy** — Bandwidth monitor and network tracker with zero configuration (github.com/instax-dutta/packet-buddy)
-- **Send-Finder** — Client-side benchmark for Send servers with 3D globe visualization (ssf.sdad.pro)
-- **AiScribe** — AI audio transcription tool with Groq Whisper and SRT export (ais.sdad.pro)
-- **GenieLabs** — AI-powered developer code assistant platform (genielabs.sdad.pro)
-- **AMZRelay** — Amazon non-returnable products finder with async scraping (github.com/instax-dutta/AMZRelay)
-- **VeronicaBot** — Self-hosted live notifier for YouTube & Twitch (github.com/instax-dutta/VeronicaBot)
-- **Auralyn** — Discord music bot with bundled Lavalink server (auralyn.sdad.pro)
-- **Elysium** — Terminal-native monospaced theme for Pterodactyl Panel (github.com/instax-dutta/elysium)
-- **Elipso Theme** — Vercel-inspired dark theme for Pterodactyl Panel (github.com/instax-dutta/elipso-theme)
-- **Elden Theme** — Sentry-inspired premium dark theme for Pterodactyl (github.com/instax-dutta/elden-theme)
+- **Name:** Sai Dutta Abhishek Dash
+- **Role:** Founder & Engineer
+- **Location:** Odisha, India
+- **Website:** https://sdad.pro
+- **Email:** contact@sdad.pro
+- **GitHub:** https://github.com/instax-dutta
+- **LinkedIn:** https://linkedin.com/in/sdabhishekdash
+- **Hugging Face:** https://huggingface.co/saidutta69
+- **46+ models** and **22+ datasets** published on Hugging Face
+- **AWS Certified** Cloud Practitioner (2024)
 
-## Credentials
-- AWS Certified Cloud Practitioner (2024)
-- Amazon Bedrock Getting Started — AWS (2024)
-- Amazon Q Developer — AWS (2024)
-- Planning a Machine Learning Project — AWS (2024)
-- Python for Data Science and Machine Learning — Udemy (2024)
-- Bachelor's Degree in Computer Science — GIET University Gunupur (2025)
+## What I Do
 
-## Contact & Links
-- Email: contact@sdad.pro
-- GitHub: github.com/instax-dutta
-- LinkedIn: linkedin.com/in/sdabhishekdash
-- Portfolio: sdad.pro
-- Availability: Remote worldwide for AI infrastructure, security engineering, and self-hosted platforms consulting.
+Sai Dutta Abhishek Dash builds at the intersection of three domains:
+
+1. **Language AI for underserved markets** — Tokenizer optimization, LLMs, speech recognition, and translation for low-resource Indian languages. Building the first commercial Odia-specific AI API.
+2. **On-device ML and edge security** — Sub-100KB inference models, phishing detection, model quantization, and abliteration for production deployment on consumer hardware.
+3. **Privacy-first infrastructure** — Zero-knowledge architectures, on-device processing, encrypted communication systems, and self-hosted platforms.
+
+## Key Products
+
+### AI & Language Infrastructure
+
+- **AgentLoop** — Harness-agnostic, self-verifying autonomy wrapper for coding agents. Drives OpenCode/Kilo/Claude/Aider/Codex in a verify-gated loop with a held-out oracle. (https://github.com/instax-dutta/agentloop)
+- **ornith-flight** — Expert-streaming C99 inference engine for Ornith 35B MoE. Runs 20 GB models on 8 GB Apple Silicon via per-layer streaming I/O. (https://github.com/instax-dutta/ornith-flight)
+- **MarkItDownJS** — Universal document-to-Markdown conversion engine for TypeScript. Converts PDFs, Office docs, images, audio, and archives into AI-ready Markdown. (https://github.com/instax-dutta/MarkItDownJS)
+- **PhishScout** — 131 KB on-device phishing URL detector. 90% precision, ~4ms per lookup. Trained and benchmarked on Hugging Face. (https://huggingface.co/saidutta69/PhishScout)
+- **Hinglish-Bench** — Reference-free benchmark for Hindi-English code-mixed text generation. 34 prompts, 8 categories, lm-evaluation-harness integration. (https://github.com/instax-dutta/hinglish-bench)
+
+### Security & Systems
+
+- **Vulscany** — Private, self-hostable AI code security agent with automated fix generation. Multi-language scanning, real-time CVE matching. (https://github.com/instax-dutta/vulscany)
+- **PraharShield** — High-performance Minecraft Velocity anti-bot filter. CAPTCHA handshakes, client fingerprinting, blocks 100k join-flood JPS. (https://github.com/instax-dutta/PraharShield)
+- **CL-Chat Reborn** — P2P command-line chat with X25519 ECDH encryption and ChaCha20-Poly1305 AEAD. (https://github.com/instax-dutta/cl-chat-reborn)
+- **Forensic-Recovery** — Forensically-sound digital evidence acquisition with SHA-256 chain-of-custody. (https://github.com/instax-dutta/Forensic-Recovery)
+- **DadGuard** — Lightweight Windows security watchdog for non-technical users. (https://github.com/instax-dutta/DadGuard)
+
+### Platforms & Products
+
+- **Binify** — Zero-knowledge encrypted pastebin with client-side encryption. (https://bin.sdad.pro)
+- **Ansora** — Self-hostable serverless blogging platform. Markdown + git, no database. (https://blog.sdad.pro)
+- **The Watcher** — Stalks 13 Indian used-tech subreddits 24/7, LLM-extracts price/specs, drops rich Discord embeds. (https://github.com/instax-dutta/The-Watcher)
+- **Visitor Analytics** — Privacy-preserving, framework-agnostic analytics SDK. Zero PII. (https://github.com/instax-dutta/visitor-analytics)
+- **PacketBuddy** — Cross-platform network usage monitor with real-time analytics. (https://github.com/instax-dutta/packet-buddy)
+- **3D Web Contents** — Zero-dep React Three.js components: 8 copy-paste templates. (https://github.com/instax-dutta/3d-web-contents)
+- **Auralyn** — Discord music bot with integrated Lavalink, single-container Docker deployment. (https://auralyn.sdad.pro)
+
+### AI Agent Skills
+
+- **Brand Vibes** — Apply any company's design language while vibecoding. 66 brand profiles. (https://github.com/instax-dutta/brand-vibes)
+- **Market Validator** — Validate SaaS ideas by scraping real user complaints across 10+ platforms. (https://github.com/instax-dutta/market-validator)
+- **Google Code Review** — Google's official code review best practices as an AI skill. (https://github.com/instax-dutta/google-code-review)
+- **Only Skills You Need** — One install command for every coding AI tool. (https://github.com/instax-dutta/only-skills-you-need)
+- **Roadmap Tutor** — Learn any roadmap.sh roadmap one topic at a time. Stdlib-only Python. (https://github.com/instax-dutta/roadmap-tutor)
+
+## Technical Expertise
+
+- **Languages:** Python, TypeScript, JavaScript, Rust, C/C++, Java, Go, Bash
+- **AI/ML:** PyTorch, TensorFlow, scikit-learn, Ollama, Hugging Face, LangChain, Mistral AI
+- **Infrastructure:** AWS, Docker, Kubernetes, Linux, Nginx, GitHub Actions, Vercel
+- **Databases:** PostgreSQL, MongoDB, Turso, NeonDB, Upstash Redis
+
+## Experience
+
+- **Founder** — Maelis Research (Aug 2026–Present): Language AI infrastructure for Odia and low-resource Indian languages.
+- **Co-Founder** — Offsage (Sep 2025–Present): Smart engineering for ambitious brands. Business automation and SaaS development.
+- **Associate** — Tech Mahindra (May–Sep 2025): Enterprise solutions and digital transformation.
+- **Founder** — RacerNodes (May 2022–Jul 2023): Game server hosting startup.
+
+## Services & Advisory
+
+Detailed service offerings, engagement models, and technical credentials:
+https://sdad.pro/advisory.md
+
+## Open To
+
+- Investment conversations and strategic partnerships
+- Technical collaborations across AI infrastructure and language technology
+- Advisory roles in deep-tech AI ventures
