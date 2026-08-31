@@ -5,7 +5,7 @@ const ExperienceClient = dynamic(() => import("./ExperienceClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Builder Timeline | Sai Dutta Abhishek Dash",
+  title: "Builder Timeline — Sai Dutta Abhishek Dash",
   description: "Building across AI infrastructure, language technology, security systems, and product engineering. From founder-led ventures to enterprise experience and open-source development at scale.",
   keywords: [
     "Founder Timeline",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Builder Timeline | Sai Dutta Abhishek Dash",
+    title: "Builder Timeline — Sai Dutta Abhishek Dash",
     description: "Building across AI infrastructure, language technology, and product engineering at scale.",
     images: ["/og-image.png"],
   }
@@ -55,6 +55,7 @@ const experienceStructuredData = {
       "url": "https://sdad.pro",
       "email": "contact@sdad.pro",
       "jobTitle": "Founder & Engineer",
+      "dateModified": "2026-08-31",
       "sameAs": [
         "https://github.com/instax-dutta",
         "https://www.linkedin.com/in/sdabhishekdash/",

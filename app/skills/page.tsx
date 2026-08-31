@@ -5,7 +5,7 @@ const SkillsClient = dynamic(() => import("./SkillsClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Engineering Toolkit & Tech Stack | Sai Dutta Abhishek Dash",
+  title: "Engineering Toolkit — Sai Dutta Abhishek Dash",
   description: "Complete tech stack of Sai Dutta Abhishek Dash. Expertise in Python, React, Next.js, Rust, AWS (Certified), TensorFlow, Docker, and cryptography.",
   keywords: [
     "Tech Stack 2026",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Engineering Toolkit & Tech Stack | Sai Dutta Abhishek Dash",
+    title: "Engineering Toolkit — Sai Dutta Abhishek Dash",
     description: "Complete tech stack of Sai Dutta Abhishek Dash. Spanning languages, AI & data, infrastructure, and security engineering.",
     images: ["/og-image.png"],
   }
@@ -53,6 +53,7 @@ const skillsStructuredData = {
       "@id": "https://sdad.pro/skills/#article",
       "headline": "Technical Skills of Sai Dutta Abhishek Dash",
       "description": "Comprehensive engineering stack including Python, TypeScript, React, Next.js, AWS, TensorFlow, and security engineering tools.",
+      "dateModified": "2026-08-31",
       "author": {
         "@type": "Person",
         "@id": "https://sdad.pro/#person",

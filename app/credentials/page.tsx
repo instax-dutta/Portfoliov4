@@ -5,7 +5,7 @@ const CredentialsClient = dynamic(() => import("./CredentialsClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Academic Credentials & Certifications | Sai Dutta Abhishek Dash",
+  title: "Credentials — Sai Dutta Abhishek Dash",
   description: "Verified educational background and industry certifications from AWS, GIET University, and leading tech institutions. Focus on AI, security, and cloud systems.",
   keywords: [
     "AWS Certified Cloud Practitioner",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Academic Credentials & Certifications | Sai Dutta Abhishek Dash",
+    title: "Credentials — Sai Dutta Abhishek Dash",
     description: "Verified educational background and industry certifications from AWS, GIET University, and leading tech institutions.",
     images: ["/og-image.png"],
   }
@@ -52,6 +52,7 @@ const credentialsStructuredData = {
       "@id": "https://sdad.pro/#person",
       "name": "Sai Dutta Abhishek Dash",
       "url": "https://sdad.pro",
+      "dateModified": "2026-08-31",
       "sameAs": [
         "https://github.com/instax-dutta",
         "https://www.linkedin.com/in/sdabhishekdash/",

@@ -59,6 +59,7 @@ const projectsStructuredData = {
       "url": "https://sdad.pro/projects",
       "name": "Shipped Products — Sai Dutta Abhishek Dash",
       "description": "Production systems shipped by Sai Dutta Abhishek Dash spanning AI infrastructure, language technology, security, and AI agent skills.",
+      "dateModified": "2026-08-31",
       "mainEntity": {
         "@type": "ItemList",
         "numberOfItems": 22,

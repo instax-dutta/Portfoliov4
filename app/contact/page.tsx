@@ -5,7 +5,7 @@ const ContactClient = dynamic(() => import("./ContactClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Connect & Collaborate | Sai Dutta Abhishek Dash",
+  title: "Contact — Sai Dutta Abhishek Dash",
   description: "Get in touch with Sai Dutta Abhishek Dash for investment conversations, strategic partnerships, technical collaborations, and advisory roles across AI infrastructure, language technology, and security.",
   keywords: [
     "Contact Founder",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Connect & Collaborate | Sai Dutta Abhishek Dash",
+    title: "Contact — Sai Dutta Abhishek Dash",
     description: "Connect with Sai Dutta Abhishek Dash for projects in AI infrastructure and security engineering.",
     images: ["/og-image.png"],
   }
@@ -63,7 +63,8 @@ const contactStructuredData = {
       "@id": "https://sdad.pro/contact/#webpage",
       "url": "https://sdad.pro/contact",
       "name": "Contact Sai Dutta Abhishek Dash",
-      "description": "Contact page for consulting, collaborations, and engineering inquiries across AI infrastructure, security, and developer platforms.",
+      "description": "Contact page for investment conversations, strategic partnerships, technical collaborations, and advisory roles.",
+      "dateModified": "2026-08-31",
       "mainEntity": { "@id": "https://sdad.pro/#person" }
     },
     {
@@ -83,7 +84,7 @@ export default function ContactPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactStructuredData) }} />
       <ContactClient />
       <div className="sr-only" aria-hidden="true">
-        <p>Get in touch with Sai Dutta Abhishek Dash for investment conversations, strategic partnerships, technical collaborations, and advisory roles across AI infrastructure, language technology, and security. Active across multiple deep-tech AI ventures. Contact via email at contact@sdad.pro or the submit form.</p>
+        <p>Get in touch with Sai Dutta Abhishek Dash for investment conversations, strategic partnerships, technical collaborations, and advisory roles. Based in Odisha, India. Active across multiple deep-tech AI ventures. Contact via email at contact@sdad.pro or the submit form.</p>
         <p>Last updated: August 2026</p>
       </div>
     </>
