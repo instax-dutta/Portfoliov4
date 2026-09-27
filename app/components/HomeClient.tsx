@@ -4,7 +4,7 @@ import Link from "next/link"
 import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
-import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, ArrowUpRight, BookOpen } from "lucide-react"
 import { transitionSmooth } from "../lib/animation"
 
 const AerodynamicStream = dynamic(() => import("./AerodynamicStream"), {
@@ -65,6 +65,15 @@ export default function HomeClient() {
                 Explore Projects
                 <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
+              <a
+                href="https://blog.sdad.pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bmw-btn"
+              >
+                Blog
+                <BookOpen className="w-4 h-4 ml-2" />
+              </a>
               <Link href="/contact" className="bmw-btn">
                 Contact
               </Link>
