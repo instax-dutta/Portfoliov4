@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
+import AnswerBlocks from "../components/AnswerBlocks"
+import { SITE } from "../lib/site-facts"
 const AboutClient = dynamic(() => import("./AboutClient"), {
   loading: () => null,
 })
@@ -55,7 +57,9 @@ const aboutStructuredData = {
       "url": "https://sdad.pro/about",
       "name": "About Sai Dutta Abhishek Dash — Founder & Engineer",
       "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 85+ public repositories, 46+ Hugging Face models.",
-      "dateModified": "2026-08-31",
+      "inLanguage": "en",
+      "datePublished": SITE.datePublished,
+      "dateModified": SITE.dateModified,
       "mainEntity": {
         "@type": "Person",
         "@id": "https://sdad.pro/#person",
@@ -109,10 +113,7 @@ export default function AboutPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutStructuredData) }} />
       <AboutClient />
-      <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash is a founder and engineer building AI infrastructure, language technology for underserved markets, and security systems. He has shipped 20+ production products across LLM inference engines, on-device ML models, code security agents, privacy-first platforms, and developer tooling. His toolkit spans Python, TypeScript, Rust, C++, Next.js, AWS, and Docker.</p>
-        <p>Last updated: August 2026</p>
-      </div>
+      <AnswerBlocks page="about" />
     </>
   )
 }

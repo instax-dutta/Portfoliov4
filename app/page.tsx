@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
+import AnswerBlocks, { stripLinkMarkup } from "./components/AnswerBlocks"
+import { SITE, answerSections } from "./lib/site-facts"
 const HomeClient = dynamic(() => import("./components/HomeClient"), {
   loading: () => null,
 })
@@ -57,55 +59,39 @@ export const metadata: Metadata = {
 const homeStructuredData = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://sdad.pro/#person",
-      "name": "Sai Dutta Abhishek Dash",
-      "url": "https://sdad.pro",
-      "image": "https://sdad.pro/og-image.png",
-      "description": "Founder and engineer building AI infrastructure, language technology, and security systems at production scale.",
-      "sameAs": [
-        "https://github.com/instax-dutta",
-        "https://www.linkedin.com/in/sdabhishekdash/",
-        "https://twitter.com/abhishekdash69",
-        "https://huggingface.co/saidutta69"
-      ],
-      "email": "contact@sdad.pro",
-      "jobTitle": "Founder & Engineer",
-      "knowsAbout": [
-        "AI Infrastructure",
-        "Language AI",
-        "On-Device ML",
-        "Security Engineering",
-        "Developer Tooling",
-        "LLM Inference",
-        "Tokenizer Optimization",
-        "Privacy Engineering",
-        "Product Engineering",
-        "Open Source Software",
-        "Startup Building"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://sdad.pro/#website",
-      "url": "https://sdad.pro",
-      "name": "Sai Dutta Abhishek Dash — Founder & Engineer",
-      "dateModified": "2026-08-31",
-      "publisher": { "@id": "https://sdad.pro/#person" }
-    },
+    { "@type": "Person", "@id": "https://sdad.pro/#person" },
+    { "@type": "WebSite", "@id": "https://sdad.pro/#website" },
     {
       "@type": "ProfilePage",
       "@id": "https://sdad.pro/#profile",
       "url": "https://sdad.pro",
-      "name": "Sai Dutta Abhishek Dash — Founder & Engineer Profile",
-      "mainEntity": { "@id": "https://sdad.pro/#person" }
+      "name": "Sai Dutta Abhishek Dash \u2014 Founder & Engineer Profile",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://sdad.pro/#website" },
+      "datePublished": SITE.datePublished,
+      "dateModified": SITE.dateModified,
+      "mainEntity": { "@id": "https://sdad.pro/#person" },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#answer-home-0 h2", "#answer-home-0 p"]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sdad.pro/#faq",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://sdad.pro/#profile" },
+      "mainEntity": answerSections.home.map((section) => ({
+        "@type": "Question",
+        "name": section.question,
+        "acceptedAnswer": { "@type": "Answer", "text": stripLinkMarkup(section.answer) }
+      }))
     },
     {
       "@type": "BreadcrumbList",
       "@id": "https://sdad.pro/#breadcrumb",
       "itemListElement": [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://sdad.pro" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sdad.pro" }
       ]
     }
   ]
@@ -116,10 +102,7 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }} />
       <HomeClient />
-      <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash is a founder and engineer based in Odisha, India, building AI infrastructure, language technology for underserved markets, and security systems. He has shipped production products and maintains 85+ public repositories spanning LLM inference engines, on-device ML models, code security agents, privacy-first platforms, developer tooling, and 6 AI agent skills. His technical capabilities cover Python, TypeScript, Rust, C++, Next.js, AWS, Docker, and production infrastructure.</p>
-        <p>Stats: 20+ shipped products | 85+ public repositories | 6 AI agent skills | Multiple ventures in deep-tech AI | Open to investment and strategic partnerships | Last updated: August 2026</p>
-      </div>
+      <AnswerBlocks page="home" />
     </>
   )
 }

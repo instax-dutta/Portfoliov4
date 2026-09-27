@@ -2,7 +2,7 @@
 
 > Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems. Available for advisory, consulting, and engineering partnerships.
 
-**Last updated:** August 2026
+**Last updated:** September 2026
 
 ## What I Offer
 

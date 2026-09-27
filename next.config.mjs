@@ -59,6 +59,17 @@ const nextConfig = {
         destination: '/credentials',
         permanent: true,
       },
+      {
+        source: '/services',
+        destination: '/advisory',
+        permanent: true,
+      },
+    ]
+  },
+  async rewrites() {
+    return [
+      // Emerging convention: some agent crawlers probe /.well-known/llms.txt
+      { source: '/.well-known/llms.txt', destination: '/llms.txt' },
     ]
   },
 }

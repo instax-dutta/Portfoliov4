@@ -63,6 +63,7 @@ export default function About() {
         initial="hidden"
         animate="visible"
       >
+        <article>
         <motion.div className="mb-16" variants={itemVariants}>
           <span className="bmw-label inline-block mb-4">About</span>
           <h1 className="bmw-display-lg mb-4">Builder Profile</h1>
@@ -71,8 +72,8 @@ export default function About() {
           </p>
         </motion.div>
 
-        <motion.div className="mb-20" variants={itemVariants}>
-          <h2 className="bmw-display-md mb-8">Core Expertise</h2>
+        <motion.section className="mb-20" variants={itemVariants} aria-labelledby="about-expertise">
+          <h2 id="about-expertise" className="bmw-display-md mb-8">Core Expertise</h2>
           <div className="grid md:grid-cols-2 gap-3">
             {skills.map((skill) => (
               <div key={skill.title} className="bg-bmw-surface-card p-6">
@@ -90,11 +91,11 @@ export default function About() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.section>
 
-        <motion.div variants={itemVariants}>
-          <p className="text-bmw-muted text-xs mb-8">Last updated: August 2026</p>
-          <h2 className="bmw-display-md mb-8">Focus Areas</h2>
+        <motion.section variants={itemVariants} aria-labelledby="about-focus">
+          <p className="text-bmw-muted text-xs mb-8"><time dateTime="2026-09-27">Last updated: September 2026</time></p>
+          <h2 id="about-focus" className="bmw-display-md mb-8">Focus Areas</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {focusAreas.map((area) => (
               <div key={area.title} className="bg-bmw-surface-soft p-6">
@@ -106,7 +107,8 @@ export default function About() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.section>
+        </article>
       </motion.main>
       <div className="m-stripe" />
     </div>

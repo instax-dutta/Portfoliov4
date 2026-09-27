@@ -31,6 +31,7 @@ const education = [
 ]
 
 const certifications = [
+  { title: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services (AWS)", year: "2024" },
   { title: "AWS Bedrock Workshop - Build a Gen AI Chatbot", issuer: "Udemy", year: "2024" },
   { title: "Amazon Bedrock Getting Started", issuer: "Amazon Web Services (AWS)", year: "2024" },
   { title: "Amazon Q Developer", issuer: "Amazon Web Services (AWS)", year: "2024" },
@@ -57,19 +58,19 @@ export default function Credentials() {
           </p>
         </motion.div>
 
-        <motion.div className="mb-20" variants={itemVariants}>
+        <motion.section className="mb-20" variants={itemVariants} aria-labelledby="cred-education">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-10 flex items-center justify-center border border-bmw-hairline">
               <GraduationCap className="w-5 h-5 text-bmw-ink" />
             </div>
-            <h2 className="text-bmw-ink text-lg font-bold uppercase tracking-machined">Education</h2>
+            <h2 id="cred-education" className="text-bmw-ink text-lg font-bold uppercase tracking-machined">Education</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-3">
             {education.map((edu, index) => (
               <div key={index} className="bg-bmw-surface-card p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Calendar className="w-3.5 h-3.5 text-bmw-muted" />
-                  <span className="text-bmw-muted text-xs">{edu.year}</span>
+                  <time dateTime={edu.year} className="text-bmw-muted text-xs">{edu.year}</time>
                 </div>
                 <h3 className="text-bmw-ink text-sm font-bold uppercase mb-2">{edu.degree}</h3>
                 <p className="text-bmw-body text-xs mb-3">{edu.description}</p>
@@ -80,14 +81,14 @@ export default function Credentials() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.section>
 
-        <motion.div variants={itemVariants}>
+        <motion.section variants={itemVariants} aria-labelledby="cred-certs">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-10 flex items-center justify-center border border-bmw-hairline">
               <Award className="w-5 h-5 text-bmw-ink" />
             </div>
-            <h2 className="text-bmw-ink text-lg font-bold uppercase tracking-machined">Professional Development</h2>
+            <h2 id="cred-certs" className="text-bmw-ink text-lg font-bold uppercase tracking-machined">Professional Development</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {certifications.map((cert, index) => (
@@ -100,17 +101,17 @@ export default function Credentials() {
                 </div>
                 <p className="text-bmw-muted text-[11px] mb-3">{cert.issuer}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-bmw-muted text-[10px]">{cert.year}</span>
+                  <time dateTime={cert.year} className="text-bmw-muted text-[10px]">{cert.year}</time>
                 </div>
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.section>
 
         <motion.div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-3" variants={itemVariants}>
           {[
             { value: "20+", label: "Products Built" },
-            { value: "50+", label: "Public Repositories" },
+            { value: "85+", label: "Public Repositories" },
             { value: "3+", label: "Years Building" },
             { value: "AI • Security • Infrastructure", label: "Focus" },
           ].map((stat) => (

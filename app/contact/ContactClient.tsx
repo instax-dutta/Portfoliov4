@@ -99,7 +99,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="bmw-label text-[10px] mb-1">Location</p>
-                  <p className="text-bmw-ink text-sm">Odisha, India</p>
+                  <address className="text-bmw-ink text-sm not-italic">Odisha, India</address>
                   <p className="text-bmw-muted text-xs mt-0.5 leading-relaxed">
                     Open to opportunities, collaborations, and consulting across AI infrastructure, security engineering, developer tooling, and self-hosted platforms.
                   </p>

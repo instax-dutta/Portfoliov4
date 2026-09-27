@@ -3,6 +3,7 @@ import { Suspense } from "react"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import LenisProvider from "./components/LenisProvider"
+import { SITE } from "./lib/site-facts"
 
 import type { Metadata } from "next"
 
@@ -54,6 +55,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sdad.pro"),
   alternates: {
     canonical: "https://sdad.pro/",
+    types: {
+      "application/llms.txt": "https://sdad.pro/llms.txt",
+    },
   },
   openGraph: {
     type: "profile",
@@ -108,45 +112,6 @@ export const metadata: Metadata = {
   },
 }
 
-const faqStructuredData = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Who is Sai Dutta Abhishek Dash?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sai Dutta Abhishek Dash is a founder and engineer based in Odisha, India, building AI infrastructure, language technology for underserved markets, and security systems. He has shipped 20+ production products and maintains 85+ public repositories."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What does Sai Dutta Abhishek Dash build?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "He builds across the full stack: LLM inference engines, on-device ML models, language AI infrastructure, code security agents, privacy-first platforms, developer tooling, and open-source systems. His work spans Python, TypeScript, Rust, C++, and production infrastructure."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Sai Dutta Abhishek Dash open to investment or collaboration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. He is actively building multiple ventures in deep-tech AI and is open to investment conversations, technical collaborations, and strategic partnerships across AI infrastructure, language technology, and security."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What has Sai Dutta Abhishek Dash shipped?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "He has shipped production systems including AgentLoop (self-verifying coding agents), ornith-flight (C99 inference engine), Vulscany (AI code security agent), MarkItDownJS (universal document converter), PhishScout (on-device phishing detector), and 6 AI agent skills used by developers worldwide."
-      }
-    }
-  ]
-}
-
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -154,16 +119,13 @@ const structuredData = {
       "@type": "Person",
       "@id": "https://sdad.pro/#person",
       "name": "Sai Dutta Abhishek Dash",
+      "alternateName": ["SDAD", "instax-dutta"],
       "url": "https://sdad.pro",
       "image": "https://sdad.pro/og-image.png",
-      "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products.",
-      "sameAs": [
-        "https://github.com/instax-dutta",
-        "https://www.linkedin.com/in/sdabhishekdash/",
-        "https://twitter.com/abhishekdash69",
-        "https://huggingface.co/saidutta69"
-      ],
+      "email": "contact@sdad.pro",
+      "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products, 85+ public repositories, 46+ Hugging Face models.",
       "jobTitle": "Founder & Engineer",
+      "sameAs": SITE.sameAs,
       "knowsAbout": [
         "AI Infrastructure",
         "Language AI",
@@ -177,6 +139,33 @@ const structuredData = {
         "Open Source Software",
         "Startup Building"
       ],
+      "knowsLanguage": ["en", "Odia"],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "GIET University Gunupur",
+        "url": "https://www.giet.edu"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AWS Certified Cloud Practitioner",
+          "credentialCategory": "Certification",
+          "dateCreated": "2024",
+          "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services", "url": "https://aws.amazon.com" }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Bachelor's Degree in Computer Science",
+          "credentialCategory": "degree",
+          "dateCreated": "2025",
+          "recognizedBy": { "@type": "CollegeOrUniversity", "name": "GIET University Gunupur", "url": "https://www.giet.edu" }
+        }
+      ],
+      "founderOf": [
+        { "@id": "https://sdad.pro/#maelisresearch" },
+        { "@id": "https://sdad.pro/#offsage" }
+      ],
+      "worksFor": { "@id": "https://sdad.pro/#maelisresearch" },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Odisha",
@@ -188,29 +177,40 @@ const structuredData = {
       "@type": "WebSite",
       "@id": "https://sdad.pro/#website",
       "url": "https://sdad.pro",
-      "name": "Sai Dutta Abhishek Dash — Founder & Engineer",
-      "dateModified": "2026-08-31",
+      "name": "Sai Dutta Abhishek Dash \u2014 Founder & Engineer",
+      "inLanguage": "en",
+      "datePublished": SITE.datePublished,
+      "dateModified": SITE.dateModified,
       "publisher": { "@id": "https://sdad.pro/#person" }
     },
     {
-      "@type": "ProfessionalService",
-      "name": "Sai Dutta Abhishek Dash — Engineering & Advisory Services",
-      "image": "https://sdad.pro/og-image.png",
-      "url": "https://sdad.pro",
+      "@type": "Organization",
+      "@id": "https://sdad.pro/#maelisresearch",
+      "name": "Maelis Research",
+      "url": "https://maelis.sdad.pro",
+      "description": "Language AI infrastructure for Odia and low-resource Indian languages. Building an Odia-optimized tokenizer 3x more efficient than generic alternatives, the Lekhani Odia-exclusive LLM family, Shruti speech recognition, and Anuvada translation for 38 million Odia speakers.",
+      "foundingDate": "2026",
+      "founder": { "@id": "https://sdad.pro/#person" },
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Odisha",
+        "addressLocality": "Dhenkanal",
         "addressRegion": "Odisha",
         "addressCountry": "IN"
       },
-      "areaServed": "Worldwide",
-      "serviceType": [
-        "AI Infrastructure Engineering",
-        "Language Technology Development",
-        "Security Engineering",
-        "Product Architecture",
-        "Technical Advisory"
+      "sameAs": [
+        "https://maelis.sdad.pro",
+        "https://huggingface.co/MaelisResearch"
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sdad.pro/#offsage",
+      "name": "Offsage",
+      "url": "https://offsage.com",
+      "description": "Technical agency delivering business automation, SaaS development, and web engineering for startups and scaling teams.",
+      "foundingDate": "2025",
+      "founder": { "@id": "https://sdad.pro/#person" },
+      "sameAs": ["https://offsage.com"]
     }
   ]
 }
@@ -226,10 +226,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
         />
         <Suspense fallback={null}>
           <LenisProvider>

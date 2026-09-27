@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
+import AnswerBlocks from "../components/AnswerBlocks"
+import { SITE } from "../lib/site-facts"
 const ExperienceClient = dynamic(() => import("./ExperienceClient"), {
   loading: () => null,
 })
@@ -49,18 +51,14 @@ const experienceStructuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
-      "@id": "https://sdad.pro/#person",
-      "name": "Sai Dutta Abhishek Dash",
-      "url": "https://sdad.pro",
-      "email": "contact@sdad.pro",
-      "jobTitle": "Founder & Engineer",
-      "dateModified": "2026-08-31",
-      "sameAs": [
-        "https://github.com/instax-dutta",
-        "https://www.linkedin.com/in/sdabhishekdash/",
-        "https://twitter.com/abhishekdash69"
-      ]
+      "@type": "ItemList",
+      "@id": "https://sdad.pro/experience/#timeline",
+      "name": "Builder timeline of Sai Dutta Abhishek Dash",
+      "inLanguage": "en",
+      "datePublished": SITE.datePublished,
+      "dateModified": SITE.dateModified,
+      "numberOfItems": 6,
+      "author": { "@id": "https://sdad.pro/#person" }
     },
     {
       "@type": "EducationalOccupationalCredential",
@@ -143,10 +141,7 @@ export default function ExperiencePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(experienceStructuredData) }} />
       <ExperienceClient />
-      <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash is building across AI infrastructure, language technology, security systems, and product engineering. His timeline includes founder-led ventures in deep-tech AI and language infrastructure, co-founding a technical agency, enterprise experience at Tech Mahindra, and multiple ML and software engineering internships.</p>
-        <p>Last updated: August 2026</p>
-      </div>
+      <AnswerBlocks page="experience" />
     </>
   )
 }

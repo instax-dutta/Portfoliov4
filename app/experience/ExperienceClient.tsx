@@ -5,11 +5,25 @@ import Navigation from "../components/Navigation"
 import { Calendar, Building2, Zap } from "lucide-react"
 import { transitionSmooth } from "../lib/animation"
 
-const experiences = [
+type Experience = {
+  title: string
+  company: string
+  date: string
+  start: string
+  end?: string
+  type: string
+  location: string
+  description: string
+  skills: string[]
+  achievements: string[]
+}
+
+const experiences: Experience[] = [
   {
     title: "Founder",
     company: "Maelis Research",
     date: "August 2026 – Present",
+    start: "2026-08",
     type: "Founder",
     location: "Dhenkanal, Odisha",
     description: "Building language AI infrastructure for Odia and low-resource Indian languages. Developing an Odia-optimized tokenizer (3x more efficient than generic alternatives), a family of Odia-exclusive LLMs (Lekhani), speech recognition (Shruti), and translation (Anuvada) APIs. All research released under Apache 2.0.",
@@ -25,6 +39,7 @@ const experiences = [
     title: "Co-Founder",
     company: "Offsage",
     date: "September 2025 – Present",
+    start: "2025-09",
     type: "Startup",
     location: "Remote",
     description: "Co-founded a technical agency eliminating operational friction for startups and scaling teams — from first automation to full-scale SaaS. Discipline-first web engineering, measured animation systems, and conversion-optimized infrastructure. Built in India, deployed globally.",
@@ -39,6 +54,8 @@ const experiences = [
     title: "Associate",
     company: "Tech Mahindra",
     date: "June 2025 – September 2025",
+    start: "2025-06",
+    end: "2025-09",
     type: "Full-time",
     location: "Bhubaneswar, India",
     description: "Worked as an Associate, contributing to enterprise software solutions and digital transformation initiatives.",
@@ -49,6 +66,8 @@ const experiences = [
     title: "Associate Trainee",
     company: "Tech Mahindra",
     date: "May 2025 – June 2025",
+    start: "2025-05",
+    end: "2025-06",
     type: "Training Program",
     location: "Bhubaneswar, India",
     description: "Completed comprehensive training program covering enterprise technologies, software development practices, and industry standards.",
@@ -59,6 +78,8 @@ const experiences = [
     title: "Machine Learning & Software Engineering Internships",
     company: "Various Companies",
     date: "February 2024 – July 2024",
+    start: "2024-02",
+    end: "2024-07",
     type: "Internship",
     location: "Remote",
     description: "Completed multiple internships focused on machine learning, software engineering, automation, NLP, computer vision, and backend development. Built production-ready projects, deployed ML models, and gained hands-on experience across diverse technology stacks.",
@@ -74,6 +95,8 @@ const experiences = [
     title: "CEO & Co-Founder",
     company: "RacerNodes",
     date: "May 2022 – July 2023",
+    start: "2022-05",
+    end: "2023-07",
     type: "Entrepreneurship",
     location: "India",
     description: "Founded and led a technology startup, managing team operations, product development, and strategic planning.",
@@ -122,11 +145,16 @@ export default function Experience() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="space-y-0">
-          {experiences.map((exp, index) => (
-            <div key={index} className="border-t border-bmw-hairline py-8 first:border-t-0">
+          {experiences.map((exp) => {
+            const [expStart, expEnd] = exp.date.split(" \u2013 ")
+            return (
+            <article key={exp.title} className="border-t border-bmw-hairline py-8 first:border-t-0">
               <div className="grid md:grid-cols-[140px_1fr] gap-4 md:gap-8">
                 <div>
-                  <span className="text-bmw-muted text-sm font-normal">{exp.date}</span>
+                  <span className="text-bmw-muted text-sm font-normal">
+                    <time dateTime={exp.start}>{expStart}</time>
+                    {expEnd ? <> &#8211; <time dateTime={exp.end}>{expEnd}</time></> : null}
+                  </span>
                   <div className="mt-2 flex items-center gap-2">
                     <span className="bmw-label text-[10px]">{exp.type}</span>
                   </div>
@@ -170,8 +198,9 @@ export default function Experience() {
                   ) : null}
                 </div>
               </div>
-            </div>
-          ))}
+            </article>
+            )
+          })}
         </motion.div>
 
         <motion.div className="mt-20 grid grid-cols-3 gap-3" variants={itemVariants}>

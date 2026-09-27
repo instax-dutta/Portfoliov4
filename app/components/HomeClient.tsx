@@ -16,8 +16,9 @@ export default function HomeClient() {
     <main className="min-h-screen bg-bmw-canvas flex flex-col">
       <Navigation />
 
-      <section className="flex-1 flex flex-col justify-center px-6 pt-16 relative overflow-hidden">
+      <section className="flex-1 flex flex-col justify-center px-6 pt-16 relative overflow-hidden" aria-labelledby="home-heading">
         <div className="max-w-[1440px] mx-auto w-full relative z-10">
+          <article>
           {/* 3D Component - AerodynamicStream (can be easily removed/commented) */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-[45%] h-[350px] lg:h-[550px] pointer-events-none z-0 opacity-60">
             <AerodynamicStream />
@@ -33,6 +34,7 @@ export default function HomeClient() {
             </motion.span>
 
             <motion.h1
+              id="home-heading"
               className="bmw-display-xl mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -49,7 +51,7 @@ export default function HomeClient() {
             >
               Building AI infrastructure, language technology, and security systems at production scale. Multiple ventures. 20+ shipped products. Open-source by default.
               <span className="block text-bmw-muted text-sm mt-4 font-normal">
-                20+ shipped products • 85+ repositories • 6 AI agent skills
+                20+ shipped products • 85+ repositories • 5 AI agent skills
               </span>
             </motion.p>
 
@@ -90,6 +92,7 @@ export default function HomeClient() {
               <span className="text-bmw-muted text-sm">contact@sdad.pro</span>
             </motion.div>
           </div>
+          </article>
         </div>
       </section>
 

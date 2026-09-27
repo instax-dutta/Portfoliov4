@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export default function robots(): MetadataRoute.Robots {
     return {
         rules: [
-            // ── AI search & citation bots ──
+            // ── AI search & citation crawlers ──
             {
                 userAgent: ['GPTBot', 'ChatGPT-User'],
                 allow: '/',
@@ -13,15 +13,28 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
             },
             {
-                userAgent: ['ClaudeBot', 'anthropic-ai'],
+                userAgent: ['ClaudeBot', 'Claude-User', 'anthropic-ai'],
                 allow: '/',
             },
             {
-                userAgent: 'Google-Extended',
+                userAgent: ['Google-Extended', 'Google-CloudVertexBot', 'GoogleOther'],
                 allow: '/',
             },
             {
                 userAgent: 'Bingbot',
+                allow: '/',
+            },
+            {
+                userAgent: 'Applebot',
+                allow: '/',
+            },
+            // ── User-triggered fetchers (fired when a user asks a model to read the page) ──
+            {
+                userAgent: 'Perplexity-User',
+                allow: '/',
+            },
+            {
+                userAgent: 'Claude-User',
                 allow: '/',
             },
             // ── AI platform crawlers ──
@@ -42,7 +55,7 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
             },
             {
-                userAgent: ['Omgilibot', 'Diffbot'],
+                userAgent: ['Omgilibot', 'Diffbot', 'cohere-ai', 'ai2bot', 'YouBot'],
                 allow: '/',
             },
             // ── Training-only crawlers — block ──

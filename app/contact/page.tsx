@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
+import AnswerBlocks, { stripLinkMarkup } from "../components/AnswerBlocks"
+import { SITE, answerSections } from "../lib/site-facts"
 const ContactClient = dynamic(() => import("./ContactClient"), {
   loading: () => null,
 })
@@ -64,8 +66,40 @@ const contactStructuredData = {
       "url": "https://sdad.pro/contact",
       "name": "Contact Sai Dutta Abhishek Dash",
       "description": "Contact page for investment conversations, strategic partnerships, technical collaborations, and advisory roles.",
-      "dateModified": "2026-08-31",
+      "inLanguage": "en",
+      "datePublished": SITE.datePublished,
+      "dateModified": SITE.dateModified,
       "mainEntity": { "@id": "https://sdad.pro/#person" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://sdad.pro/contact/#services",
+      "name": "AI Infrastructure, Security, and Language Technology Advisory",
+      "serviceType": [
+        "AI Infrastructure Consulting",
+        "Security Engineering",
+        "Language Technology",
+        "Full-Stack Product Engineering",
+        "Technical Advisory"
+      ],
+      "description": "Advisory and engineering services covering LLM integration, inference optimization, on-device ML, code security scanning, privacy-first architecture, low-resource language AI, and full-stack product engineering.",
+      "provider": { "@id": "https://sdad.pro/#person" },
+      "areaServed": "Worldwide",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://sdad.pro/contact"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sdad.pro/contact/#faq",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://sdad.pro/contact/#webpage" },
+      "mainEntity": answerSections.contact.map((section) => ({
+        "@type": "Question",
+        "name": section.question,
+        "acceptedAnswer": { "@type": "Answer", "text": stripLinkMarkup(section.answer) }
+      }))
     },
     {
       "@type": "BreadcrumbList",
@@ -83,10 +117,7 @@ export default function ContactPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactStructuredData) }} />
       <ContactClient />
-      <div className="sr-only" aria-hidden="true">
-        <p>Get in touch with Sai Dutta Abhishek Dash for investment conversations, strategic partnerships, technical collaborations, and advisory roles. Based in Odisha, India. Active across multiple deep-tech AI ventures. Contact via email at contact@sdad.pro or the submit form.</p>
-        <p>Last updated: August 2026</p>
-      </div>
+      <AnswerBlocks page="contact" />
     </>
   )
 }

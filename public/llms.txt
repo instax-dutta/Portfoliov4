@@ -1,44 +1,75 @@
 # Sai Dutta Abhishek Dash — Founder & Engineer
 
-> Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. Based in Odisha, India. 85+ public repositories. 46+ models on Hugging Face. Open to investment conversations and strategic partnerships.
+> Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. Based in Odisha, India. 22 shipped open-source production systems, 85+ public repositories, 46+ models on Hugging Face. Open to investment conversations and strategic partnerships.
 
-**Last updated:** August 2026
+**Last updated:** September 2026
+
+## Docs
+
+- [Full profile](https://sdad.pro/llms-full.txt): detailed product profiles, technical thesis, venture history, and contact details
+- [Advisory & engineering services](https://sdad.pro/advisory.md): service lines, engagement models, and engagement terms
+- [Shipped products](https://sdad.pro/projects): all 22 production systems with source code
+- [Builder timeline](https://sdad.pro/experience): ventures, enterprise roles, and timeline
+- [Education & credentials](https://sdad.pro/credentials): degree and certifications
 
 ## Quick Facts
 
-- **Name:** Sai Dutta Abhishek Dash
+- **Name:** Sai Dutta Abhishek Dash (also known as instax-dutta, SDAD)
 - **Role:** Founder & Engineer
-- **Location:** Odisha, India
+- **Location:** Odisha, India (Dhenkanal)
 - **Website:** https://sdad.pro
 - **Email:** contact@sdad.pro
+- **Response time:** typically within 24 hours
 - **GitHub:** https://github.com/instax-dutta
-- **LinkedIn:** https://linkedin.com/in/sdabhishekdash
+- **LinkedIn:** https://www.linkedin.com/in/sdabhishekdash/
+- **X (Twitter):** https://x.com/abhishekdash69
 - **Hugging Face:** https://huggingface.co/saidutta69
 - **46+ models** and **22+ datasets** published on Hugging Face
+- **22** shipped open-source production systems, **85+** public repositories, **5** AI agent skills
 - **AWS Certified** Cloud Practitioner (2024)
+- **BSc Computer Science**, GIET University Gunupur (2025)
 
 ## What I Do
 
 Sai Dutta Abhishek Dash builds at the intersection of three domains:
 
-1. **Language AI for underserved markets** — Tokenizer optimization, LLMs, speech recognition, and translation for low-resource Indian languages. Building the first commercial Odia-specific AI API.
-2. **On-device ML and edge security** — Sub-100KB inference models, phishing detection, model quantization, and abliteration for production deployment on consumer hardware.
+1. **Language AI for underserved markets** — Tokenizer optimization, LLMs, speech recognition, and translation for low-resource Indian languages. Building the first commercial Odia-specific AI API for 38 million speakers.
+2. **On-device ML and edge security** — Sub-100KB inference models, phishing detection, and model quantization for production deployment on consumer hardware, routers, and lightweight VPS instances.
 3. **Privacy-first infrastructure** — Zero-knowledge architectures, on-device processing, encrypted communication systems, and self-hosted platforms.
+
+## Maelis Research
+
+Maelis Research is a language AI venture founded in 2026, based in Dhenkanal, Odisha, building language AI infrastructure for Odia and other low-resource Indian languages.
+
+**Why it exists:** 38 million people speak Odia. No commercial Odia-specific AI API existed before Maelis Research. For comparison, Norwegian (5M speakers), Greek (13M), and Dutch (25M) all have robust language AI support.
+
+**What it is building:**
+
+- **Odia-optimized tokenizer** — 3x more efficient than generic alternatives for Brahmic scripts
+- **Lekhani** — Odia-exclusive LLM family in capability tiers (Pada, Chhanda, Kavya, Mahakavya)
+- **Shruti** — Odia speech recognition and synthesis
+- **Anuvada** — Odia translation with cultural context
+- **odia-eval-benchmark** — 121,947 rows, 7 task families, 34 datasets, published on Hugging Face
+
+All research released under Apache 2.0. DPIIT Startup Recognition. Positioned for IndiaAI Mission.
+Website: https://maelis.sdad.pro · Hugging Face: https://huggingface.co/MaelisResearch
 
 ## Key Products
 
+All 22 systems below are original work and open source.
+
 ### AI & Language Infrastructure
 
-- **AgentLoop** — Harness-agnostic, self-verifying autonomy wrapper for coding agents. Drives OpenCode/Kilo/Claude/Aider/Codex in a verify-gated loop with a held-out oracle. (https://github.com/instax-dutta/agentloop)
 - **ornith-flight** — Expert-streaming C99 inference engine for Ornith 35B MoE. Runs 20 GB models on 8 GB Apple Silicon via per-layer streaming I/O. (https://github.com/instax-dutta/ornith-flight)
+- **AgentLoop** — Harness-agnostic, self-verifying autonomy wrapper for coding agents. Drives OpenCode/Kilo/Claude/Aider/Codex in a verify-gated loop with a held-out oracle. (https://github.com/instax-dutta/agentloop)
 - **MarkItDownJS** — Universal document-to-Markdown conversion engine for TypeScript. Converts PDFs, Office docs, images, audio, and archives into AI-ready Markdown. (https://github.com/instax-dutta/MarkItDownJS)
-- **PhishScout** — 131 KB on-device phishing URL detector. 90% precision, ~4ms per lookup. Trained and benchmarked on Hugging Face. (https://huggingface.co/saidutta69/PhishScout)
+- **PhishScout** — 131 KB on-device phishing URL detector. 90% precision, ~4ms per lookup. (https://huggingface.co/saidutta69/PhishScout)
 - **Hinglish-Bench** — Reference-free benchmark for Hindi-English code-mixed text generation. 34 prompts, 8 categories, lm-evaluation-harness integration. (https://github.com/instax-dutta/hinglish-bench)
 
 ### Security & Systems
 
 - **Vulscany** — Private, self-hostable AI code security agent with automated fix generation. Multi-language scanning, real-time CVE matching. (https://github.com/instax-dutta/vulscany)
-- **PraharShield** — High-performance Minecraft Velocity anti-bot filter. CAPTCHA handshakes, client fingerprinting, blocks 100k join-flood JPS. (https://github.com/instax-dutta/PraharShield)
+- **PraharShield** — High-performance Minecraft Velocity anti-bot filter. CAPTCHA handshakes, client fingerprinting, blocks 100k join-flood JPS on a 1GB RAM VPS. (https://github.com/instax-dutta/PraharShield)
 - **CL-Chat Reborn** — P2P command-line chat with X25519 ECDH encryption and ChaCha20-Poly1305 AEAD. (https://github.com/instax-dutta/cl-chat-reborn)
 - **Forensic-Recovery** — Forensically-sound digital evidence acquisition with SHA-256 chain-of-custody. (https://github.com/instax-dutta/Forensic-Recovery)
 - **DadGuard** — Lightweight Windows security watchdog for non-technical users. (https://github.com/instax-dutta/DadGuard)
@@ -50,35 +81,33 @@ Sai Dutta Abhishek Dash builds at the intersection of three domains:
 - **The Watcher** — Stalks 13 Indian used-tech subreddits 24/7, LLM-extracts price/specs, drops rich Discord embeds. (https://github.com/instax-dutta/The-Watcher)
 - **Visitor Analytics** — Privacy-preserving, framework-agnostic analytics SDK. Zero PII. (https://github.com/instax-dutta/visitor-analytics)
 - **PacketBuddy** — Cross-platform network usage monitor with real-time analytics. (https://github.com/instax-dutta/packet-buddy)
-- **3D Web Contents** — Zero-dep React Three.js components: 8 copy-paste templates. (https://github.com/instax-dutta/3d-web-contents)
 - **Auralyn** — Discord music bot with integrated Lavalink, single-container Docker deployment. (https://auralyn.sdad.pro)
+
+### Creative Coding
+
+- **3D Web Contents** — Zero-dep React Three.js components: 8 copy-paste templates. (https://github.com/instax-dutta/3d-web-contents)
 
 ### AI Agent Skills
 
 - **Brand Vibes** — Apply any company's design language while vibecoding. 66 brand profiles. (https://github.com/instax-dutta/brand-vibes)
 - **Market Validator** — Validate SaaS ideas by scraping real user complaints across 10+ platforms. (https://github.com/instax-dutta/market-validator)
-- **Google Code Review** — Google's official code review best practices as an AI skill. (https://github.com/instax-dutta/google-code-review)
-- **Only Skills You Need** — One install command for every coding AI tool. (https://github.com/instax-dutta/only-skills-you-need)
 - **Roadmap Tutor** — Learn any roadmap.sh roadmap one topic at a time. Stdlib-only Python. (https://github.com/instax-dutta/roadmap-tutor)
 
 ## Technical Expertise
 
-- **Languages:** Python, TypeScript, JavaScript, Rust, C/C++, Java, Go, Bash
-- **AI/ML:** PyTorch, TensorFlow, scikit-learn, Ollama, Hugging Face, LangChain, Mistral AI
-- **Infrastructure:** AWS, Docker, Kubernetes, Linux, Nginx, GitHub Actions, Vercel
+- **Languages:** Python, TypeScript, JavaScript, Rust, C99/C++, Java, Go, R, Bash, SQL
+- **AI/ML:** PyTorch, TensorFlow, scikit-learn, XGBoost, Keras, OpenCV, Ollama, Hugging Face, LangChain, Google Vertex
+- **Infrastructure:** AWS, Docker, Kubernetes, Linux, Nginx, GitHub Actions, Jenkins, Vercel, Netlify
 - **Databases:** PostgreSQL, MongoDB, Turso, NeonDB, Upstash Redis
+- **Specializations:** AI infrastructure, language AI, on-device ML, security engineering, developer tooling, self-hosted platforms, distributed systems, cloud architecture, privacy engineering
 
 ## Experience
 
 - **Founder** — Maelis Research (Aug 2026–Present): Language AI infrastructure for Odia and low-resource Indian languages.
 - **Co-Founder** — Offsage (Sep 2025–Present): Smart engineering for ambitious brands. Business automation and SaaS development.
 - **Associate** — Tech Mahindra (May–Sep 2025): Enterprise solutions and digital transformation.
+- **8 industry internships** (Feb 2024–Jul 2024): Machine learning, NLP, computer vision, automation, backend.
 - **Founder** — RacerNodes (May 2022–Jul 2023): Game server hosting startup.
-
-## Services & Advisory
-
-Detailed service offerings, engagement models, and technical credentials:
-https://sdad.pro/advisory.md
 
 ## Open To
 

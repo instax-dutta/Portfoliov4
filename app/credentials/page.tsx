@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
+import AnswerBlocks from "../components/AnswerBlocks"
+import { SITE } from "../lib/site-facts"
 const CredentialsClient = dynamic(() => import("./CredentialsClient"), {
   loading: () => null,
 })
@@ -48,16 +50,15 @@ const credentialsStructuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
-      "@id": "https://sdad.pro/#person",
-      "name": "Sai Dutta Abhishek Dash",
-      "url": "https://sdad.pro",
-      "dateModified": "2026-08-31",
-      "sameAs": [
-        "https://github.com/instax-dutta",
-        "https://www.linkedin.com/in/sdabhishekdash/",
-        "https://twitter.com/abhishekdash69"
-      ]
+      "@type": "ProfilePage",
+      "@id": "https://sdad.pro/credentials/#webpage",
+      "url": "https://sdad.pro/credentials",
+      "name": "Education & Credentials \u2014 Sai Dutta Abhishek Dash",
+      "inLanguage": "en",
+      "datePublished": SITE.datePublished,
+      "dateModified": SITE.dateModified,
+      "isPartOf": { "@id": "https://sdad.pro/#website" },
+      "mainEntity": { "@id": "https://sdad.pro/#person" }
     },
     {
       "@type": "EducationalOccupationalCredential",
@@ -100,10 +101,7 @@ export default function CredentialsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(credentialsStructuredData) }} />
       <CredentialsClient />
-      <div className="sr-only" aria-hidden="true">
-        <p>Sai Dutta Abhishek Dash holds a Bachelor's Degree in Computer Science from GIET University Gunupur (2025). He completed Intermediate at Delhi Public School Dhenkanal (2021) and High School at Maharshi Vidya Mandir Rayagada (2019). AWS Certified Cloud Practitioner (2024). Professional development includes AWS Bedrock, Amazon Q Developer, and Python for Data Science and Machine Learning.</p>
-        <p>Last updated: August 2026</p>
-      </div>
+      <AnswerBlocks page="credentials" />
     </>
   )
 }

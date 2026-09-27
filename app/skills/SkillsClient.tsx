@@ -1,8 +1,9 @@
 "use client"
 import { motion } from "framer-motion"
-import { Code, Brain, Server, Zap } from "lucide-react"
+import { Code, Brain, Server, Zap, type LucideIcon } from "lucide-react"
 import Navigation from "../components/Navigation"
 import { containerVariants, itemVariants } from "../lib/animation"
+import { skillCategories } from "../lib/skills"
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/components/ui/tooltip"
 import {
   SiHtml5, SiPython, SiCss, SiSqlite, SiJavascript, SiOpenjdk, SiCplusplus,
@@ -71,28 +72,8 @@ const techIconMap: Record<string, React.ReactNode> = {
   Teamwork: <TbChartDots />,
 }
 
-const skills = [
-  {
-    category: "Languages & Frameworks",
-    icon: <Code className="w-5 h-5" />,
-    items: ["Python", "SQL", "JavaScript", "Java", "C++", "Rust", "TypeScript", "React", "Next.js", "Tailwind CSS", "Node.js"],
-  },
-  {
-    category: "AI & Data",
-    icon: <Brain className="w-5 h-5" />,
-    items: ["TensorFlow", "PyTorch", "scikit-learn", "NumPy", "Pandas", "Keras", "XGBoost", "OpenCV", "Matplotlib", "Seaborn", "Plotly", "Ollama", "Hugging Face", "Google Vertex"],
-  },
-  {
-    category: "Infrastructure",
-    icon: <Server className="w-5 h-5" />,
-    items: ["AWS", "Docker", "Git", "CI/CD", "Bash", "Linux", "Netlify", "Vercel", "GitHub Actions", "Jenkins", "Kubernetes"],
-  },
-  {
-    category: "Specializations",
-    icon: <Zap className="w-5 h-5" />,
-    items: ["AI Infrastructure", "Security Engineering", "Developer Tooling", "Self-Hosted Platforms", "Open Source", "Distributed Systems", "Cloud Architecture", "Privacy Engineering"],
-  },
-]
+
+const CATEGORY_ICONS: Record<string, LucideIcon> = { code: Code, brain: Brain, server: Server, zap: Zap }
 
 export default function Skills() {
   return (
@@ -114,10 +95,10 @@ export default function Skills() {
           </motion.div>
 
           <motion.div className="grid md:grid-cols-2 gap-3" variants={containerVariants}>
-            {skills.map((skill) => (
+            {skillCategories.map((skill) => (
               <motion.div key={skill.category} variants={itemVariants} className="bg-bmw-surface-card p-6">
                 <div className="flex items-center gap-3 mb-5 pb-4 border-b border-bmw-hairline">
-                  <div className="text-bmw-m-blue-light">{skill.icon}</div>
+                  <div className="text-bmw-m-blue-light">{(() => { const Icon = CATEGORY_ICONS[skill.icon]; return <Icon className="w-5 h-5" /> })()}</div>
                   <h2 className="text-bmw-ink text-sm font-bold tracking-machined uppercase">{skill.category}</h2>
                 </div>
                 <div className="flex flex-wrap gap-2.5">
@@ -133,6 +114,7 @@ export default function Skills() {
                             className="inline-flex items-center justify-center w-12 h-12 rounded-lg text-lg text-bmw-muted bg-bmw-surface-soft hover:bg-bmw-surface-hover hover:text-bmw-ink transition-colors cursor-pointer"
                           >
                             {techIconMap[item]}
+                            <span className="sr-only">{item}</span>
                           </span>
                         </TooltipTrigger>
                         <TooltipContent className="bg-bmw-surface-card border-bmw-hairline text-bmw-ink text-[11px] uppercase tracking-machined px-3 py-1.5 font-bold rounded-none shadow-xl">
