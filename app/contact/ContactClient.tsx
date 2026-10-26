@@ -20,11 +20,20 @@ const sanitizeInput = (input: string): string => {
 export default function Contact() {
   const [result, setResult] = useState("")
   const formRef = useRef<HTMLFormElement>(null)
+  const mountedAt = useRef(Date.now())
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const form = event.currentTarget
     const formData = new FormData(form)
+
+    // Bots fill hidden fields and submit instantly; humans do neither.
+    if (formData.get("website")) return
+    if (Date.now() - mountedAt.current < 3000) {
+      setResult("Please take a moment and try again.")
+      return
+    }
+
     const name = sanitizeInput(formData.get("name") as string || "")
     const email = sanitizeInput(formData.get("email") as string || "")
     const message = sanitizeInput(formData.get("message") as string || "")
@@ -32,6 +41,10 @@ export default function Contact() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(email)) { setResult("Please enter a valid email address"); return }
     if (!name || !email || !message) { setResult("Please fill in all required fields"); return }
+    if (name.length > 100 || email.length > 254 || message.length > 5000) {
+      setResult("One of the fields is too long.")
+      return
+    }
 
     setResult("Sending...")
 
@@ -152,6 +165,14 @@ export default function Contact() {
 
           <motion.div variants={itemVariants} className="bg-bmw-surface-card p-6">
             <form ref={formRef} onSubmit={onSubmit} className="space-y-5">
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="sr-only" aria-label="Leave this field empty"
+              />
               <div>
                 <label htmlFor="name" className="bmw-label text-[10px] block mb-2">Name</label>
                 <input
@@ -159,6 +180,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
+                  maxLength={100}
                   placeholder="Your name"
                   className="w-full h-12 px-4 bg-bmw-surface-soft border border-bmw-hairline text-bmw-ink text-sm placeholder:text-bmw-muted focus:outline-none focus:border-bmw-ink transition-colors"
                 />
@@ -170,6 +192,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
+                  maxLength={254}
                   placeholder="your.email@example.com"
                   className="w-full h-12 px-4 bg-bmw-surface-soft border border-bmw-hairline text-bmw-ink text-sm placeholder:text-bmw-muted focus:outline-none focus:border-bmw-ink transition-colors"
                 />
@@ -180,6 +203,7 @@ export default function Contact() {
                   id="message"
                   name="message"
                   required
+                  maxLength={5000}
                   rows={5}
                   placeholder="Tell me about your project..."
                   className="w-full px-4 py-3 bg-bmw-surface-soft border border-bmw-hairline text-bmw-ink text-sm placeholder:text-bmw-muted focus:outline-none focus:border-bmw-ink transition-colors resize-none"
