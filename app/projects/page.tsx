@@ -8,8 +8,10 @@ const ProjectsClient = dynamic(() => import("./ProjectsClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Shipped Products | Sai Dutta Abhishek Dash — Founder & Engineer",
-  description: "22 production systems shipped by Sai Dutta Abhishek Dash — LLM inference engines, on-device ML models, code security agents, language benchmarks, privacy-first platforms, and developer tooling. All publicly documented.",
+  title: {
+    absolute: "22 Projects & Shipped Systems | Sai Dutta Abhishek Dash (SDAD)",
+  },
+  description: "Sai Dutta Abhishek Dash (SDAD) has shipped 22 projects spanning byte-identical model benchmarks, Tesla T4 LLM benchmarking, on-device phishing detection, code security agents, language data, privacy-first platforms, and developer tooling.",
   keywords: [
     "Shipped Products",
     "Production Systems",

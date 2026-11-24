@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
         rules: [
             // ── AI search & citation crawlers ──
             {
-                userAgent: ['GPTBot', 'ChatGPT-User'],
+                userAgent: ['OAI-SearchBot', 'GPTBot', 'ChatGPT-User'],
                 allow: '/',
             },
             {
@@ -13,7 +13,7 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
             },
             {
-                userAgent: ['ClaudeBot', 'Claude-User', 'anthropic-ai'],
+                userAgent: ['Claude-SearchBot', 'ClaudeBot', 'Claude-User'],
                 allow: '/',
             },
             {
@@ -26,15 +26,6 @@ export default function robots(): MetadataRoute.Robots {
             },
             {
                 userAgent: 'Applebot',
-                allow: '/',
-            },
-            // ── User-triggered fetchers (fired when a user asks a model to read the page) ──
-            {
-                userAgent: 'Perplexity-User',
-                allow: '/',
-            },
-            {
-                userAgent: 'Claude-User',
                 allow: '/',
             },
             // ── AI platform crawlers ──

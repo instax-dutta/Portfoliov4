@@ -58,7 +58,7 @@ const credentialsStructuredData = {
       "datePublished": SITE.datePublished,
       "dateModified": SITE.dateModified,
       "isPartOf": { "@id": "https://sdad.pro/#website" },
-      "mainEntity": { "@id": "https://sdad.pro/#person" }
+      "mainEntity": { "@type": "Person", "@id": "https://sdad.pro/#person" }
     },
     {
       "@type": "EducationalOccupationalCredential",

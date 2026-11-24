@@ -54,7 +54,11 @@ export default function Projects() {
             >
               <div className="p-6 h-full flex flex-col">
                 <div className="mb-3">
-                  <h2 className="text-bmw-ink text-sm font-bold uppercase tracking-machined mb-1" itemProp="name">{project.title}</h2>
+                  <h2 className="text-bmw-ink text-sm font-bold uppercase tracking-machined mb-1" itemProp="name">
+                    <Link href={`/projects/${project.slug}`} className="hover:text-bmw-m-blue-light transition-colors">
+                      {project.title}
+                    </Link>
+                  </h2>
                   <p className="text-bmw-muted text-xs uppercase tracking-[0.5px]">{project.subtitle}</p>
                 </div>
                 <p className="text-bmw-body text-sm leading-relaxed mb-4 flex-1" itemProp="description">{project.description}</p>

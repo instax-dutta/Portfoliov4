@@ -65,7 +65,7 @@ const contactStructuredData = {
       "inLanguage": "en",
       "datePublished": SITE.datePublished,
       "dateModified": SITE.dateModified,
-      "mainEntity": { "@id": "https://sdad.pro/#person" }
+      "mainEntity": { "@type": "Person", "@id": "https://sdad.pro/#person" }
     },
     {
       "@type": "Service",

@@ -94,6 +94,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        destination: 'https://sdad.pro/:path*',
+        permanent: true,
+        has: [{ type: 'host', value: 'www.sdad.pro' }],
+      },
+      {
         source: '/education',
         destination: '/credentials',
         permanent: true,

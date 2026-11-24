@@ -8,8 +8,8 @@ export const SITE = {
   email: "contact@sdad.pro",
   location: "Odisha, India",
   city: "Dhenkanal, Odisha",
-  dateModified: "2026-11-25",
-  datePublished: "2024-01-01",
+  dateModified: "2026-11-25T00:00:00.000Z",
+  datePublished: "2024-01-01T00:00:00.000Z",
   lastUpdatedLabel: "Last updated: November 2026",
   sameAs: [
     "https://github.com/instax-dutta",

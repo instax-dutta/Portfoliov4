@@ -7,8 +7,8 @@ const HomeClient = dynamic(() => import("./components/HomeClient"), {
 })
 
 export const metadata: Metadata = {
-  title: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
-  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products spanning byte-identical model benchmarks, Tesla T4 LLM benchmarking, on-device phishing detection, privacy-first platforms, and developer tooling. Active across multiple deep-tech ventures.",
+  title: "SDAD | Sai Dutta Abhishek Dash — AI Engineer & Founder",
+  description: "Sai Dutta Abhishek Dash (SDAD) builds AI infrastructure, language AI, on-device security, and developer tools. 22 shipped projects.",
   keywords: [
     "Founder",
     "Builder",
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
     canonical: "https://sdad.pro/",
   },
   openGraph: {
-    title: "Sai Dutta Abhishek Dash — Founder & Engineer",
-    description: "Building AI infrastructure, language technology for underserved markets, and security systems. 225+ public repos across GitHub and Hugging Face, open-source benchmarks and datasets, 22 shipped products.",
+    title: "SDAD | Sai Dutta Abhishek Dash — Founder & Engineer",
+    description: "Sai Dutta Abhishek Dash (SDAD) builds AI infrastructure, language technology for underserved markets, and security systems. 225+ public repos across GitHub and Hugging Face, open-source benchmarks and datasets, 22 shipped products.",
     url: "https://sdad.pro/",
     siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
     locale: "en_US",
@@ -92,7 +92,7 @@ const homeStructuredData = {
       "isPartOf": { "@id": "https://sdad.pro/#website" },
       "datePublished": SITE.datePublished,
       "dateModified": SITE.dateModified,
-      "mainEntity": { "@id": "https://sdad.pro/#person" },
+      "mainEntity": { "@type": "Person", "@id": "https://sdad.pro/#person" },
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": ["#answer-home-0 h2", "#answer-home-0 p"]

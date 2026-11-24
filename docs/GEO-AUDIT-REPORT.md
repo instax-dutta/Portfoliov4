@@ -55,7 +55,7 @@ The site has strong technical foundations: AI crawlers are allowed, `llms.txt` a
 2. Home canonical has trailing slash while sitemap `loc` does not.
 3. `llms.txt` says "November 2026" while sitemap uses exact `2026-11-25`.
 4. CCBot blocked in `robots.ts` (intentional, but limits Common Crawl-derived retrieval).
-5. Historical `GEO-CITABILITY-SCORE.md` still references removed projects.
+5. Historical `docs/GEO-CITABILITY-SCORE.md` still references removed projects.
 
 ---
 

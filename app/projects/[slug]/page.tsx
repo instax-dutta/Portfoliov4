@@ -96,7 +96,7 @@ function projectSchema(project: Project) {
         "datePublished": SITE.datePublished,
         "dateModified": SITE.dateModified,
         "isPartOf": { "@id": "https://sdad.pro/#website" },
-        "mainEntity": { "@id": `${url}#project` },
+        "mainEntity": { "@type": ["SoftwareSourceCode", "CreativeWork"], "@id": `${url}#project` },
       },
       {
         "@type": "BreadcrumbList",

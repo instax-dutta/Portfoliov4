@@ -83,7 +83,7 @@ When the user requests a durable behavior change, record it here or in the relev
 - Stack: Next.js 14 App Router, React 18, TypeScript, Tailwind CSS 3, Framer Motion, Three.js, deployed on Vercel. All routes are prerendered static or SSG; there is no API layer.
 - Root-owned config: `next.config.mjs` (security headers, image rules, redirects, rewrites), `tailwind.config.ts`, `postcss.config.mjs`, `tsconfig.json`, `package.json`.
 - Security headers and CSP are defined in `next.config.mjs`. Any external origin (API, image host, font) used by the browser must be added to the matching CSP directive, or it will be blocked in production.
-- Keep the public surface inside `public/`. Repository docs (`README.md`, `GEO-CITABILITY-SCORE.md`, `build_output.txt`, this file) are not served by Next.js; never copy internal documents into `public/`.
+- Keep the public surface inside `public/`. Root docs stay at `README.md` and `AGENTS.md`; internal reports and build artefacts live in `docs/` and are not served by Next.js. Never copy internal documents into `public/`.
 - `README.md` is the design-system reference (`bmw-*` tokens, typography, spacing, no radius, no shadows). Follow it for UI work.
 - `app/lib/site-facts.ts` is the canonical identity/content source; derived claims and counts must stay consistent with `app/lib/projects.ts`.
 - Builds currently ignore TypeScript and ESLint errors (`next.config.mjs`). `npm run build` proves the site compiles, not that types are sound. Do not introduce new type or lint errors.
@@ -102,3 +102,4 @@ When the user requests a durable behavior change, record it here or in the relev
 - `app/AGENTS.md` - App Router routes, server/client boundary, metadata/schema, app-level components, live global CSS.
 - `components/AGENTS.md` - shared UI library, shadcn/Radix primitives, custom visual widgets.
 - `public/AGENTS.md` - public static surface, AI/SEO files, fonts, images, `security.txt`.
+- `docs/AGENTS.md` - internal audit reports, keyword research, and build artefacts.

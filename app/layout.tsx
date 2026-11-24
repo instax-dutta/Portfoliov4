@@ -17,10 +17,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
+    default: "SDAD | Sai Dutta Abhishek Dash — Founder & Engineer",
     template: "%s | Sai Dutta Abhishek Dash",
   },
-  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products spanning byte-identical model benchmarks, Tesla T4 LLM benchmarking, on-device phishing detection, privacy-first platforms, and developer tooling. Active across multiple ventures in deep-tech AI.",
+  description: "Sai Dutta Abhishek Dash (SDAD) builds AI infrastructure, language AI, on-device security, and developer tools. 22 shipped projects.",
   keywords: [
     "Founder",
     "Builder",
