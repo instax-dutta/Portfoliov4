@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
-import AnswerBlocks, { stripLinkMarkup } from "./components/AnswerBlocks"
-import { SITE, answerSections } from "./lib/site-facts"
+import AnswerBlocks from "./components/AnswerBlocks"
+import { SITE, faqSchema } from "./lib/site-facts"
 const HomeClient = dynamic(() => import("./components/HomeClient"), {
   loading: () => null,
 })
 
 export const metadata: Metadata = {
   title: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
-  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products spanning on-device ML, LLM inference engines, privacy-first platforms, and developer tooling. Active across multiple deep-tech ventures.",
+  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products spanning on-device ML, LLM inference engines, privacy-first platforms, and developer tooling. Active across multiple deep-tech ventures.",
   keywords: [
     "Founder",
     "Builder",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Sai Dutta Abhishek Dash — Founder & Engineer",
-    description: "Building AI infrastructure, language technology for underserved markets, and security systems. 85+ repos, 46+ HF models, 20+ shipped products.",
+    description: "Building AI infrastructure, language technology for underserved markets, and security systems. 225+ public repos across GitHub and Hugging Face, open-source benchmarks and datasets, 22 shipped products.",
     url: "https://sdad.pro/",
     siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
     locale: "en_US",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sai Dutta Abhishek Dash — Founder & Engineer",
-    description: "Building AI infrastructure, language technology, and security systems. 85+ repos, 46+ HF models.",
+    description: "Building AI infrastructure, language technology, and security systems. 225+ public repos across GitHub and Hugging Face, open-source benchmarks and datasets.",
     images: ["/og-image.png"],
   }
 }
@@ -76,17 +76,7 @@ const homeStructuredData = {
         "cssSelector": ["#answer-home-0 h2", "#answer-home-0 p"]
       }
     },
-    {
-      "@type": "FAQPage",
-      "@id": "https://sdad.pro/#faq",
-      "inLanguage": "en",
-      "isPartOf": { "@id": "https://sdad.pro/#profile" },
-      "mainEntity": answerSections.home.map((section) => ({
-        "@type": "Question",
-        "name": section.question,
-        "acceptedAnswer": { "@type": "Answer", "text": stripLinkMarkup(section.answer) }
-      }))
-    },
+    faqSchema("home", "https://sdad.pro"),
     {
       "@type": "BreadcrumbList",
       "@id": "https://sdad.pro/#breadcrumb",

@@ -49,7 +49,7 @@ const focusAreas = [
   {
     icon: <Globe className="w-4 h-4" />,
     title: "Open Source & Community",
-    desc: "85+ public repositories. Maintaining tools across AI, infrastructure, security, and developer ecosystems.",
+    desc: "225+ public repositories across GitHub and Hugging Face. Maintaining tools across AI, infrastructure, security, and developer ecosystems.",
   },
 ]
 
@@ -68,7 +68,7 @@ export default function About() {
           <span className="bmw-label inline-block mb-4">About</span>
           <h1 className="bmw-display-lg mb-4">Builder Profile</h1>
           <p className="text-bmw-body text-base max-w-3xl leading-relaxed">
-            I build AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products, 85+ public repositories, and multiple active ventures in deep-tech AI. My work spans LLM inference engines, on-device ML models, code security agents, privacy-first platforms, and <Link href="/projects" className="underline hover:text-bmw-m-blue-light transition-colors">open-source tools</Link> used by engineers worldwide.
+            I build AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products, 225+ public repositories across GitHub and Hugging Face, and multiple active ventures in deep-tech AI. My work spans LLM inference engines, on-device ML models, code security agents, privacy-first platforms, and <Link href="/projects" className="underline hover:text-bmw-m-blue-light transition-colors">open-source tools</Link> used by engineers worldwide.
           </p>
         </motion.div>
 
@@ -94,7 +94,7 @@ export default function About() {
         </motion.section>
 
         <motion.section variants={itemVariants} aria-labelledby="about-focus">
-          <p className="text-bmw-muted text-xs mb-8"><time dateTime="2026-09-27">Last updated: September 2026</time></p>
+          <p className="text-bmw-muted text-xs mb-8"><time dateTime="2026-11-25">Last updated: November 2026</time></p>
           <h2 id="about-focus" className="bmw-display-md mb-8">Focus Areas</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {focusAreas.map((area) => (

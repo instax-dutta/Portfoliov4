@@ -2,7 +2,7 @@
 
 > Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems. Available for advisory, consulting, and engineering partnerships.
 
-**Last updated:** September 2026
+**Last updated:** November 2026
 
 ## What I Offer
 
@@ -33,7 +33,7 @@
 - **Web applications** — Next.js, React, TypeScript, Node.js
 - **Developer tools** — CLI tools, SDKs, APIs, documentation platforms
 - **Infrastructure** — Docker, Kubernetes, AWS, Vercel, CI/CD pipelines
-- **Open source** — 85+ public repositories, 46+ Hugging Face models
+- **Open source** — 225+ public repositories across GitHub and Hugging Face, 130+ models and datasets on Hugging Face
 
 **Best for:** Startups needing CTO-level technical leadership, teams building developer-facing products
 
@@ -57,18 +57,18 @@
 ## Technical Credentials
 
 - **AWS Certified** Cloud Practitioner (2024)
-- **46+ models** published on Hugging Face
-- **22+ datasets** curated and public
-- **85+ public repositories** on GitHub
-- **20+ production products** shipped
+- **130+ models and datasets** published on Hugging Face
+- **8 AI agent skills** spanning validation, fine-tuning, design, research, and learning
+- **225+ public repositories** across GitHub and Hugging Face
+- **22 production products** shipped
 - **Active ventures** in deep-tech AI and language technology
 
 ## Notable Technical Achievements
 
-- Built a C99 inference engine that runs 35B parameter MoE models on 8GB Apple Silicon
-- Created a 131KB on-device ML model with 90% precision for phishing detection
-- Designed a 3x more efficient tokenizer for Brahmic scripts (Odia language)
-- Shipped a self-verifying coding agent with oracle-gated verification loops
+- Built sysone-bench, a byte-identical model benchmark with sealed manifests and reproducibility tooling
+- Built PhishScout and PhishTrap, a local phishing-detection system with an auto-refreshing dataset pipeline
+- Designed an Odia-optimized tokenizer for Brahmic scripts (Odia language)
+- Built sysone-bench, an independent byte-identical benchmark with sealed manifests and reproducibility tooling
 - Built zero-knowledge encrypted systems with client-side Web Crypto API
 
 ## Industries & Domains
@@ -88,7 +88,7 @@
 - **GitHub:** github.com/instax-dutta
 - **LinkedIn:** linkedin.com/in/sdabhishekdash
 - **Portfolio:** sdad.pro
-- **Website:** maelis.sdad.pro (Maelis Research — Language AI Infrastructure)
+- **Website:** maelis.in (Maelis Research — Language AI Infrastructure)
 - **Website:** offsage.com (Offsage — Smart Engineering for Ambitious Brands)
 
 Open to: Investment conversations, strategic partnerships, technical collaborations, advisory roles.

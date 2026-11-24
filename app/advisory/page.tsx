@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Advisory & Engineering Services — Sai Dutta Abhishek Dash",
     description:
-      "5 service lines and 4 engagement models, grounded in 22 shipped open-source systems and 85+ public repositories. AI infrastructure, security, language technology, product engineering, and technical advisory.",
+      "5 service lines and 4 engagement models, grounded in 22 shipped open-source systems and 225+ public repositories across GitHub and Hugging Face. AI infrastructure, security, language technology, product engineering, and technical advisory.",
     url: "https://sdad.pro/advisory",
     siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
     locale: "en_US",

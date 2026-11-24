@@ -1,97 +1,85 @@
-# Sai Dutta Abhishek Dash — Full Profile
+# Sai Dutta Abhishek Dash - Full Profile
 
-> Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. Based in Odisha, India. Ships open-source by default.
+> Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. Based in Odisha, India. Ships open source by default.
 
-**Last updated:** September 2026
+**Last updated:** November 2026
 
 ## Identity
 
-Sai Dutta Abhishek Dash (also known as instax-dutta / R4C3R0P) is a founder and engineer from Odisha, India. He builds across the full stack — from C99 inference engines to Next.js web platforms — with a focus on AI infrastructure, language technology for underserved markets, and privacy-first security systems.
+Sai Dutta Abhishek Dash (also known as SDAD, instax-dutta, R4C3R0P, RACER IS OP, AbhishekDash69) is a founder and engineer from Odisha, India. He builds across the full stack, from Python benchmark infrastructure and Java products to Next.js web platforms, with a focus on AI infrastructure, language technology for underserved markets, and privacy-first security systems.
 
-He has shipped 22 open-source production systems, maintains 85+ public repositories on GitHub, and has published 46+ models and 22+ datasets on Hugging Face. He is AWS Certified (Cloud Practitioner, 2024) and holds a Bachelor's degree in Computer Science from GIET University Gunupur (2025).
+He has shipped 22 production systems, maintains 225+ public repositories across GitHub and Hugging Face, including 130+ models and datasets. He is AWS Certified (Cloud Practitioner, 2024) and holds a Bachelor's degree in Computer Science from GIET University Gunupur (2025).
 
 ## Core Thesis
 
 Three conviction-driven bets:
 
-1. **Language AI should exist for every language with 10M+ speakers.** There are 38 million Odia speakers. Zero commercial Odia-specific AI APIs exist. Maelis Research is building the first one — tokenizer optimization, LLMs, speech recognition, and translation.
+1. **Language AI should exist for every language with 10M+ speakers.** There are 38 million Odia speakers. Maelis Research is building language AI infrastructure for Odia, including tokenizer optimization, speech recognition, and translation.
 
-2. **On-device ML is the future of security.** Not every threat detection model needs a cloud API. PhishScout is a 131KB model that detects phishing URLs with 90% precision in ~4ms, running entirely on-device.
+2. **Measured AI infrastructure beats benchmark theater.** sysone-bench and T4-Bench preserve protocols, raw results, and reproducibility artifacts. finetune-llm turns controlled GPU measurements into a verification-gated agent workflow.
 
-3. **Privacy-first doesn't mean worse UX.** Binify, CL-Chat Reborn, and CL-Chat prove you can build zero-knowledge systems that feel native. Client-side encryption, no accounts, no telemetry.
+3. **Privacy and safety must be built into the system.** Binify encrypts before transmission, PhishTrap validates data before publication, gmail-automator enforces quota ceilings, and truemotion gives agents rendered-frame feedback before export.
 
 ## Detailed Product Profiles
 
-### AgentLoop
-**Category:** AI Agent Infrastructure
+### PhishScout
+**Category:** Security Data Engineering
 **Language:** Python
-**URL:** https://github.com/instax-dutta/agentloop
+**Repository:** https://github.com/instax-dutta/PhishScout
+**Dataset:** https://huggingface.co/datasets/saidutta69/PhishTrap
+**Pipeline:** https://github.com/instax-dutta/PhishTrap
 
-Harness-agnostic, self-verifying autonomy wrapper for coding agents. AgentLoop drives OpenCode, Kilo, Claude, Aider, and Codex in a verify-gated loop with a held-out oracle. The agent must prove its changes are correct before the loop terminates. This solves the fundamental reliability problem in autonomous coding agents — they stop when they're right, not when they give up.
-
-### ornith-flight
-**Category:** LLM Inference
-**Language:** C99
-**URL:** https://github.com/instax-dutta/ornith-flight
-
-Expert-streaming C99 inference engine for Ornith 35B MoE. Runs 20 GB models on 8 GB Apple Silicon via per-layer streaming I/O. Zero Python dependencies, pure systems engineering. Demonstrates that high-performance inference doesn't require GPU clusters — a well-engineered CPU implementation can serve real workloads on consumer hardware.
+Local phishing-detection system paired with PhishTrap, an original auto-refreshing URL dataset pipeline. PhishTrap fetches OpenPhish, Phishing.Database, PhishStats, and Tranco every six hours, canonicalizes URLs, tracks freshness, prunes expired entries, creates deterministic stratified splits, and validates before publication. PhishScout is designed for router, browser-extension, and edge-device deployment.
 
 ### MarkItDownJS
 **Category:** Document Processing
 **Language:** TypeScript
 **URL:** https://github.com/instax-dutta/MarkItDownJS
 
-AST-first document ingestion and conversion platform. Converts PDFs, DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, images, audio, EPUB, and archives into clean, LLM-friendly Markdown. Built as a Turborepo monorepo with Vite, pnpm, and RAG-ready chunking. Used as the backend engine for Tooner and other AI pipeline tools.
+AST-first document ingestion and conversion platform. Converts PDFs, DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, images, audio, EPUB, and archives into clean, LLM-friendly Markdown. Built as a Turborepo monorepo with Vite, pnpm, and RAG-ready chunking.
+
+### sysone-bench
+**Category:** AI Benchmarking
+**Language:** Python
+**URL:** https://sysone.sdad.pro
+**Repository:** https://github.com/instax-dutta/sysone-bench
+
+Independent, byte-identical head-to-head benchmark for System One decision models. Runs 50 distinct measurements against a sealed manifest with checksummed artifacts and seed 42. The closed Jev reference scores 0.9065 while the best open model scores 0.8702 under the same protocol. Includes 36 test files, CI, public results, and reproducibility tooling.
+
+### T4-Bench
+**Category:** AI Benchmarking
+**Language:** Python
+**URL:** https://t4b.sdad.pro
+**Repository:** https://github.com/instax-dutta/T4-Bench
+
+Measured benchmark suite for LLM inference, fine-tuning, image, video, and agent workloads on two consumer Kaggle Tesla T4 GPUs. Preserves CSV and JSON results, reports, logs, runner scripts, and generated media. Recorded results include LFM2.5-8B-A1B at 119 tokens per second, FLUX.2 klein at 374 images per hour, and an Unsloth NF4 run at 7.1 GB versus 14.9 GB stock.
+
+### Gupshup
+**Category:** Language Dataset
+**URL:** https://huggingface.co/datasets/saidutta69/Gupshup
+
+Original privacy-scrubbed corpus of observed Roman-script Hinglish chat, including community emote tokens. Contains 353,843 messages split into 318,458 training and 35,385 test rows. Uses author hashing, mention/link redaction, abuse filtering, documented anonymisation, and deterministic splits.
 
 ### Vulscany
 **Category:** Security Engineering
 **Language:** TypeScript / Next.js
 **URL:** https://github.com/instax-dutta/vulscany
 
-Private, self-hostable AI-powered code security agent. Born from a venture-backed startup codebase, now open-source. Multi-language scanning, AI-powered fix generation, real-time CVE matching, GitHub OAuth integration. Zero database dependencies — runs entirely locally.
-
-### PhishScout
-**Category:** On-Device ML
-**Language:** Python
-**URL:** https://huggingface.co/saidutta69/PhishScout
-**Repository:** https://github.com/instax-dutta/PhishScout
-
-131.5 KB on-device phishing URL detector. 90% precision, ~4ms per lookup. Trained on curated phishing datasets from OpenPhish, Phishing.Database, and PhishStats. Designed for network-level scam protection — runs on edge devices, home routers, and lightweight VPS instances without cloud dependencies.
-
-### Hinglish-Bench
-**Category:** NLP Benchmarking
-**Language:** Python
-**URL:** https://github.com/instax-dutta/hinglish-bench
-
-Reference-free benchmark for measuring LLM Hinglish (Hindi-English code-mixed) text generation. 34 prompts across 8 categories. Metrics include CMI (Code-Mixing Index), M-Index, SyMCoM, plus LLM judge evaluation. Integrates with lm-evaluation-harness for standardized evaluation pipelines.
+Private, self-hostable AI-powered code security agent. Multi-language scanning, AI-powered fix generation, real-time CVE matching, and GitHub OAuth integration. Runs locally with zero database dependencies.
 
 ### PraharShield
 **Category:** Security Engineering
 **Language:** Java
 **URL:** https://github.com/instax-dutta/PraharShield
 
-High-performance bot filtering plugin for Minecraft Velocity proxies. Built on LimboAPI. Features CAPTCHA handshakes, client fingerprinting, and pattern-based detection to block 100k join-flood JPS attacks on a 1GB RAM VPS.
-
-### CL-Chat Reborn
-**Category:** Cryptography / P2P
-**Language:** Python
-**URL:** https://github.com/instax-dutta/cl-chat-reborn
-
-Peer-to-peer command-line chat with per-connection X25519 ECDH key exchange, ChaCha20-Poly1305 AEAD encryption, and HKDF-SHA256 key derivation. Serverless mesh propagation, TOFU fingerprint verification, full input sanitization. 81 pytest tests covering all cryptographic operations.
-
-### Forensic-Recovery
-**Category:** Digital Forensics
-**Language:** PowerShell
-**URL:** https://github.com/instax-dutta/Forensic-Recovery
-
-Forensically-sound digital evidence acquisition tool for Windows. SHA-256 chain-of-custody verification, automated system file exclusion, audit logs, dry-run mode, multi-drive triage. Designed for law enforcement and incident response teams.
+High-performance bot filtering plugin for Minecraft Velocity proxies. Built on LimboAPI with CAPTCHA handshakes, client fingerprinting, and pattern-based detection to block join-flood attacks on a 1GB RAM VPS.
 
 ### DadGuard
 **Category:** Windows Security
 **Language:** C#
 **URL:** https://github.com/instax-dutta/DadGuard
 
-Lightweight Windows security watchdog for protecting non-technical family members. Real-time threat monitoring, suspicious process detection, and alert system — all with minimal system overhead.
+Lightweight Windows security watchdog for protecting non-technical family members. Real-time threat monitoring, suspicious process detection, and alerts with minimal system overhead.
 
 ### Binify
 **Category:** Privacy Infrastructure
@@ -99,7 +87,7 @@ Lightweight Windows security watchdog for protecting non-technical family member
 **URL:** https://bin.sdad.pro
 **Repository:** https://github.com/instax-dutta/binify
 
-Zero-knowledge encrypted pastebin with client-side Web Crypto API encryption. Data is encrypted in the browser before transmission. The server never sees plaintext. Built with Next.js, Turso database, and Upstash Redis for rate limiting.
+Zero-knowledge encrypted pastebin with client-side Web Crypto API encryption. Data is encrypted in the browser before transmission, so the server never sees plaintext. Built with Next.js, Turso, and Upstash Redis for rate limiting.
 
 ### Ansora
 **Category:** Developer Platform
@@ -107,93 +95,100 @@ Zero-knowledge encrypted pastebin with client-side Web Crypto API encryption. Da
 **URL:** https://blog.sdad.pro
 **Repository:** https://github.com/instax-dutta/ansora
 
-Self-hostable, serverless-deployable blogging platform. Every post is a Markdown file, every save is a git commit. No database, no SaaS CMS. Deploy to Netlify, Vercel, Docker, or any VPS. Git-native version control for all content.
-
-### The Watcher
-**Category:** Data Engineering / AI
-**Language:** Python
-**URL:** https://github.com/instax-dutta/The-Watcher
-
-Reddit used-tech intelligence bot. Monitors 13 Indian used-tech subreddits 24/7, identifies WTS (Want to Sell) posts, uses LLM extraction to parse price, specs, and condition from natural language, and drops rich embeds in Discord channels.
-
-### Visitor Analytics
-**Category:** Privacy / Developer Tooling
-**Language:** TypeScript
-**URL:** https://github.com/instax-dutta/visitor-analytics
-
-Production-ready, framework-agnostic analytics SDK. Tracks visitors, page views, performance metrics, and user interactions — all anonymous, zero PII. Privacy-preserving by design.
+Self-hostable, serverless-deployable blogging platform. Every post is a Markdown file and every save is a git commit. No database and no SaaS CMS. Deploys to Netlify, Vercel, Docker, or any VPS.
 
 ### PacketBuddy
 **Category:** Network Monitoring
 **Language:** Python / JavaScript
 **URL:** https://github.com/instax-dutta/packet-buddy
 
-Cross-platform network usage monitor with real-time analytics. Runs silently in the background, tracks bandwidth usage across interfaces, and provides beautiful real-time dashboards. Zero configuration required.
+Cross-platform network usage monitor with real-time analytics. Runs quietly in the background, tracks bandwidth usage across interfaces, and provides dashboards with minimal configuration.
 
-### Auralyn
-**Category:** Discord Bot
+### winnow
+**Category:** Self-Hosted Product
+**Language:** Java
+**URL:** https://github.com/instax-dutta/winnow
+
+Self-hosted lead generation and cold-email platform for agencies. Finds published business emails, keeps prospect data local, and sends campaigns through owned mailboxes. Includes tenant isolation, SSRF redirect protection, secret-store isolation, 218 tests, 14 release gates, an SBOM, and checksummed release artifacts.
+
+### truemotion
+**Category:** Agent Infrastructure
 **Language:** JavaScript
-**URL:** https://auralyn.sdad.pro
-**Repository:** https://github.com/instax-dutta/Auralyn
+**URL:** https://github.com/instax-dutta/truemotion
 
-Zero-infrastructure Discord music bot with a bundled Lavalink server. High-fidelity audio playback, smart search, queue management, and single-container Docker deployment. No external Lavalink setup required.
+Local MCP motion-graphics studio. Agents author HTML/GSAP scenes, inspect rendered frames, receive measured feedback, and export frame-accurate MP4s. Ships 11 MCP tools, deterministic seek-safe timelines, resumable rendering, and 103 tests plus golden-frame, crash, audio, CSP, schema, and concurrency suites.
 
-### 3D Web Contents
-**Category:** Frontend / Creative Coding
-**Language:** JavaScript
-**URL:** https://github.com/instax-dutta/3d-web-contents
+### gmail-automator
+**Category:** Agent Infrastructure
+**Language:** Python
+**URL:** https://github.com/instax-dutta/gmail-automator
 
-Zero-dependency, drop-in 3D components for React + Three.js. Eight copy-paste templates: CSS3DCard, ParticleField, MorphingBlob, WarpSpeed, TunnelScroll, GeometryRepel, LightingReflection, BarChart3D. Own the source, skip the npm bloat.
+Self-hosted Gmail MCP/REST gateway with encrypted OAuth custody, durable queues, rolling 24-hour quota accounting, paced sending, and an 85% quota ceiling. Ships 14 tools, 61 test files, CI, and release workflows.
 
 ## AI Agent Skills
 
 ### Brand Vibes
 **URL:** https://github.com/instax-dutta/brand-vibes
 
-Ships a library of 66 full brand design profiles (Stripe, Linear, Vercel, Apple, Claude, Nike, Ferrari, and more) plus an off-library DNA-extraction workflow. Apply any company's design language to your website while vibecoding. Resolves the brand, extracts design DNA into semantic tokens, applies to Tailwind/CSS/shadcn.
+Ships 66 full brand design profiles plus an off-library DNA-extraction workflow. Applies a company's design language to Tailwind, CSS, or shadcn while vibecoding.
 
 ### Market Validator
 **URL:** https://github.com/instax-dutta/market-validator
 
-Validate SaaS and product ideas by scraping real user complaints from Reddit, Twitter, G2, Quora, HackerNews, ProductHunt, V2EX, XiaoHongShu, Bilibili, and YouTube. Uses agent-reach for multi-platform data collection. Replaces guesswork with evidence from actual user pain points.
+Validates SaaS and product ideas using real user complaints from Reddit, X, G2, Quora, Hacker News, Product Hunt, V2EX, XiaoHongShu, Bilibili, and YouTube through agent-reach.
 
 ### Google Code Review
 **URL:** https://github.com/instax-dutta/google-code-review
 
-Google's official code review best practices packaged as an AI agent skill. Covers both reviewer and developer perspectives — what to look for, how to comment, CL descriptions, handling feedback, and resolving conflicts.
+Packages Google's public code-review best practices as an agent skill, covering reviewer and developer perspectives, CL descriptions, feedback, and conflict resolution.
 
 ### Only Skills You Need
 **URL:** https://github.com/instax-dutta/only-skills-you-need
 
-One install command for every coding AI tool. Curated skills stack: full-stack dev, frontend/React, SEO, workflow automation, and code review. Works on opencode, Claude Code, Antigravity, Kilocode.
+One install command for a curated coding-skills stack across OpenCode, Claude Code, Antigravity, and Kilocode.
 
 ### Roadmap Tutor
 **URL:** https://github.com/instax-dutta/roadmap-tutor
 
-Hermes Agent skill: learn any roadmap.sh roadmap one topic at a time, tracked across sessions. Stdlib-only Python, runs on a Raspberry Pi.
+Learn any roadmap.sh roadmap one topic at a time, with progress tracked across sessions. Stdlib-only Python that runs on a Raspberry Pi.
+
+### finetune-llm
+**URL:** https://github.com/instax-dutta/finetune-llm
+
+Hardware-aware, verification-gated fine-tuning workflow for coding agents. Probes VRAM, chooses an engine, prepares deterministic data, smoke-tests, trains with instrumentation, and verifies with a neutral evaluator. Backed by a controlled four-arm 2x T4 benchmark.
+
+### darpa-audit
+**URL:** https://github.com/instax-dutta/darpa-audit
+
+Deterministic startup and project audit based on the Heilmeier Catechism. Runs five ordered prompts, stops at the first failed gate, and returns an explicit SURVIVES / DOES NOT SURVIVE verdict.
+
+### flash-compare
+**URL:** https://github.com/instax-dutta/flash-compare
+
+Evidence-first product comparison using OEM specifications, owner reports, independent load tests, verified buyer reviews, and multiple stores. Rejects seeded reviews and inflated listings, then keeps at most two candidates.
 
 ## Maelis Research
 
 Maelis Research builds language AI infrastructure for Odia and low-resource Indian languages. Founded in 2026, based in Dhenkanal, Odisha.
 
-**The opportunity:** 38 million Odia speakers exist. Norwegian (5M), Dutch (25M), and Greek (13M) all have robust AI support. Odia has none. No commercial Odia-specific AI API exists today.
+**The opportunity:** 38 million Odia speakers. Norwegian (5M), Dutch (25M), and Greek (13M) all have robust AI support, while Odia has far fewer dedicated resources.
 
 **What Maelis is building:**
-- Odia-optimized tokenizer — 3x more efficient than generic alternatives for Brahmic scripts
-- Lekhani (ଲେଖନୀ) model family — Odia-exclusive LLMs in capability tiers (Pada, Chhanda, Kavya, Mahakavya)
-- Shruti (ଶ୍ରୁତି) — Odia speech recognition and synthesis
-- Anuvada (ଅନୁବାଦ) — Odia translation with cultural context
-- odia-eval-benchmark — 121,947 rows, 7 task families, 34 datasets (published on Hugging Face)
+- Odia-optimized tokenizer for Brahmic scripts
+- Lekhani Odia-exclusive LLM family
+- Shruti Odia speech recognition and synthesis
+- Anuvada Odia translation with cultural context
+- odia-eval-benchmark with 121,947 rows across 7 task families and 34 datasets
 
-All research released under Apache 2.0. DPIIT Startup Recognition. Positioned for IndiaAI Mission.
+Published artifacts carry their own licenses; see each repository or dataset card.
 
-**Website:** https://maelis.sdad.pro
+**Website:** https://maelis.in
 
 ## Offsage
 
-Offsage is a technical agency eliminating operational friction for startups and scaling teams. From first automation to full-scale SaaS. Built in India, deployed globally.
+Offsage is a technical agency delivering business automation, SaaS development, and web engineering for startups and scaling teams. Built in India, deployed globally.
 
-Discipline-first web engineering: Next.js, React Server Components, mobile-first responsive design, conversion-optimized layouts, measured animation systems.
+Discipline-first web engineering: Next.js, React Server Components, mobile-first responsive design, conversion-optimized layouts, and measured animation systems.
 
 **Website:** https://offsage.com
 
@@ -202,9 +197,9 @@ Discipline-first web engineering: Next.js, React Server Components, mobile-first
 - **Email:** contact@sdad.pro
 - **GitHub:** https://github.com/instax-dutta
 - **LinkedIn:** https://www.linkedin.com/in/sdabhishekdash/
-- **X (Twitter):** https://x.com/abhishekdash69
+- **X:** https://x.com/abhishekdash69
 - **Portfolio:** https://sdad.pro
 - **Blog:** https://blog.sdad.pro
 - **Hugging Face:** https://huggingface.co/saidutta69
 
-Open to: Investment conversations, strategic partnerships, technical collaborations, advisory roles.
+Open to investment conversations, strategic partnerships, technical collaborations, and advisory roles.

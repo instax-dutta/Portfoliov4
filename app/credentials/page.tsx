@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
 import AnswerBlocks from "../components/AnswerBlocks"
-import { SITE } from "../lib/site-facts"
+import { SITE, faqSchema } from "../lib/site-facts"
 const CredentialsClient = dynamic(() => import("./CredentialsClient"), {
   loading: () => null,
 })
 
 export const metadata: Metadata = {
   title: "Credentials — Sai Dutta Abhishek Dash",
-  description: "Verified educational background and industry certifications from AWS, GIET University, and leading tech institutions. Focus on AI, security, and cloud systems.",
+  description: "Educational background and industry certifications from AWS, GIET University, and leading tech institutions. Focus on AI, security, and cloud systems.",
   keywords: [
     "AWS Certified Cloud Practitioner",
     "Computer Science degree",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Credentials — Sai Dutta Abhishek Dash",
-    description: "Verified educational background and industry certifications from AWS, GIET University, and leading tech institutions.",
+    description: "Educational background and industry certifications from AWS, GIET University, and leading tech institutions.",
     images: ["/og-image.png"],
   }
 }
@@ -85,6 +85,7 @@ const credentialsStructuredData = {
         "url": "https://www.giet.edu"
       }
     },
+    faqSchema("credentials", "https://sdad.pro/credentials"),
     {
       "@type": "BreadcrumbList",
       "@id": "https://sdad.pro/credentials/#breadcrumb",

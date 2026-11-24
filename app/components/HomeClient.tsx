@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
 import { Github, Linkedin, Twitter, Mail, ArrowUpRight, BookOpen } from "lucide-react"
 import { transitionSmooth } from "../lib/animation"
+import { STATS } from "../lib/site-facts"
 
 const AerodynamicStream = dynamic(() => import("./AerodynamicStream"), {
   ssr: false,
@@ -49,9 +50,9 @@ export default function HomeClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: transitionSmooth.ease }}
             >
-              Building AI infrastructure, language technology, and security systems at production scale. Multiple ventures. 20+ shipped products. Open-source by default.
+              Building AI infrastructure, language technology, and security systems at production scale. Multiple ventures. 22 shipped products. Open-source by default.
               <span className="block text-bmw-muted text-sm mt-4 font-normal">
-                20+ shipped products • 85+ repositories • 5 AI agent skills
+                22 shipped products • 225+ repositories across GitHub and Hugging Face • {STATS.agentSkills} AI agent skills
               </span>
             </motion.p>
 

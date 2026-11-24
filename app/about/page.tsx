@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
 import AnswerBlocks from "../components/AnswerBlocks"
-import { SITE } from "../lib/site-facts"
+import { SITE, faqSchema } from "../lib/site-facts"
 const AboutClient = dynamic(() => import("./AboutClient"), {
   loading: () => null,
 })
 
 export const metadata: Metadata = {
   title: "About | Sai Dutta Abhishek Dash — Founder & Engineer",
-  description: "Building AI infrastructure, language technology, and security systems at production scale. 20+ shipped products. Active across multiple deep-tech ventures. Open to investment and partnerships.",
+  description: "Building AI infrastructure, language technology, and security systems at production scale. 22 shipped products. Active across multiple deep-tech ventures. Open to investment and partnerships.",
   keywords: [
     "Founder Profile",
     "Builder",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "About — Sai Dutta Abhishek Dash",
-    description: "Building AI infrastructure, language technology for underserved markets, and security systems. 85+ repos, 46+ HF models, 20+ shipped products.",
+    description: "Building AI infrastructure, language technology for underserved markets, and security systems. 225+ public repos across GitHub and Hugging Face, open-source benchmarks and datasets, 22 shipped products.",
     url: "https://sdad.pro/about",
     siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
     locale: "en_US",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About | Sai Dutta Abhishek Dash — Founder & Engineer",
-    description: "Building AI infrastructure, language technology, and security systems. 20+ shipped products.",
+    description: "Building AI infrastructure, language technology, and security systems. 22 shipped products.",
     images: ["/og-image.png"],
   }
 }
@@ -56,7 +56,7 @@ const aboutStructuredData = {
       "@id": "https://sdad.pro/about/#webpage",
       "url": "https://sdad.pro/about",
       "name": "About Sai Dutta Abhishek Dash — Founder & Engineer",
-      "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 85+ public repositories, 46+ Hugging Face models.",
+      "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 225+ public repositories across GitHub and Hugging Face, 130+ models and datasets on Hugging Face.",
       "inLanguage": "en",
       "datePublished": SITE.datePublished,
       "dateModified": SITE.dateModified,
@@ -89,14 +89,10 @@ const aboutStructuredData = {
             "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" }
           }
         ],
-        "sameAs": [
-          "https://github.com/instax-dutta",
-          "https://www.linkedin.com/in/sdabhishekdash/",
-          "https://twitter.com/abhishekdash69",
-          "https://huggingface.co/saidutta69"
-        ]
+        "sameAs": SITE.sameAs
       }
     },
+    faqSchema("about", "https://sdad.pro/about"),
     {
       "@type": "BreadcrumbList",
       "@id": "https://sdad.pro/about/#breadcrumb",

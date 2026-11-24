@@ -2,14 +2,14 @@ import type { Metadata } from "next"
 import dynamic from "next/dynamic"
 import AnswerBlocks from "../components/AnswerBlocks"
 import { projects } from "../lib/projects"
-import { SITE } from "../lib/site-facts"
+import { SITE, faqSchema } from "../lib/site-facts"
 const ProjectsClient = dynamic(() => import("./ProjectsClient"), {
   loading: () => null,
 })
 
 export const metadata: Metadata = {
   title: "Shipped Products | Sai Dutta Abhishek Dash — Founder & Engineer",
-  description: "20+ production systems shipped by Sai Dutta Abhishek Dash — LLM inference engines, on-device ML models, code security agents, language benchmarks, privacy-first platforms, and developer tooling. All open-source.",
+  description: "22 production systems shipped by Sai Dutta Abhishek Dash — LLM inference engines, on-device ML models, code security agents, language benchmarks, privacy-first platforms, and developer tooling. All publicly documented.",
   keywords: [
     "Shipped Products",
     "Production Systems",
@@ -20,18 +20,17 @@ export const metadata: Metadata = {
     "Language AI",
     "Privacy Engineering",
     "Open Source Software",
-    "AgentLoop",
-    "MarkItDownJS",
-    "Vulscany",
-    "PhishScout",
-    "ornith-flight"
+    "sysone-bench",
+    "T4-Bench",
+    "truemotion",
+    "winnow",
   ],
   alternates: {
     canonical: "https://sdad.pro/projects",
   },
   openGraph: {
     title: "Shipped Products — Sai Dutta Abhishek Dash",
-    description: "20+ production systems — LLM inference engines, on-device ML, code security agents, language benchmarks, and developer tooling. All open-source.",
+    description: "22 production systems — LLM inference engines, on-device ML, code security agents, language benchmarks, and developer tooling. All publicly documented.",
     url: "https://sdad.pro/projects",
     siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
     locale: "en_US",
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Shipped Products | Sai Dutta Abhishek Dash — Founder & Engineer",
-    description: "20+ production systems — LLM inference, on-device ML, code security, language AI, and developer tooling.",
+    description: "22 production systems — LLM inference, on-device ML, code security, language AI, and developer tooling.",
     images: ["/og-image.png"],
   }
 }
@@ -104,6 +103,7 @@ const projectsStructuredData = {
       "description": app.description,
       "author": { "@id": "https://sdad.pro/#person" }
     })),
+    faqSchema("projects", "https://sdad.pro/projects"),
     {
       "@type": "BreadcrumbList",
       "@id": "https://sdad.pro/projects/#breadcrumb",

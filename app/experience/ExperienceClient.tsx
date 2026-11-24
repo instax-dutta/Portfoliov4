@@ -26,12 +26,12 @@ const experiences: Experience[] = [
     start: "2026-08",
     type: "Founder",
     location: "Dhenkanal, Odisha",
-    description: "Building language AI infrastructure for Odia and low-resource Indian languages. Developing an Odia-optimized tokenizer (3x more efficient than generic alternatives), a family of Odia-exclusive LLMs (Lekhani), speech recognition (Shruti), and translation (Anuvada) APIs. All research released under Apache 2.0.",
+    description: "Building language AI infrastructure for Odia and low-resource Indian languages. Developing an Odia-optimized tokenizer, a family of Odia-exclusive LLMs (Lekhani), speech recognition (Shruti), and translation (Anuvada) APIs. Published artifacts carry their own licenses.",
     skills: ["Language AI", "Tokenizer Optimization", "Model Distillation", "On-Device ML", "NLP", "Low-Resource Languages", "Product Strategy", "Research"],
     achievements: [
-      "Building the first commercial Odia-specific AI API",
-      "3x more efficient tokenizer for Brahmic scripts",
-      "Odia-exclusive LLM family with Apache 2.0 licensing",
+      "Building an Odia-specific AI API (in development)",
+      "Odia-optimized tokenizer for Brahmic scripts",
+      "Odia-exclusive LLM family with per-artifact licensing",
       "Published unified Odia evaluation benchmark on Hugging Face"
     ],
   },
@@ -206,8 +206,8 @@ export default function Experience() {
         <motion.div className="mt-20 grid grid-cols-3 gap-3" variants={itemVariants}>
           {[
             { value: "3", label: "Active Ventures" },
-            { value: "20+", label: "Products Shipped" },
-            { value: "85+", label: "Public Repositories" },
+            { value: "22", label: "Products Shipped" },
+            { value: "225+", label: "Public Repos (GH + HF)" },
           ].map((stat) => (
             <div key={stat.label} className="bg-bmw-surface-soft p-6 text-center">
               <div className="text-bmw-ink text-3xl font-bold mb-1">{stat.value}</div>

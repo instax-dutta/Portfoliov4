@@ -36,7 +36,8 @@ const nextConfig = {
     const csp = [
       "default-src 'self'",
       // Next.js ships inline bootstrap/flight scripts; without a nonce they need unsafe-inline.
-      "script-src 'self' 'unsafe-inline'",
+      // The webpack dev runtime also needs eval; production stays strict.
+      `script-src 'self' 'unsafe-inline'${process.env.NODE_ENV === "production" ? "" : " 'unsafe-eval'"}`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://images.unsplash.com",
       "font-src 'self' data:",

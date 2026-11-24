@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
 import AnswerBlocks from "../components/AnswerBlocks"
-import { SITE } from "../lib/site-facts"
+import { SITE, faqSchema } from "../lib/site-facts"
 import { skillCategories } from "../lib/skills"
 const SkillsClient = dynamic(() => import("./SkillsClient"), {
   loading: () => null,
@@ -95,6 +95,7 @@ const skillsStructuredData = {
       "inLanguage": "en",
       "creator": { "@id": "https://sdad.pro/#person" }
     },
+    faqSchema("skills", "https://sdad.pro/skills"),
     {
       "@type": "BreadcrumbList",
       "@id": "https://sdad.pro/skills/#breadcrumb",

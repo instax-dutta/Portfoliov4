@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
 import AnswerBlocks from "../components/AnswerBlocks"
-import { SITE } from "../lib/site-facts"
+import { SITE, faqSchema } from "../lib/site-facts"
 const ExperienceClient = dynamic(() => import("./ExperienceClient"), {
   loading: () => null,
 })
@@ -58,6 +58,14 @@ const experienceStructuredData = {
       "datePublished": SITE.datePublished,
       "dateModified": SITE.dateModified,
       "numberOfItems": 6,
+      "itemListElement": [
+        { "@type": "ListItem", position: 1, name: "Founder, Maelis Research" },
+        { "@type": "ListItem", position: 2, name: "Co-Founder, Offsage" },
+        { "@type": "ListItem", position: 3, name: "Associate, Tech Mahindra" },
+        { "@type": "ListItem", position: 4, name: "Associate Trainee, Tech Mahindra" },
+        { "@type": "ListItem", position: 5, name: "Machine Learning and Software Engineering Internships" },
+        { "@type": "ListItem", position: 6, name: "CEO and Co-Founder, RacerNodes" }
+      ],
       "author": { "@id": "https://sdad.pro/#person" }
     },
     {
@@ -75,56 +83,11 @@ const experienceStructuredData = {
     },
     {
       "@type": "Organization",
-      "@id": "https://sdad.pro/experience/#maelisresearch",
-      "name": "Maelis Research",
-      "description": "Language AI infrastructure for Odia and low-resource Indian languages. Building tokenizer optimization, LLMs, speech recognition, and translation APIs.",
-      "url": "https://maelis.sdad.pro",
-      "foundingDate": "2026",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dhenkanal",
-        "addressRegion": "Odisha",
-        "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://maelis.sdad.pro",
-        "https://huggingface.co/MaelisResearch"
-      ]
-    },
-    {
-      "@type": "OrganizationRole",
-      "@id": "https://sdad.pro/experience/#maelisresearch-role",
-      "roleName": "Founder",
-      "description": "Building language AI infrastructure for 38 million Odia speakers. Developing Odia-optimized tokenizer, Lekhani model family, Shruti speech recognition, and Anuvada translation.",
-      "startDate": "2026-08",
-      "organization": { "@id": "https://sdad.pro/experience/#maelisresearch" },
-      "employee": { "@id": "https://sdad.pro/#person" }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://sdad.pro/experience/#offsage",
-      "name": "Offsage",
-      "description": "Smart engineering for ambitious brands. Digital and technical agency specializing in business automation, SaaS development, and web engineering for startups and scaling teams.",
-      "url": "https://offsage.com",
-      "sameAs": [
-        "https://offsage.com"
-      ]
-    },
-    {
-      "@type": "OrganizationRole",
-      "@id": "https://sdad.pro/experience/#offsage-role",
-      "roleName": "Co-Founder",
-      "description": "Co-founded a technical agency eliminating operational friction for startups and scaling teams — from first automation to full-scale SaaS.",
-      "startDate": "2025-09",
-      "organization": { "@id": "https://sdad.pro/experience/#offsage" },
-      "employee": { "@id": "https://sdad.pro/#person" }
-    },
-    {
-      "@type": "Organization",
       "@id": "https://sdad.pro/experience/#techmahindra",
       "name": "Tech Mahindra",
       "url": "https://www.techmahindra.com"
     },
+    faqSchema("experience", "https://sdad.pro/experience"),
     {
       "@type": "BreadcrumbList",
       "@id": "https://sdad.pro/experience/#breadcrumb",

@@ -12,6 +12,8 @@ export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }))
 }
 
+export const dynamicParams = false
+
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const project = projects.find((p) => p.slug === params.slug)
   if (!project) return {}
@@ -165,7 +167,7 @@ function projectAnswer(project: Project): string {
     parts.push(`The full source code is public at ${project.github}.`)
   }
   parts.push(
-    `Sai Dutta Abhishek Dash has shipped ${projects.length} open-source production systems, maintains 85+ public repositories on GitHub, and has published 46+ models and 22+ datasets on Hugging Face.`
+    `Sai Dutta Abhishek Dash has shipped ${projects.length} production systems, maintains 225+ public repositories across GitHub and Hugging Face, including 130+ models and datasets.`
   )
 
   // Keep every passage inside the 134-167 word extraction window. Only shorter

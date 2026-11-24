@@ -54,11 +54,7 @@ const contactStructuredData = {
       "name": "Sai Dutta Abhishek Dash",
       "url": "https://sdad.pro",
       "email": "contact@sdad.pro",
-      "sameAs": [
-        "https://github.com/instax-dutta",
-        "https://www.linkedin.com/in/sdabhishekdash/",
-        "https://twitter.com/abhishekdash69"
-      ]
+      "sameAs": SITE.sameAs
     },
     {
       "@type": "ContactPage",

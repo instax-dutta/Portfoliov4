@@ -110,8 +110,8 @@ export default function Credentials() {
 
         <motion.div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-3" variants={itemVariants}>
           {[
-            { value: "20+", label: "Products Built" },
-            { value: "85+", label: "Public Repositories" },
+            { value: "22", label: "Products Built" },
+            { value: "225+", label: "Public Repos (GH + HF)" },
             { value: "3+", label: "Years Building" },
             { value: "AI • Security • Infrastructure", label: "Focus" },
           ].map((stat) => (

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
     template: "%s | Sai Dutta Abhishek Dash",
   },
-  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products spanning on-device ML, LLM inference engines, privacy-first platforms, and developer tooling. Active across multiple ventures in deep-tech AI.",
+  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products spanning on-device ML, LLM inference engines, privacy-first platforms, and developer tooling. Active across multiple ventures in deep-tech AI.",
   keywords: [
     "Founder",
     "Builder",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     url: "https://sdad.pro",
     siteName: "Sai Dutta Abhishek Dash — Founder & Engineer",
     title: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
-    description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems. 85+ repositories, 46+ Hugging Face models, 20+ shipped products.",
+    description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems. 225+ repositories across GitHub and Hugging Face, 130+ models and datasets on Hugging Face, 22 shipped products.",
     images: [
       {
         url: "/og-image.png",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sai Dutta Abhishek Dash — Founder & Engineer",
-    description: "Building AI infrastructure, language technology, and security systems. 85+ repos, 46+ HF models, 20+ shipped products.",
+    description: "Building AI infrastructure, language technology, and security systems. 225+ public repos across GitHub and Hugging Face, open-source benchmarks and datasets, 22 shipped products.",
     images: ["/og-image.png"],
     creator: "@abhishekdash69",
     site: "@abhishekdash69",
@@ -119,11 +119,11 @@ const structuredData = {
       "@type": "Person",
       "@id": "https://sdad.pro/#person",
       "name": "Sai Dutta Abhishek Dash",
-      "alternateName": ["SDAD", "instax-dutta"],
+      "alternateName": ["SDAD", "instax-dutta", "R4C3R0P", "RACER IS OP", "AbhishekDash69"],
       "url": "https://sdad.pro",
       "image": "https://sdad.pro/og-image.png",
       "email": "contact@sdad.pro",
-      "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 20+ shipped products, 85+ public repositories, 46+ Hugging Face models.",
+      "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products, 225+ public repositories across GitHub and Hugging Face, 130+ models and datasets on Hugging Face.",
       "jobTitle": "Founder & Engineer",
       "sameAs": SITE.sameAs,
       "knowsAbout": [
@@ -165,7 +165,10 @@ const structuredData = {
         { "@id": "https://sdad.pro/#maelisresearch" },
         { "@id": "https://sdad.pro/#offsage" }
       ],
-      "worksFor": { "@id": "https://sdad.pro/#maelisresearch" },
+      "worksFor": [
+        { "@id": "https://sdad.pro/#maelisresearch" },
+        { "@id": "https://sdad.pro/#offsage" }
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Odisha",
@@ -187,10 +190,11 @@ const structuredData = {
       "@type": "Organization",
       "@id": "https://sdad.pro/#maelisresearch",
       "name": "Maelis Research",
-      "url": "https://maelis.sdad.pro",
-      "description": "Language AI infrastructure for Odia and low-resource Indian languages. Building an Odia-optimized tokenizer 3x more efficient than generic alternatives, the Lekhani Odia-exclusive LLM family, Shruti speech recognition, and Anuvada translation for 38 million Odia speakers.",
+      "url": "https://maelis.in",
+      "description": "Language AI infrastructure for Odia and low-resource Indian languages. Building an Odia-optimized tokenizer for Brahmic scripts, the Lekhani Odia-exclusive LLM family, Shruti speech recognition, and Anuvada translation for 38 million Odia speakers.",
       "foundingDate": "2026",
       "founder": { "@id": "https://sdad.pro/#person" },
+      "member": { "@id": "https://sdad.pro/#person" },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dhenkanal",
@@ -198,7 +202,8 @@ const structuredData = {
         "addressCountry": "IN"
       },
       "sameAs": [
-        "https://maelis.sdad.pro",
+        "https://maelis.in",
+        "https://www.linkedin.com/company/maelis-research",
         "https://huggingface.co/MaelisResearch"
       ]
     },
@@ -210,7 +215,11 @@ const structuredData = {
       "description": "Technical agency delivering business automation, SaaS development, and web engineering for startups and scaling teams.",
       "foundingDate": "2025",
       "founder": { "@id": "https://sdad.pro/#person" },
-      "sameAs": ["https://offsage.com"]
+      "member": { "@id": "https://sdad.pro/#person" },
+      "sameAs": [
+        "https://offsage.com",
+        "https://www.linkedin.com/company/offsage"
+      ]
     }
   ]
 }

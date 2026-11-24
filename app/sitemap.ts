@@ -7,14 +7,14 @@ import { projects } from './lib/projects'
  * lastmod and triggers needless recrawls.
  */
 const ROUTE_LASTMOD: Record<string, string> = {
-    '': '2026-09-27',
-    '/about': '2026-09-27',
-    '/projects': '2026-09-27',
-    '/experience': '2026-09-27',
-    '/skills': '2026-09-27',
-    '/credentials': '2026-09-27',
-    '/contact': '2026-09-27',
-    '/advisory': '2026-09-27',
+    '': '2026-11-25',
+    '/about': '2026-11-25',
+    '/projects': '2026-11-25',
+    '/experience': '2026-11-25',
+    '/skills': '2026-11-25',
+    '/credentials': '2026-11-25',
+    '/contact': '2026-11-25',
+    '/advisory': '2026-11-25',
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -44,8 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
 
     const agentRoutes = [
-        { url: '/llms.txt', lastModified: '2026-09-27', changeFrequency: 'monthly' as const, priority: 0.5 },
-        { url: '/llms-full.txt', lastModified: '2026-09-27', changeFrequency: 'monthly' as const, priority: 0.5 },
+        { url: '/llms.txt', lastModified: '2026-11-25', changeFrequency: 'monthly' as const, priority: 0.5 },
+        { url: '/llms-full.txt', lastModified: '2026-11-25', changeFrequency: 'monthly' as const, priority: 0.5 },
     ]
 
     return [...routes, ...projectRoutes, ...agentRoutes].map((route) => ({
