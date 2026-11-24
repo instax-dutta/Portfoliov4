@@ -16,6 +16,7 @@
 
 - **Name:** Sai Dutta Abhishek Dash (aliases: SDAD, instax-dutta, R4C3R0P, RACER IS OP, AbhishekDash69)
 - **Metrics snapshot:** November 2026
+- **Also known as:** instax-dutta, R4C3R0P, RACER IS OP, AbhishekDash69
 - **Role:** Founder & Engineer
 - **Location:** Odisha, India (Dhenkanal)
 - **Website:** https://sdad.pro
@@ -34,7 +35,7 @@
 
 Sai Dutta Abhishek Dash builds at the intersection of three domains:
 
-1. **Language AI for underserved markets** — Tokenizer optimization, LLMs, speech recognition, and translation for low-resource Indian languages. Building an Odia-specific AI API (in development) for 38 million speakers.
+1. **Language AI for underserved markets** — Tokenizer optimization, LLMs, speech recognition, and translation for low-resource Indian languages. Building an Odia AI API (in development) and an Odia tokenizer for 38 million speakers.
 2. **On-device security and measured AI infrastructure** — Local phishing detection, auto-refreshing security datasets, GPU benchmarks, and verification-gated fine-tuning workflows.
 3. **Privacy-first infrastructure** — Zero-knowledge architectures, on-device processing, encrypted communication systems, and self-hosted platforms.
 
@@ -46,7 +47,7 @@ Maelis Research is a language AI venture founded in 2026, based in Dhenkanal, Od
 
 **What it is building:**
 
-- **Odia-optimized tokenizer** — an Odia-optimized tokenizer for Brahmic scripts
+- **Odia tokenizer** — a Brahmic-script tokenizer for the Odia AI API
 - **Lekhani** — Odia-exclusive LLM family in capability tiers (Pada, Chhanda, Kavya, Mahakavya)
 - **Shruti** — Odia speech recognition and synthesis
 - **Anuvada** — Odia translation with cultural context
@@ -61,11 +62,11 @@ The 22 systems below span original tools, benchmarks, data pipelines, and agent 
 
 ### AI & Language Infrastructure
 
-- **PhishScout** — Local phishing-detection system paired with PhishTrap's auto-refreshing dataset pipeline. (https://github.com/instax-dutta/PhishScout)
+- **PhishScout** — On-device phishing detector paired with the PhishTrap phishing dataset pipeline. (https://github.com/instax-dutta/PhishScout)
 - **MarkItDownJS** — Universal document-to-Markdown conversion engine for TypeScript. Converts PDFs, Office docs, images, audio, and archives into AI-ready Markdown. (https://github.com/instax-dutta/MarkItDownJS)
-- **sysone-bench** — Independent byte-identical benchmark for System One decision models, with 50 measurements, sealed manifests, and reproducibility tooling. (https://sysone.sdad.pro)
-- **T4-Bench** — Measured inference, fine-tuning, image, video, and agent workloads on consumer Tesla T4 GPUs. (https://t4b.sdad.pro)
-- **Gupshup** — Original privacy-scrubbed Hinglish chat corpus with 353,843 messages and deterministic splits. (https://huggingface.co/datasets/saidutta69/Gupshup)
+- **sysone-bench** — Independent byte-identical model benchmark for System One decision models, with 50 measurements, sealed manifests, and reproducibility tooling. (https://sysone.sdad.pro)
+- **T4-Bench** — Tesla T4 LLM benchmark suite for inference, fine-tuning, image, video, and agent workloads. (https://t4b.sdad.pro)
+- **Gupshup** — Gupshup Hinglish corpus of privacy-scrubbed code-mixed chat with 353,843 messages and deterministic splits. (https://huggingface.co/datasets/saidutta69/Gupshup)
 
 ### Security & Systems
 
@@ -79,8 +80,8 @@ The 22 systems below span original tools, benchmarks, data pipelines, and agent 
 - **Ansora** — Self-hostable serverless blogging platform. Markdown + git, no database. (https://blog.sdad.pro)
 - **PacketBuddy** — Cross-platform network usage monitor with real-time analytics. (https://github.com/instax-dutta/packet-buddy)
 - **winnow** — Self-hosted lead generation and cold-email platform with tenant isolation and abuse controls. (https://github.com/instax-dutta/winnow)
-- **truemotion** — Local MCP motion-graphics studio with deterministic timelines, rendered-frame feedback, and MP4 export. (https://github.com/instax-dutta/truemotion)
-- **gmail-automator** — Self-hosted Gmail MCP/REST gateway with encrypted OAuth custody and quota-safe sending. (https://github.com/instax-dutta/gmail-automator)
+- **truemotion** — MCP motion-graphics studio for coding agents with deterministic timelines, rendered-frame feedback, and MP4 export. (https://github.com/instax-dutta/truemotion)
+- **gmail-automator** — Self-hosted quota-safe Gmail MCP server with encrypted OAuth custody and durable queues. (https://github.com/instax-dutta/gmail-automator)
 
 ### AI Agent Skills
 

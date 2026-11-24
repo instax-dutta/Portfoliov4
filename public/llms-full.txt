@@ -29,7 +29,7 @@ Three conviction-driven bets:
 **Dataset:** https://huggingface.co/datasets/saidutta69/PhishTrap
 **Pipeline:** https://github.com/instax-dutta/PhishTrap
 
-Local phishing-detection system paired with PhishTrap, an original auto-refreshing URL dataset pipeline. PhishTrap fetches OpenPhish, Phishing.Database, PhishStats, and Tranco every six hours, canonicalizes URLs, tracks freshness, prunes expired entries, creates deterministic stratified splits, and validates before publication. PhishScout is designed for router, browser-extension, and edge-device deployment.
+On-device phishing detector paired with PhishTrap, an original auto-refreshing phishing URL phishing dataset pipeline. PhishTrap fetches OpenPhish, Phishing.Database, PhishStats, and Tranco every six hours, canonicalizes URLs, tracks freshness, prunes expired entries, creates deterministic stratified splits, and validates before publication. PhishScout is designed for router, browser-extension, and edge-device deployment.
 
 ### MarkItDownJS
 **Category:** Document Processing
@@ -44,7 +44,7 @@ AST-first document ingestion and conversion platform. Converts PDFs, DOCX, PPTX,
 **URL:** https://sysone.sdad.pro
 **Repository:** https://github.com/instax-dutta/sysone-bench
 
-Independent, byte-identical head-to-head benchmark for System One decision models. Runs 50 distinct measurements against a sealed manifest with checksummed artifacts and seed 42. The closed Jev reference scores 0.9065 while the best open model scores 0.8702 under the same protocol. Includes 36 test files, CI, public results, and reproducibility tooling.
+Independent byte-identical model benchmark for System One decision models. Runs 50 distinct measurements against a sealed manifest with checksummed artifacts and seed 42. The closed Jev reference scores 0.9065 while the best open model scores 0.8702 under the same protocol. Includes 36 test files, CI, public results, and reproducibility tooling.
 
 ### T4-Bench
 **Category:** AI Benchmarking
@@ -52,13 +52,13 @@ Independent, byte-identical head-to-head benchmark for System One decision model
 **URL:** https://t4b.sdad.pro
 **Repository:** https://github.com/instax-dutta/T4-Bench
 
-Measured benchmark suite for LLM inference, fine-tuning, image, video, and agent workloads on two consumer Kaggle Tesla T4 GPUs. Preserves CSV and JSON results, reports, logs, runner scripts, and generated media. Recorded results include LFM2.5-8B-A1B at 119 tokens per second, FLUX.2 klein at 374 images per hour, and an Unsloth NF4 run at 7.1 GB versus 14.9 GB stock.
+Tesla T4 LLM benchmark suite for inference, fine-tuning, image, video, and agent workloads on two consumer Kaggle Tesla T4 GPUs. Preserves CSV and JSON results, reports, logs, runner scripts, and generated media. Recorded results include LFM2.5-8B-A1B at 119 tokens per second, FLUX.2 klein at 374 images per hour, and an Unsloth NF4 run at 7.1 GB versus 14.9 GB stock.
 
 ### Gupshup
 **Category:** Language Dataset
 **URL:** https://huggingface.co/datasets/saidutta69/Gupshup
 
-Original privacy-scrubbed corpus of observed Roman-script Hinglish chat, including community emote tokens. Contains 353,843 messages split into 318,458 training and 35,385 test rows. Uses author hashing, mention/link redaction, abuse filtering, documented anonymisation, and deterministic splits.
+Gupshup Hinglish corpus of privacy-scrubbed Roman-script chat, including community emote tokens. Contains 353,843 messages split into 318,458 training and 35,385 test rows. Uses author hashing, mention/link redaction, abuse filtering, documented anonymisation, and deterministic splits.
 
 ### Vulscany
 **Category:** Security Engineering
@@ -116,14 +116,14 @@ Self-hosted lead generation and cold-email platform for agencies. Finds publishe
 **Language:** JavaScript
 **URL:** https://github.com/instax-dutta/truemotion
 
-Local MCP motion-graphics studio. Agents author HTML/GSAP scenes, inspect rendered frames, receive measured feedback, and export frame-accurate MP4s. Ships 11 MCP tools, deterministic seek-safe timelines, resumable rendering, and 103 tests plus golden-frame, crash, audio, CSP, schema, and concurrency suites.
+MCP motion-graphics studio for coding agents. Agents author HTML/GSAP scenes, inspect rendered frames, receive measured feedback, and export frame-accurate MP4s. Ships 11 MCP tools, deterministic seek-safe timelines, resumable rendering, and 103 tests plus golden-frame, crash, audio, CSP, schema, and concurrency suites.
 
 ### gmail-automator
 **Category:** Agent Infrastructure
 **Language:** Python
 **URL:** https://github.com/instax-dutta/gmail-automator
 
-Self-hosted Gmail MCP/REST gateway with encrypted OAuth custody, durable queues, rolling 24-hour quota accounting, paced sending, and an 85% quota ceiling. Ships 14 tools, 61 test files, CI, and release workflows.
+Self-hosted quota-safe Gmail MCP server with encrypted OAuth custody, durable queues, rolling 24-hour quota accounting, paced sending, and an 85% quota ceiling. Ships 14 tools, 61 test files, CI, and release workflows.
 
 ## AI Agent Skills
 
@@ -174,7 +174,7 @@ Maelis Research builds language AI infrastructure for Odia and low-resource Indi
 **The opportunity:** 38 million Odia speakers. Norwegian (5M), Dutch (25M), and Greek (13M) all have robust AI support, while Odia has far fewer dedicated resources.
 
 **What Maelis is building:**
-- Odia-optimized tokenizer for Brahmic scripts
+- Odia tokenizer for the Odia AI API (Brahmic scripts)
 - Lekhani Odia-exclusive LLM family
 - Shruti Odia speech recognition and synthesis
 - Anuvada Odia translation with cultural context

@@ -19,9 +19,9 @@ export const projects: Project[] = [
     title: "sysone-bench",
     slug: "sysone-bench",
     group: "AI & Language Infrastructure",
-    subtitle: "Independent Benchmark for System One Decision Models",
+    subtitle: "Byte-Identical Model Benchmark for System One",
     description:
-      "Byte-identical head-to-head benchmark for System One decision models, with 50 distinct measurements, sealed manifests, checksummed artifacts, and seed-42 reproducibility.",
+      "An independent byte-identical model benchmark for System One decision models, with 50 distinct measurements, sealed manifests, checksummed artifacts, and seed-42 reproducibility.",
     highlights: [
       "Scores a closed Jev reference at 0.9065 and the best open model at 0.8702 under the same protocol.",
       "Ships 36 test files, CI, public results, and reproducibility tooling.",
@@ -35,9 +35,9 @@ export const projects: Project[] = [
     title: "T4-Bench",
     slug: "t4-bench",
     group: "AI & Language Infrastructure",
-    subtitle: "Measured AI Workloads on Consumer Tesla T4 GPUs",
+    subtitle: "Tesla T4 LLM Benchmark and GPU Workload Suite",
     description:
-      "Benchmark suite for LLM inference, fine-tuning, image, video, and agent workloads on two consumer Kaggle Tesla T4 GPUs. Preserves raw results, logs, reports, and generated media.",
+      "Tesla T4 LLM benchmark suite for inference, fine-tuning, image, video, and agent workloads on two consumer Kaggle Tesla T4 GPUs. Preserves raw results, logs, reports, and generated media.",
     highlights: [
       "Records LFM2.5-8B-A1B at 119 tok/s and FLUX.2 klein at 374 images/hour on the measured T4 setup.",
       "Compares Unsloth NF4 at 7.1 GB against 14.9 GB stock in the recorded fine-tuning run.",
@@ -67,9 +67,9 @@ export const projects: Project[] = [
     title: "truemotion",
     slug: "truemotion",
     group: "Platforms & Products",
-    subtitle: "Local MCP Motion-Graphics Studio",
+    subtitle: "MCP Motion-Graphics Studio for Coding Agents",
     description:
-      "Local MCP motion-graphics studio where agents author HTML/GSAP scenes, inspect rendered frames, receive measured feedback, and export frame-accurate MP4s without cloud services.",
+      "MCP motion-graphics studio where coding agents author HTML/GSAP scenes, inspect rendered frames, receive measured feedback, and export frame-accurate MP4s without cloud services.",
     highlights: [
       "Ships 11 MCP tools with deterministic seek-safe timelines and resumable rendering.",
       "Includes 103 tests plus golden-frame, crash, audio, CSP, schema, and concurrency suites.",
@@ -83,9 +83,9 @@ export const projects: Project[] = [
     title: "gmail-automator",
     slug: "gmail-automator",
     group: "Platforms & Products",
-    subtitle: "Quota-Safe Gmail Gateway for AI Agents",
+    subtitle: "Quota-Safe Gmail MCP Server for AI Agents",
     description:
-      "Self-hosted Gmail MCP/REST gateway with encrypted OAuth custody, durable queues, rolling 24-hour quota accounting, and paced sending that stays below Gmail's daily limits.",
+      "Self-hosted quota-safe Gmail MCP server with encrypted OAuth custody, durable queues, rolling 24-hour quota accounting, and paced sending that stays below Gmail's daily limits.",
     highlights: [
       "Ships 14 tools and enforces an 85% quota ceiling with terminal handling for daily-limit rejections.",
       "Includes 61 test files, CI, and release workflows.",
@@ -115,9 +115,9 @@ export const projects: Project[] = [
     title: "PhishScout",
     slug: "phishscout",
     group: "AI & Language Infrastructure",
-    subtitle: "On-Device Phishing Detection and Data Pipeline",
+    subtitle: "On-Device Phishing Detector and PhishTrap Dataset",
     description:
-      "Security system pairing a compact phishing classifier with PhishTrap, an auto-refreshing dataset pipeline with canonical deduplication, freshness tracking, deterministic splits, and publication gates.",
+      "On-device phishing detector paired with the PhishTrap phishing dataset pipeline, using canonical deduplication, freshness tracking, deterministic splits, and publication gates.",
     highlights: [
       "PhishTrap refreshes from OpenPhish, Phishing.Database, PhishStats, and Tranco every six hours, then validates before publishing.",
       "PhishScout runs locally for router, browser-extension, and edge-device deployment.",
@@ -132,9 +132,9 @@ export const projects: Project[] = [
     title: "Gupshup",
     slug: "gupshup",
     group: "AI & Language Infrastructure",
-    subtitle: "Privacy-Scrubbed Hinglish Chat Corpus",
+    subtitle: "Gupshup Hinglish Corpus for Code-Mixed NLP",
     description:
-      "Original privacy-scrubbed corpus of observed Roman-script Hinglish chat, including community emote tokens. Author hashing, mention/link redaction, abuse filtering, and deterministic splits.",
+      "Gupshup Hinglish corpus of privacy-scrubbed Roman-script chat, including community emote tokens, author hashing, mention/link redaction, abuse filtering, and deterministic splits.",
     highlights: [
       "Contains 353,843 messages split into 318,458 training and 35,385 test rows.",
       "Ships as 35.3 MB Parquet with documented anonymisation and source handling.",

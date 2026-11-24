@@ -24,7 +24,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title,
     description: project.description,
-    keywords: [project.title, project.group, ...project.technologies],
+    keywords: [project.title, project.subtitle, project.group, ...project.technologies],
     alternates: { canonical: url },
     openGraph: {
       title: `${project.title} — Sai Dutta Abhishek Dash`,
