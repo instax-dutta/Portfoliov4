@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
     template: "%s | Sai Dutta Abhishek Dash",
   },
-  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products spanning on-device ML, LLM inference engines, privacy-first platforms, and developer tooling. Active across multiple ventures in deep-tech AI.",
+  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products spanning byte-identical model benchmarks, Tesla T4 LLM benchmarking, on-device phishing detection, privacy-first platforms, and developer tooling. Active across multiple ventures in deep-tech AI.",
   keywords: [
     "Founder",
     "Builder",
@@ -148,6 +148,14 @@ const structuredData = {
       "description": "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products, 225+ public repositories across GitHub and Hugging Face, 130+ models and datasets on Hugging Face.",
       "jobTitle": "Founder & Engineer",
       "sameAs": SITE.sameAs,
+      "subjectOf": [
+        { "@type": "CreativeWork", "name": "sysone-bench: Byte-Identical Model Benchmark for System One", "url": "https://sdad.pro/projects/sysone-bench" },
+        { "@type": "CreativeWork", "name": "T4-Bench: Tesla T4 LLM Benchmark and GPU Workload Suite", "url": "https://sdad.pro/projects/t4-bench" },
+        { "@type": "CreativeWork", "name": "PhishScout: On-Device Phishing Detector and PhishTrap Dataset", "url": "https://sdad.pro/projects/phishscout" },
+        { "@type": "CreativeWork", "name": "truemotion: MCP Motion-Graphics Studio for Coding Agents", "url": "https://sdad.pro/projects/truemotion" },
+        { "@type": "CreativeWork", "name": "gmail-automator: Quota-Safe Gmail MCP Server for AI Agents", "url": "https://sdad.pro/projects/gmail-automator" },
+        { "@type": "CreativeWork", "name": "Gupshup: Gupshup Hinglish Corpus for Code-Mixed NLP", "url": "https://sdad.pro/projects/gupshup" }
+      ],
       "knowsAbout": [
         "AI Infrastructure",
         "Language AI",

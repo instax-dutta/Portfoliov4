@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react"
 import { motion } from "framer-motion"
-import { Github, Linkedin, Twitter, Mail, MapPin, Clock, Send } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, MapPin, Clock, Send, Boxes } from "lucide-react"
 import Navigation from "../components/Navigation"
 import { containerVariants, itemVariants } from "../lib/animation"
 
@@ -10,6 +10,7 @@ const socialLinks = [
   { icon: Github, href: "https://github.com/instax-dutta", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/sdabhishekdash/", label: "LinkedIn" },
   { icon: Twitter, href: "https://twitter.com/abhishekdash69", label: "Twitter" },
+  { icon: Boxes, href: "https://huggingface.co/saidutta69", label: "Hugging Face" },
   { icon: Mail, href: "mailto:contact@sdad.pro", label: "Email" },
 ]
 

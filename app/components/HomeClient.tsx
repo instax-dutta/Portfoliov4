@@ -4,7 +4,7 @@ import Link from "next/link"
 import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
 import Navigation from "../components/Navigation"
-import { Github, Linkedin, Twitter, Mail, ArrowUpRight, BookOpen } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, ArrowUpRight, BookOpen, Boxes } from "lucide-react"
 import { transitionSmooth } from "../lib/animation"
 import { STATS } from "../lib/site-facts"
 
@@ -94,6 +94,9 @@ export default function HomeClient() {
               </a>
               <a href="https://twitter.com/abhishekdash69" target="_blank" rel="noopener noreferrer" className="text-bmw-muted hover:text-bmw-ink transition-colors" aria-label="Twitter">
                 <Twitter className="w-5 h-5" />
+              </a>
+              <a href="https://huggingface.co/saidutta69" target="_blank" rel="noopener noreferrer" className="text-bmw-muted hover:text-bmw-ink transition-colors" aria-label="Hugging Face">
+                <Boxes className="w-5 h-5" />
               </a>
               <a href="mailto:contact@sdad.pro" className="text-bmw-muted hover:text-bmw-ink transition-colors" aria-label="Email">
                 <Mail className="w-5 h-5" />

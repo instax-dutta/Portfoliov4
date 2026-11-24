@@ -205,6 +205,11 @@ Obscura at `chatgpt.com/` returned "Log in / Sign up for free"; at `claude.ai/` 
 ### LLM tracker
 `firecrawl_map` of `llm.dataforseo.com` returned 50 tracked entity pages; none were the user's domains. Direct scrapes of `/sdad.pro`, `/maelis.in`, and `/sysone-bench` returned HTTP 404 "Page Not Found".
 
+### Direct Claude session check (2026-11-25)
+Using the user's own logged-in Claude session, a direct authenticated request to `claude.ai/api/organizations/{org}/chat_conversations/{conv}/completion` returned HTTP 200 and this answer: Claude had no reliable knowledge of `sysone-bench`, `T4-Bench`, `PhishScout`, `gmail-automator`, or `truemotion`. It did recall, from prior user conversations rather than live sources, the name, Bhubaneswar location, Maelis Research/Offsage/Project Prahar affiliation, `sdad.pro` via `vc.sdad.pro`, and handles `R4C3R`, `instax-dutta`, `saidutta69`. It cited no URLs and explicitly refused to fabricate citations for the named projects. This confirms the earlier verdict: no verifiable project citation, stale entity facts, and no live-source grounding in the tested answer.
+
+Direct ChatGPT session check was blocked by a Cloudflare "ChatGPT hit a snag" page even with the supplied session cookies; no answer was captured.
+
 ### Live vs index mismatch
 Live `https://sdad.pro/projects/agentloop` and `/projects/ornith-flight` return 404, but search indexes still show them as current portfolio pages.
 

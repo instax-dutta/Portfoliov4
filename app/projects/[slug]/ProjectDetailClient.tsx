@@ -23,7 +23,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
         <article>
           <motion.div className="mb-12" variants={itemVariants}>
             <span className="bmw-label inline-block mb-4">{project.group}</span>
-            <h1 className="bmw-display-lg mb-4">{project.title}</h1>
+            <h1 className="bmw-display-lg mb-4">{project.title}: {project.subtitle}</h1>
             <p className="text-bmw-muted text-sm uppercase tracking-[0.5px] mb-6">{project.subtitle}</p>
             <p className="text-bmw-body text-base max-w-3xl leading-relaxed mb-8">
               {project.description}

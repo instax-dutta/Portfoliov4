@@ -8,7 +8,7 @@ const HomeClient = dynamic(() => import("./components/HomeClient"), {
 
 export const metadata: Metadata = {
   title: "Sai Dutta Abhishek Dash — Founder & Engineer | AI, Language Infrastructure & Security",
-  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products spanning on-device ML, LLM inference engines, privacy-first platforms, and developer tooling. Active across multiple deep-tech ventures.",
+  description: "Founder and engineer building AI infrastructure, language technology for underserved markets, and security systems at production scale. 22 shipped products spanning byte-identical model benchmarks, Tesla T4 LLM benchmarking, on-device phishing detection, privacy-first platforms, and developer tooling. Active across multiple deep-tech ventures.",
   keywords: [
     "Founder",
     "Builder",
